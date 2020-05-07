@@ -1169,7 +1169,7 @@ a {
 
 .work-layout-container.wlc-analytics {
   overflow: hidden;
-  max-width: 100vw;
+  max-width: 96vw;
 }
 
 .work-layout-container.wlc-am {
@@ -1182,18 +1182,45 @@ a {
 
 .tab {
   z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 8px -0.5px 24px;
   padding: 4px 12px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   border: 1px solid #000;
   background-color: #fff;
   font-family: GLB, Georgia, sans-serif;
   color: #160b09;
-  text-decoration: line-through;
-  cursor: not-allowed;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .tab.w--current {
   z-index: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
   background-color: #160b09;
   color: #fff;
   text-decoration: none;
@@ -1201,7 +1228,8 @@ a {
 }
 
 .text-block {
-  opacity: 0.33;
+  margin-bottom: -1px;
+  opacity: 1;
 }
 
 .paragraph {
@@ -1361,7 +1389,7 @@ a {
   left: 2vw;
   width: auto;
   max-height: 96vh;
-  max-width: 94vw;
+  max-width: 88vw;
 }
 
 .work-images.olddashboard {
@@ -1436,8 +1464,8 @@ a {
 .work-image-header.ab-header {
   position: absolute;
   left: auto;
-  top: 48px;
-  right: auto;
+  top: -32px;
+  right: 64px;
   display: inline;
   padding-left: 0px;
   -webkit-align-self: center;
@@ -1475,12 +1503,20 @@ a {
 
 .tabs-menu {
   z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #fff;
 }
 
 .tabs-menu-2 {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tabs {
@@ -1660,7 +1696,7 @@ a {
   -ms-flex: 0 auto;
   flex: 0 auto;
   border-style: solid;
-  border-width: 1px 1.5px 16px;
+  border-width: 1px 1px 16px;
   border-color: #160b09;
   box-shadow: -12px 21px 48px 24px rgba(22, 11, 9, 0.1);
   -webkit-filter: saturate(120%);
@@ -1741,7 +1777,7 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 24px;
-  bottom: 96px;
+  bottom: 300px;
   z-index: 100;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1930,6 +1966,101 @@ a {
   height: 100%;
   margin-top: 0px;
   margin-left: 0px;
+}
+
+.grid-4 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.breakdown-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #000;
+  font-family: Gillsans, sans-serif;
+}
+
+.breakdown-div.right {
+  border-left-width: 0px;
+}
+
+.breakdown-div.top {
+  border-bottom-width: 0px;
+}
+
+.breakdown-div.top.left {
+  border-left-width: 0px;
+}
+
+.timeblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0px;
+  margin-left: 6px;
+  padding: 0px 2px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.timeblock-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-right: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  color: #f75534;
+  font-size: 14px;
+}
+
+.text-block-2 {
+  margin-bottom: 0px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-decoration: none;
+}
+
+.questions {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  line-height: 22px;
+}
+
+.bd-span {
+  font-family: GLB, Georgia, sans-serif;
+  color: #f75534;
+}
+
+.text-span {
+  display: block;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding: 8px;
+  background-color: #efddc9;
+  font-weight: 400;
+}
+
+.text-block-3 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 991px) {
