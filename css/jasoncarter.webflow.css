@@ -2125,13 +2125,11 @@ a {
   align-items: center;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
-  background-color: #fff;
+ 
   cursor: pointer;
 }
 
-.close-contact:hover {
-  background-image: radial-gradient(circle farthest-corner at 100% 0%, #000, #fff);
-}
+
 
 .linkedin {
   display: -webkit-box;
