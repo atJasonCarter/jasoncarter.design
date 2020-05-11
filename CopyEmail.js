@@ -1,10 +1,10 @@
-function copyEmail() {
-  var copyText = document.getElementById("copyEmail");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-  console.log("copied.");
-}
+// function copyEmail() {
+//   var copyText = document.getElementById("copyEmail");
+//   copyText.select();
+//   copyText.setSelectionRange(0, 99999);
+//   document.execCommand("copy");
+//   console.log("copied.");
+// }
 
 /*
     <div data-w-id="2c350c4f-2e20-86df-9032-23d8014c9213" class="copy-email" onclick="copyEmail()">
