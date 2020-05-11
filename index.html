@@ -108,9 +108,11 @@
       <div id="w-node-dc8eec031497-5e7efd95" class="mail-header">
         <h6 class="h6 mail">EmaiL</h6>
       </div>
-      <div class="copy-email" onclick="copyTextFromElement('copyEmail')">
+      <div class="copy-email" onclick="copyEmail()">
         <h2 class="about-link close-contact">CLICK TO COPY</h2>
-        <div style="color:white" id="copyEmail">jcarter91@gmail.com</div>
+        <div style="opacity: 0;" type="text" id="copyEmail">
+          jcarter91@gmail.com
+        </div>
       </div>
       <a
         href="mailto:JCARTER91@GMAIL.COM?subject=Hey%20Jason!"
@@ -204,14 +206,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
-    <script>
-      function copyTextFromElement(elementID) {
-        let element = document.getElementById(elementID); //select the element
-        let elementText = element.textContent; //get the text content from the element
-        copyText(elementText); //use the copyText function below
-      }
-    </script>
-
+    <script src="/CopyEmail.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
 </html>
