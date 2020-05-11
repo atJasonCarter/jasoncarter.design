@@ -365,6 +365,21 @@ a {
   cursor: pointer;
 }
 
+.about-link.close-contact {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-style: none;
+  border-right-style: none;
+  color: #000;
+  cursor: pointer;
+}
+
 .contact-selector {
   position: fixed;
   left: 71.4vh;
@@ -663,6 +678,13 @@ a {
 
 .h6.bio {
   color: #032f30;
+}
+
+.h6.mail {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #160b09;
+  cursor: pointer;
 }
 
 .work-columns {
@@ -2063,6 +2085,126 @@ a {
   align-self: flex-end;
 }
 
+.contact-overflow {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 200000;
+  display: none;
+  width: 100vw;
+  height: 75vh;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-rows: auto 48px;
+  grid-template-rows: auto 48px;
+}
+
+.close-contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.close-contact:hover {
+  background-image: radial-gradient(circle farthest-corner at 100% 0%, #000, #fff);
+}
+
+.linkedin {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.linkedin:hover {
+  background-color: #f5ad09;
+}
+
+.copy-email {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.copy-email:hover {
+  background-color: #002abf;
+}
+
+.go-to-mail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.go-to-mail:hover {
+  background-color: #160b09;
+}
+
+.mail-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-left: 48px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 991px) {
   .nameh1 {
     left: 0%;
@@ -2521,6 +2663,17 @@ a {
     border-right-width: 0px;
     border-left-width: 0px;
   }
+}
+
+#w-node-dc8eec031497-5e7efd95 {
+  -ms-grid-column: span 2;
+  grid-column-start: span 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
 }
 
 #w-node-346466568eed-5e7efd95 {
