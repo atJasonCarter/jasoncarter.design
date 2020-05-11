@@ -662,6 +662,14 @@ a {
   color: #fff;
 }
 
+.about-p1.copied {
+  top: auto;
+  bottom: auto;
+  z-index: 999999;
+  padding: 6px 12px;
+  background-color: #160b09;
+}
+
 .grid-2 {
   -ms-grid-rows: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
@@ -2203,6 +2211,12 @@ a {
   border-top: 1px solid #000;
   background-color: #fff;
   cursor: pointer;
+}
+
+.copied {
+  position: absolute;
+  top: auto;
+  bottom: 24vh;
 }
 
 @media screen and (max-width: 991px) {

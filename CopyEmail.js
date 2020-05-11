@@ -6,9 +6,12 @@ function copyEmail() {
 }
 
 /*
-< value="jcarter91@gmail.com" id="copyEmail">
+<div class="copy-email" onclick="copyEmail()">
+        <h2 class="about-link close-contact">CLICK TO COPY</h2>
+        <input style="opacity: 0;" type="text" id="copyEmail" value="jcarter91@gmail.com">
+      </input>
+      </div>
 
-<!-- The button used to copy the text -->
-<button onclick="copyEmail()"></button>
+<script src="/CopyEmail.js" type="text/javascript"></script>
 
  */
