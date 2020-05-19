@@ -16,3 +16,5 @@
 <script src="/CopyEmail.js" type="text/javascript"></script>
 
  */
+
+//  <video autoplay loop src="/images/CMP.mov" style="width:100%"></video>
