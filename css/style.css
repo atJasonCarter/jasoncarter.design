@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
+:root {
+    --font-default: 18px;
+    --font-s: 10px;
+    --font-l: 24px;
+    --font-xl: 54px;
+    --font-line-height: 24px;
+    --black: #1A1A23;
+    --white: #F8EDED;
+    --grey: #f8eded8e;
+    --color: #A9F8FF;
+   /*filter*/  --shadow: 0px 100px 80px rgba(0, 0, 0, 0.24), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.172525), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.143066), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.12), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0969343), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0674749);
+   /*filter*/ --shadow2:  0px -85px 80px rgba(0, 0, 0, 0.15), 0px -35.511px 74.7764px rgba(0, 0, 0, 0.0906071), 0px -18.9859px 54.9882px rgba(0, 0, 0, 0.0518004), 0px -10.6433px 30.4121px rgba(0, 0, 0, 0.0213177);
+    --brtop: 8px 8px 0px 0px;
+    --br: 8px;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --italic: 'PT Serif', Serif;
+    --light: 300;
+    --norm: 400;
+    --med: 500;
+    --upper: uppercase;
+
+  }
+  
+  @media (min-width: 1400px) {
+    :root {
+      --font-default: 19px;
+      --font-s: 13px;
+      --font-l: 28px;
+      --font-xl: 60px;
+      --font-line-height: 30px;
+    }
+  }
+
+  h1{
+    font-family: var(--italic);
+    font-size: var(--font-xl);
+    line-height: var(--font-line-height);
+    color: var(--color);
+    font-weight: var(--light);
+  }
+
+  h2, h3, h4, h5, h6{
+    font-family: var(--sans);
+    color: var(--white);
+    font-size: var(--font-default);
+    line-height: var(--font-line-height);
+    font-weight: var(--light);
+  }
+
+  a{
+    font-family: var(--sans);
+    font-size: var(--font-default);
+    color: var(--white);
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .dog{
+    display: inline-block;
+    position: relative;
+    transition: all .32s ease-in-out;
+    cursor: pointer;
+
+  }
+.dog:after{
+  content:url("/imgs/dog.png");
+  
+  position: absolute;
+  top: 24px;
+  right:0px;
+  /* max-width: 400px;
+  max-height: 600px;
+  width: auto;
+  height: auto; */
+
+  opacity: 0;
+  
+  /* min-width: 400px; */
+  transform: translateY(0px) scaleY(0);
+  transform-origin: top;
+}
+
+.dog:hover:after{
+  top:32px;
+  display: inline-block;
+opacity: 1;
+transform: scaleY(1) ;
+transition: top .62s ease-in-out, opacity .62s ease-in-out, transform .002s ease-in-out;
+;
+}
+
+
+
+
+  .hey::after{
+content: "👋";
+padding-left: 12px
+  }
+
+span.number, span.subtitle{
+  font-family: var(--mono);
+  text-transform: var(--upper);
+  font-size: var(--font-s);
+color: var(--grey);
+z-index: 4;
+transition: all .32s ease-in-out;
+
+}
+
+
+span.subtitle{
+  align-self: end;
+  position: relative;
+  display: block;
+}
+.subtitle.CS.AB{
+  bottom: -7px;
+  left: 155px;
+ 
+}
+
+  body{
+      font-family: var(--sans);
+      background-color: var(--black);
+      color: var(--white);
+      font-size: var(--font-default);
+      line-height: var(--font-line-height);
+      font-weight: var(--light);
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      height: 100%;
+      width: calc(100vw - 80px);
+
+      flex-direction: column;
+      counter-reset: list-number;
+  }
+
+  nav{
+      justify-self: start;
+      left: calc(0% + 40px);
+      top:40px;
+      position: absolute;
+      
+  }
+  .navbar{
+    grid-area: nav;
+  }
+  nav>a{
+    padding-right: 40px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+
+
+/* container */
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  width: 100%;
+  max-width: 1360px;
+  position: relative;
+  grid-column-gap: 24px;
+  grid-row-gap: 164px;
+  grid-template-areas: 
+  "nav nav nav nav nav nav nav nav nav nav nav nav"
+  ". . . . . .  . header header header header header"
+  ". . . . . . . . . . . ."
+  ". .  workOne workOne workOne workOne workOne  . . . .  . "
+  ".  . . . .  . workTwo workTwo workTwo workTwo workTwo     . "
+  ".  workThree workThree workThree workThree workThree  . . . . .   . "
+  ".  . . . . workFour workFour workFour workFour workFour    . . "
+  
+  "footer footer footer footer footer footer footer footer footer footer footer footer"
+  ;
+}
+.container.CS{
+grid-template-areas: 
+'nav nav nav nav nav nav nav nav nav nav nav nav'
+'  . . . . . . . header header header header header'
+'. heroImage heroImage . . . . . . . . .'
+'.  .  . workOne workOne workOne workOne  . . . .  . '
+'.  . . . .  . workTwo workTwo workTwo workTwo workTwo     . '
+'.  workThree workThree workThree workThree workThree  . . . . .   . '
+'.  . . . . workFour workFour workFour workFour workFour    . . '
+'footer footer footer footer footer footer footer footer footer footer footer footer';
+}
+
+/*  */
+/* Work containers */
+/*  */
+
+a.work:hover{
+  text-decoration: none;
+}
+a.work.one {
+  grid-area: workOne;
+}
+a.work.two {
+  grid-area: workTwo;
+}
+a.work.three {
+  grid-area: workThree;
+}
+a.work.four {
+  grid-area: workFour;
+}
+a.work.five {
+  grid-area: workFive;
+}
+a.work.six {
+  grid-area: workSix;
+}
+a.work.seven {
+  grid-area: workSeven;
+}
+
+
+
+
+.work{
+  margin-left: -24px;
+  margin-right: -24px;
+  transition: all .32s ease-in-out;
+  cursor: pointer;
+}
+
+.work:hover  .workbg{
+   transform: scale(1.05); 
+}
+.work:hover  .workIMG{
+  transform: scale(1.05) translateY(-.5%) translateX(-.5%); 
+  
+}
+.work:hover  .workTitle{
+transform: translateY(24px);
+}
+.work:hover  span.subtitle{
+  transform: translateY(24px);
+  }
+
+.workImageContainer{
+  width:calc(100% + 48px);
+  display: flex;
+    flex-direction: column;
+    /* align-content: end; */
+    /* justify-content: end; */
+    /* justify-items: end; */
+    /* align-items: end; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    width: calc(100% + 48px);
+    margin-bottom: 12px;
+    z-index: -1;
+}
+.workbg{
+  width:100%;
+  background-color: aquamarine;
+  height: 288px;
+
+  box-shadow: var(--shadow);
+  border-radius: 1px;
+  z-index: 1;
+  transition: all .32s ease-in-out;
+ 
+}
+.workbg:before{
+  font-family: var(--mono);
+  text-transform: var(--upper);
+  font-size: var(--font-s);
+color: var(--grey);
+counter-increment: list-number;
+content: "Nº 0" counter(list-number);
+top: -12px;
+    right: 48px;
+position: relative;
+text-align: right;
+}
+
+.workIMG{
+  border-radius: var(--brtop);
+  box-shadow: var(--shadow2);
+  z-index: 2;
+
+  width: auto;
+  height: auto;
+  bottom: 0%;
+  position: absolute;
+  transition: all .32s ease-in-out;
+}
+.workTitle{
+  z-index: 3;
+  transition: all .32s ease-in-out;
+}
+
+
+
+
+/* .work.one::before{
+content: "Projects";
+top:-32px;
+position: relative;
+
+} */
+.workIMG.one{
+  right:24px;
+  max-height: 136%;
+
+}
+.workIMG.two{
+  right:0px;
+  max-height: 120%;
+}
+.workIMG.three{
+  left:0px;
+  max-height: 120%;
+}
+
+.workIMG.four{
+  right:48px;
+  max-height: 136%;
+}
+
+
+
+
+.workbg.one{
+  background-image: url("/imgs/grad1.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.workbg.two{
+  background-image: url("/imgs/grad2.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.workbg.three{
+  background-image: url("/imgs/grad3.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.workbg.four{
+  background-image: url("/imgs/grad4.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+  .footer{
+    justify-content: space-between;
+
+    top: calc(100% + 40px);
+    position: relative;
+    width:100%;
+    max-width: 100vw;
+    display: flex;
+    grid-area: footer ;
+  }
+  .mail{
+    position: relative;
+   right: 80px;
+  }
+
+
+/*  */
+/* Case Study CSS */
+/*  */
+.heroImage{
+  grid-area: heroImage;
+}
+.heroImg{
+  max-width: 680px;
+
+}
