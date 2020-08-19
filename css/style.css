@@ -40,7 +40,7 @@
   h1{
     font-family: var(--italic);
     font-size: var(--font-xl);
-    line-height: var(--font-line-height);
+    line-height: 120%;
     color: var(--color);
     font-weight: var(--light);
   }
