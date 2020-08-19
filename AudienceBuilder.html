@@ -71,7 +71,48 @@ It's not a pretty interface, but the initial tools available on our audience bui
   </li>
 </ul>
 
+
+
+
 <img src="./imgs/cs/Capture.PNG" alt="" class="CSIMG preAudienceBuilder">
 
+
+<div class="two">
+  <h2>Small Changes, Quickly</h2>
+  <p class="pCS">
+The first iteration was an opportunity to build TrueData's first design system, implement new UI to our newly customer-facing product, and nail down the IA. We wanted to get the tooling in our customers hands as quickly as possible, and began testing with them immediately. Talking to 5 customers, I performed qualitative research to learn more about what was needed in the product, what was desired, what our competitors did right, and where our competitors had failed.
+</p><p class="pCS">
+This is what we thought our customer's journey looked like:
+</p>
+</div>
+
+<div class="three">
+
+<p class="pCS">
+  Our initial thought process was to improve Step 5 in the customers journey, by giving our competitors more precise selections than what our competitors were giving them. This would improve our target metric of outperforming our competitors, and lower our customers cost per click. Additionally we had no way of visualizing for the users the total size of the Audience was. Finally, our aesthetics needed updating, so I built our companies first design system to apply to all designs moving forward.
+</p>
+<p class="pCS">
+I started by adding specificity to the Audience Builder. For each selection I included logistical operators such as "and"/"or". I knew not all marketers come from a tech background, and included tooltip hovers and contextual visuals.
+</p>
+</div>
+
+<div class="four">
+  <p class="pCS">
+  Next, we added an "Audience Scale Meter" to not only show the size of the selected audience, but to Give context to our Marketing customers about what the size of the selected audience means. For example, if the audience is too large, the benefits of targeting becomes nearly useless. If the audience becomes too small, your campaign wont have enough reach (If it gets TOO small, you're invading privacy, and I set up safeguards to prevent individual privacy being invaded).
+</p><p class="pCS">
+I presented these designs back to our engineers and our customers and wrote a research document to clarify my findings. The general feedback was:
+</p></div>
+<div class="feedback">
+  The primary benefit of the logistical operators was simply revealing how the audience was being concatenated together.
+</div>
+<div class="action">
+  For version one, remove ability to toggle between operators, our backend wasn't designed to support this functionality and would take up too many engineering resources early on. After we built the toggles, a Fullstory analysis proved this point by showing just how rarely people tried to toggle.
+</div>
+<div class="feedback2">
+  What our customers really loved about our platform was their interactions with he customer service team. Our Customer Service team was building our customers audiences; helping discover new audiences, and test out multiple audiences at once.
+</div>
+<div class="action2">
+  Make our audience builder more flexible, reimagine the way our customers interact with our platform. Allow customers to build and submit multiple audiences at once. Add audience plans to groups called "test plans"
+</div>
 
 </article>

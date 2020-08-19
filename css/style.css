@@ -52,7 +52,7 @@
     color: var(--pink);
     font-size: var(--font-l);
     line-height: var(--font-line-height);
-    font-weight: var(--norm);
+    font-weight: var(--med);
     margin-bottom: 24px;
   }
 
@@ -188,7 +188,7 @@ span.subtitle{
 
 
 /* container */
-.container{
+/* .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr); 
   width: 100%;
@@ -215,7 +215,7 @@ grid-template-areas:
 '. heroImage heroImage . . . . . . . . .'
 '.  . intro intro intro intro intro intro . . . . '
 '.  . cslist cslist cslist cslist cslist . . . . . '
-}
+} */
 
 /*  */
 /* Work containers */
@@ -337,7 +337,7 @@ text-align: right;
 ul.CSList{
   grid-area: cslist;
   position: relative;
-  top: -88px
+  /* top: -88px */
 }
 .countList{
  
@@ -423,6 +423,75 @@ position: relative;
   grid-area: intro;
   position: relative;
 }
+
+.two{
+  grid-area: two;
+  position: relative;
+}
+.three{
+  grid-area: three;
+  position: relative;
+}
+.four{
+  grid-area: four;
+  position: relative;
+}
+.five{
+  grid-area: five;
+  position: relative;
+}
+.six{
+  grid-area: six;
+  position: relative;
+}
+.seven{
+  grid-area: seven;
+  position: relative;
+}
+.action:before, .action2:before ,.feedback:before, .feedback2:before{
+
+  font-size: var(--font-s);
+  color: var(--grey);
+  font-family: var(--mono);
+  position: absolute;
+  margin-top: -32px;
+  margin-left:-12px;
+  text-transform: var(--upper);
+}
+
+.action:before, .action2:before{
+  content: 'Action';
+}
+.feedback:before, .feedback2:before{
+  content: 'Feedback';
+}
+.action,.action2{
+  background-color: var(--white);
+  padding:12px;
+  border-radius: 2px;
+  color:var(--black);
+  margin-bottom: -120px;
+}
+.feedback,.feedback2{
+  background-color: var(--dkgrey);
+  padding:12px;
+  border-radius: 2px;
+  margin-bottom: -120px;
+}
+.action{
+  grid-area: action;
+}
+.feedback{
+  grid-area: feedback;
+}
+.action2{
+  grid-area: action2;
+}
+.feedback2{
+  grid-area: feedback2;
+}
+
+
 
   .footer{
     justify-content: space-between;
