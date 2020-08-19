@@ -25,6 +25,16 @@
     top: -12px;
 }
 
+
+.imgshadow{
+    width: 100%;
+    height:100%;
+    bottom: 0%;
+    position: absolute;
+  
+    z-index: 99;
+}
+
 img.heroImg {
     /* top:64px; */
     max-width: 100vw;
@@ -49,4 +59,27 @@ header.header.cs{
       line-height:120% ;
   }
 
+}
+
+
+
+
+@media (min-width: 1700px) {
+    article.container{
+        max-width: calc(100vw - 20%);
+        grid-row-gap: 264px;
+
+    }
+    .workIMG.one, .workIMG.four{
+        max-height: 200%;
+    }
+    .workIMG.two, .workIMG.three{
+        max-height: 160%;
+    }
+    .workIMG.two{
+        right:48px;
+    }
+    .workIMG.three{
+        left:48px;
+    }
 }
