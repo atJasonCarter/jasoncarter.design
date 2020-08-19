@@ -12,7 +12,9 @@
     --black: #1A1A23;
     --white: #F8EDED;
     --grey: #f8eded8e;
+    --dkgrey: #f8eded27;
     --color: #A9F8FF;
+    --pink: #ffd9d9;
    /*filter*/  --shadow: 0px 100px 80px rgba(0, 0, 0, 0.24), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.172525), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.143066), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.12), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0969343), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0674749);
    /*filter*/ --shadow2:  0px -85px 80px rgba(0, 0, 0, 0.15), 0px -35.511px 74.7764px rgba(0, 0, 0, 0.0906071), 0px -18.9859px 54.9882px rgba(0, 0, 0, 0.0518004), 0px -10.6433px 30.4121px rgba(0, 0, 0, 0.0213177);
     --brtop: 8px 8px 0px 0px;
@@ -45,12 +47,32 @@
     font-weight: var(--light);
   }
 
-  h2, h3, h4, h5, h6{
+  h2{
+    font-family: var(--sans);
+    color: var(--pink);
+    font-size: var(--font-l);
+    line-height: var(--font-line-height);
+    font-weight: var(--norm);
+    margin-bottom: 24px;
+  }
+
+   h3, h4, h5, h6{
     font-family: var(--sans);
     color: var(--white);
     font-size: var(--font-default);
     line-height: var(--font-line-height);
     font-weight: var(--light);
+  }
+
+  .pCS{
+    font-family: var(--sans);
+    color: var(--white);
+    font-size: var(--font-default);
+    line-height: var(--font-line-height);
+    font-weight: var(--light);
+    max-width: 76ch;
+    grid-area: pcs;
+    margin-bottom: 24px;
   }
 
   a{
@@ -142,6 +164,7 @@ span.subtitle{
 
       flex-direction: column;
       counter-reset: list-number;
+  
   }
 
   nav{
@@ -190,16 +213,17 @@ grid-template-areas:
 'nav nav nav nav nav nav nav nav nav nav nav nav'
 '  . . . . . . . header header header header header'
 '. heroImage heroImage . . . . . . . . .'
-'.  .  . workOne workOne workOne workOne  . . . .  . '
-'.  . . . .  . workTwo workTwo workTwo workTwo workTwo     . '
-'.  workThree workThree workThree workThree workThree  . . . . .   . '
-'.  . . . . workFour workFour workFour workFour workFour    . . '
-'footer footer footer footer footer footer footer footer footer footer footer footer';
+'.  . intro intro intro intro intro intro . . . . '
+'.  . cslist cslist cslist cslist cslist . . . . . '
 }
 
 /*  */
 /* Work containers */
 /*  */
+
+a.work{
+  perspective: 800px;
+}
 
 a.work:hover{
   text-decoration: none;
@@ -228,12 +252,16 @@ a.work.seven {
 
 
 
-
+/* .work *{
+  /* pointer-events: none; */
+ 
+} */
 .work{
   margin-left: -24px;
   margin-right: -24px;
   transition: all .32s ease-in-out;
   cursor: pointer;
+
 }
 
 .work:hover  .workbg{
@@ -251,6 +279,7 @@ transform: translateY(24px);
   }
 
 .workImageContainer{
+  transform: translateZ(0px);
   width:calc(100% + 48px);
   display: flex;
     flex-direction: column;
@@ -305,6 +334,29 @@ text-align: right;
   transition: all .32s ease-in-out;
 }
 
+ul.CSList{
+  grid-area: cslist;
+  position: relative;
+  top: -88px
+}
+.countList{
+ 
+
+    padding: 4px;
+    background-color: var(--dkgrey);
+    margin: 12px;
+    border-radius: 2px;
+}
+.countList:before{
+  position: absolute;
+  counter-increment: list-number;
+  content: "Nº 0" counter(list-number);
+  left: -48px;
+  font-family: var(--mono);
+  text-transform: var(--upper);
+  font-size: var(--font-s);
+color: var(--grey);
+}
 
 
 
@@ -367,6 +419,10 @@ position: relative;
 
 
 
+.intro{
+  grid-area: intro;
+  position: relative;
+}
 
   .footer{
     justify-content: space-between;
@@ -393,4 +449,20 @@ position: relative;
 .heroImg{
   max-width: 680px;
 
+}
+
+.preAudienceBuilder{
+  grid-area: pab;
+  max-width: 600px;
+  width: 100%;
+  height:auto;
+border-radius: 2px;
+border: 1px solid black;
+top: -88px;
+position: relative;
+}
+
+.CSIMG:hover{
+  transform: scale(1.5);
+  transition: all .35s ease-in-out;
 }

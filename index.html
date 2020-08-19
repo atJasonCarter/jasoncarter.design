@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
    
     <link rel="stylesheet" href="./css/style.css" />
-    
+    <link rel="stylesheet" href="./css/grids.css" />
 <link rel="stylesheet" href="./css/mediaQuery.css"/> 
   </head>
 <body class="el">
@@ -53,52 +53,52 @@
 <!-- <h6 class="projects" href="#work">
     Projects
 </h6> -->
-<a class="work one" href="./AudienceBuilder.html">
+<a class="work one tilter" href="./AudienceBuilder.html">
   <!-- <span class="number" > Nº 01</span> -->
-    <div class="workImageContainer">
+    <figure class="workImageContainer">
       
       <div class="workbg one"></div>
       <img class="workIMG one" src="./imgs/abheader.png"></img>
 
-    </div>
+    </figure>
     <h3 class="workTitle">Audience Builder</h3>
     <span class="subtitle">TrueData</span>
 </a>
 
 
-<a class="work two">
+<a class="work two tilter">
   <!-- <span class="number" > Nº 01</span> -->
-    <div class="workImageContainer">
+    <figure class="workImageContainer">
       
       <div class="workbg two"></div>
       <img class="workIMG two" src="./imgs/dataviz header.png"></img>
 
-    </div>
+    </figure>
     <h3 class="workTitle">Analytics / Data Viz</h3>
     <span class="subtitle">TrueData</span>
   </a>
 
-<a class="work three">
+<a class="work three tilter">
   <!-- <span class="number" > Nº 01</span> -->
-    <div class="workImageContainer">
+    <figure class="workImageContainer">
       
       <div class="workbg three"></div>
       <img class="workIMG three" src="./imgs/cmp web header.png"></img>
     
-    </div>
+    </figure>
     <h3 class="workTitle">Web Onboarding Platform</h3>
     <span class="subtitle">TrueData's CMP</span>
 </a>
 
-<a class="work four">
+<a class="work four tilter">
   <!-- <span class="number" > Nº 01</span> -->
-    <div class="workImageContainer">
-      <ul>
-      <li class="workbg four"></li>
-    </ul>
+    <figure class="workImageContainer">
+
+      <div class="workbg four"></div>
+  
       <img class="workIMG four" src="./imgs/peck header.png"></img>
 
-    </div>
+    </figure>
     <h3 class="workTitle">PeckPeck -Daily Writing</h3>
     <span class="subtitle">Personal project</span>
 </a>
@@ -140,13 +140,13 @@
 
     function init() {
       var idx = 0;
-      [].slice.call(document.querySelectorAll('a.work')).forEach(function(el, pos) { 
+      [].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
         idx = pos%2 === 0 ? idx+1 : idx;
         new TiltFx(el, tiltSettings[idx-1]);
       });
     }
 
-    // Preload all images.
+ 
     // imagesLoaded(document.querySelector('container'), function() {
     //   document.body.classList.remove('loading');
     //   init();

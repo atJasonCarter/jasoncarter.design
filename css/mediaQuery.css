@@ -4,31 +4,6 @@
     body{
         padding:12px;
     }
-.container{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "nav nav nav "
-  "header header header "
-  ". . . "
-  "workOne workOne workOne "
-  " workTwo workTwo workTwo "
-  " workThree workThree workThree  "
-  " workFour workFour workFour "
-  
-  "footer footer footer "
-}
-
-.container.CS{
-    grid-row-gap: 88px;
-  
-    grid-template-areas: 
-    ' nav nav nav '
-    ' header header header '
-    /* '. . .' */
-    'heroImage heroImage . '
- '.  . . ';
-    
- }
 
 
 .work{
@@ -71,7 +46,7 @@ header.header.cs{
 
   /* typography */
   h1{
-      line-height:140% ;
+      line-height:120% ;
   }
 
 }
