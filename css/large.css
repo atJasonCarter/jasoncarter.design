@@ -44,45 +44,252 @@
 
 
 
-
-
-
-    /* grid */
-.container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); 
-    width: 100%;
-    max-width: 1361px;
-    position: relative;
-    grid-column-gap: 24px;
-    grid-row-gap: 164px;
-    grid-template-areas: 
-    "nav nav nav nav nav nav nav nav nav nav nav nav"
-    ". . . . . .  . header header header header header"
-    ". . . . . . . . . . . ."
-    ". .  workOne workOne workOne workOne workOne  . . . .  . "
-    ".  . . . .  . workTwo workTwo workTwo workTwo workTwo     . "
-    ".  workThree workThree workThree workThree workThree  . . . . .   . "
-    ".  . . . . workFour workFour workFour workFour workFour    . . "
+    .heroImg:hover{
+        transform: scale(1.05);
+        box-shadow: var(--shadow);
+    }
     
-    "footer footer footer footer footer footer footer footer footer footer footer footer"
-    ;
-  }
-  .container.CS{
-  grid-template-areas: 
-  'nav nav nav nav nav nav nav nav nav nav nav nav'
-  '  . . . . . . . header header header header header'
-  '. heroImage heroImage . . . . . . . . .'
-  '.  . intro intro intro intro intro intro . . . . '
-  '. cslist  cslist cslist cslist cslist cslist  pab pab  pab pab  .'
-  '.  . CStwo CStwo CStwo CStwo CStwo CStwo    . . . . '
-  '.  . CSthree CSthree CSthree CSthree CSthree CSthree    . . . . '
-  '.  .CSfour CSfour CSfour CSfour CSfour CSfour     . . . . '
-  '.  feedback feedback feedback feedback  action action action action . . .' 
-  '.  feedback2 feedback2 feedback2 feedback2   action2 action2 action2 action2 . . .'
-  '.  . CSfive CSfive CSfive CSfive CSfive CSfive    . . . . '
-  '.  . CSsix CSsix CSsix CSsix CSsix CSsix    . . . . '
-  '.  . CSseven CSseven CSseven CSseven CSseven CSseven    . . . . '
-  }
-
-}
+    .preAudienceBuilder{
+      grid-area: pab;
+      max-width: 600px;
+      width: 100%;
+      height:auto;
+    border-radius: 4px;
+    border: 1px solid black;
+    top: -88px;
+    position: relative;
+    transition: all .6s ease-in-out;
+    
+    }
+    
+    .CSIMG:hover{
+      transform: scale(1.05);
+    
+      box-shadow: var(--shadow);
+    }
+    
+    .jm{
+    grid-area: jm;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    }
+    .JourneyMap{
+        padding:8px;
+        border-radius: 4px;
+        background-color: var(--dkgrey);
+    }
+    .journeyArrows{
+        color: var(--grey);
+        padding:12px;
+    }
+    .JourneyMap-fixes{
+        background: radial-gradient(60.64% 140.4% at 81.53% 0%, #0057FF 0%, #00237E 100%);
+    }
+    
+    .fullW{
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        position: relative;
+        top:24px;
+        transition: all .6s ease-in-out;
+    
+    }
+    .fullW.c{
+        position: relative;
+        margin-top: 48px;
+    }
+    
+    div.AbLog , .AbLoc{
+        position: relative;
+      
+     
+        
+        object-fit: cover;
+        width: 120%;
+        left:-7%;
+        border-radius: 4px;
+    height: auto;
+     
+        background-repeat: no-repeat;
+        background-color: #E3E9F1;
+    }
+    
+    .asmcontainer{
+        display: flex;
+        flex-direction: row;
+        max-width: 1368px;
+        left:-50%;
+        position: relative;
+        object-fit: cover;
+        gap: 12px;
+        margin-top: 88px;
+        margin-bottom: 88px;
+    }
+    .asm{
+        max-width: 40%;
+        transition: all .6s ease-in-out;
+        height: auto;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    .asm:hover{
+        transform: scale(1.05);
+        box-shadow: var(--shadow);
+    }
+    
+    .AbLog{
+        content: url("/imgs/abLog.png");
+    }
+    .AbLoc{
+        content: url("/imgs/abLoc.png");
+    }
+    
+    .asm1{
+        content: url("/imgs/asm1.png");
+    }
+    .asm2{
+        content: url("/imgs/asm2.png");
+    }
+    .asm3{
+        content: url("/imgs/asm3.png");
+    }
+    .asm4{
+        content: url("/imgs/asm4.png");
+    }
+    .asm5{
+        content: url("/imgs/asm5.png");
+    }
+    
+    
+    
+    div.fullW.scroll{
+        grid-area: if;
+        width: 100%;
+        max-height: 768px;
+        height:768px;
+        overflow: auto;
+        object-fit: fill;
+        outline: 1px var(--black) solid;
+        max-width: calc(100%);
+        margin-left: 1px;
+        margin-right: -1px;
+        border-radius: 4px;
+       
+        position: relative;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        transition: all .6s ease-in-out;
+    
+    }
+    .fullW:hover{
+        transform: scale(1.05);
+        box-shadow: var(--shadow);
+    }
+    div.fullW.scroll::-webkit-scrollbar {
+        display: none;
+    }
+    /* div.fullW.scroll:before{
+    color: var(--pink);
+        font-family: var(--mono);
+        font-size: var(--font-s);
+        text-transform: var(--upper);
+        display: inline-block;
+        content: 'Scroll';
+        position: absolute;
+        top: 1200px;
+         left: calc(100% + 24px); 
+        z-index: 99;
+        width: 100%;
+        right: -24px;
+        height: auto;
+        transform: rotate(90deg);
+    } */
+    
+    div.imgCaseStudy-SoloScroll{
+        position: relative;
+        top:0px;
+        
+        object-fit: cover;
+        width: 100%;
+        content: url("/imgs/AudienceBuilder.png");
+        background-repeat: no-repeat;
+        background-color: #E3E9F1;
+    
+    
+    }
+    
+    
+    .metricsContainer{
+        grid-area: m;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .mc{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 16px;
+    }
+    .Metrics{
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .DesignMetricsContainer{
+        grid-area: dm;
+    }
+        .metricsContainer.b{
+            grid-area: bm;
+        }
+    .Goal{
+        position: relative;
+        margin-top: -16px;
+    }
+    .Actual{
+        font-weight: var(--med);
+    }
+    
+    /* grid */
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        width: 100%;
+        max-width: 1360px;
+        position: relative;
+        grid-column-gap: 24px;
+        grid-row-gap: 164px;
+        grid-template-areas: 
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        ". . . . . .  . header header header header header"
+        ". . . . . . . . . . . ."
+        ". .  workOne workOne workOne workOne workOne  . . . .  . "
+        ".  . . . .  . workTwo workTwo workTwo workTwo workTwo     . "
+        ".  workThree workThree workThree workThree workThree  . . . . .   . "
+        ".  . . . . workFour workFour workFour workFour workFour    . . "
+        
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+      }
+      .container.CS{
+      grid-template-areas: 
+      'nav nav nav nav nav nav nav nav nav nav nav nav'
+      '  . . . . . . . header header header header header'
+      '. heroImage heroImage . . . . . . . . .'
+      '.  . intro intro intro intro intro intro . . . . '
+      '. .  cslist cslist cslist cslist pab pab pab  pab .  .'
+      '.  .  . CStwo CStwo CStwo CStwo CStwo      . . . . '
+      ' . . jm jm jm jm jm jm . . . .'
+      '.  .  . CSthree CSthree CSthree CSthree CSthree      . . . . '
+      '.  . . CSfour CSfour CSfour CSfour CSfour       . . . . '
+      '.  .  .feedback feedback feedback  action action action   . . .' 
+      '.  . .  feedback2  feedback2 feedback2   action2 action2 action2   . . .'
+      '.  if   if if if if  if if if      if . . '
+      '.  .  m m m m m m      m m . . '
+      '.  .  bm bm bm bm bm bm      bm bm . . '
+      '.  .  . CSseven CSseven CSseven CSseven CSseven      . . . . '
+      }
+    
