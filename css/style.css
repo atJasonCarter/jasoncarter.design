@@ -90,6 +90,7 @@
     position: relative;
     transition: all .32s ease-in-out;
     cursor: pointer;
+    z-index: 99;
 
   }
 .dog:after{
@@ -260,16 +261,18 @@ a.work.seven {
 .work{
   margin-left: -24px;
   margin-right: -24px;
-  transition: all .32s ease-in-out;
+  transition: all .6s ease-in-out;
   cursor: pointer;
 
 }
 
 .work:hover  .workbg{
-   transform: scale(1.05); 
+   transform: scale(.95); 
 }
 .work:hover  .workIMG{
   transform: scale(1.05) translateY(-.5%) translateX(-.5%); 
+  /* border-radius: 8px; */
+  /* border: 2px solid var(--black); */
   
 }
 .work:hover  .workTitle{
@@ -320,10 +323,10 @@ text-align: right;
 }
 
 .workIMG{
-  border-radius: var(--brtop);
-  box-shadow: var(--shadow2);
+  /* border-radius: var(--brtop); */
+  /* box-shadow: var(--shadow2); */
   z-index: 2;
-border: 1px solid var(--dkgrey);
+/* border: 1px solid var(--dkgrey); */
   width: auto;
   height: auto;
   bottom: 0%;
