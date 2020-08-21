@@ -81,7 +81,7 @@
   .dog{
     display: inline-block;
     position: relative;
-    transition: all .32s ease-in-out;
+    transition: all .66s ease-in-out;
     cursor: pointer;
     z-index: 99;
 
@@ -127,7 +127,7 @@ span.number, span.subtitle{
   font-size: var(--font-s);
 color: var(--grey);
 z-index: 4;
-transition: all .32s ease-in-out;
+transition: all .45s ease-in-out;
 
 }
 
@@ -328,7 +328,7 @@ text-align: right;
   height: auto;
   bottom: 0%;
   position: absolute;
-  transition: all .32s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 .workTitle{
   z-index: 3;
@@ -400,6 +400,10 @@ position: relative;
   z-index: 99;
   box-shadow: var(--shadow2);
 } */
+
+.comingSoon{
+    color: var(--pink);
+}
 
 
 .workbg.one{
@@ -796,3 +800,22 @@ div.imgCaseStudy-SoloScroll{
   '.  .  bm bm bm bm bm bm      bm bm . . '
   '.  .  . CSseven CSseven CSseven CSseven CSseven      . . . . '
   }
+  .container.CS.Analytics{
+    grid-template-areas: 
+    'nav nav nav nav nav nav nav nav nav nav nav nav'
+    '  . . . . . . . header header header header header'
+    '. heroImage heroImage . . . . . . . . .'
+    '.  . intro intro intro intro intro intro . . . . '
+    '. .  cslist cslist cslist cslist cslist cslist .  .'
+    '.  .  . CStwo CStwo CStwo CStwo CStwo      . . . . '
+    ' . . jm jm jm jm jm jm . . . .'
+    '.  .  . CSthree CSthree CSthree CSthree CSthree      . . . . '
+    '.  . . CSfour CSfour CSfour CSfour CSfour       . . . . '
+    '.  .  .feedback feedback feedback  action action action   . . .' 
+    '.  . .  feedback2  feedback2 feedback2   action2 action2 action2   . . .'
+    '.  if   if if if if  if if if      if . . '
+    '.  .  m m m m m m      m m . . '
+    '.  .  bm bm bm bm bm bm      bm bm . . '
+    '.  .  . CSseven CSseven CSseven CSseven CSseven      . . . . '
+    }
+  
