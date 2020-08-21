@@ -1,0 +1,88 @@
+
+
+
+@media (min-width: 1700px) {
+
+    :root {
+        --font-default: 19px;
+        --font-s: 13px;
+        --font-l: 28px;
+        --font-xl: 60px;
+        --font-line-height: 30px;
+      }
+
+  
+  
+
+    article.container{
+        max-width: calc(100vw - 20%);
+        grid-row-gap: 264px;
+
+    }
+    .workIMG.one {
+        max-width: 100%;
+        bottom: 32px;
+        right: -32px;
+    }
+    .workIMG.two{
+        max-height: 120%;
+        bottom: -12px;
+        right: -64px;
+    }
+
+    .workIMG.three{
+        left:48px;
+        max-height: 180%;
+        top:-50%
+    }
+    .workIMG.four{
+        right:48px;
+        top: -25%
+    }
+
+
+
+
+
+
+
+
+    /* grid */
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    width: 100%;
+    max-width: 1361px;
+    position: relative;
+    grid-column-gap: 24px;
+    grid-row-gap: 164px;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    ". . . . . .  . header header header header header"
+    ". . . . . . . . . . . ."
+    ". .  workOne workOne workOne workOne workOne  . . . .  . "
+    ".  . . . .  . workTwo workTwo workTwo workTwo workTwo     . "
+    ".  workThree workThree workThree workThree workThree  . . . . .   . "
+    ".  . . . . workFour workFour workFour workFour workFour    . . "
+    
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+  }
+  .container.CS{
+  grid-template-areas: 
+  'nav nav nav nav nav nav nav nav nav nav nav nav'
+  '  . . . . . . . header header header header header'
+  '. heroImage heroImage . . . . . . . . .'
+  '.  . intro intro intro intro intro intro . . . . '
+  '. cslist  cslist cslist cslist cslist cslist  pab pab  pab pab  .'
+  '.  . CStwo CStwo CStwo CStwo CStwo CStwo    . . . . '
+  '.  . CSthree CSthree CSthree CSthree CSthree CSthree    . . . . '
+  '.  .CSfour CSfour CSfour CSfour CSfour CSfour     . . . . '
+  '.  feedback feedback feedback feedback  action action action action . . .' 
+  '.  feedback2 feedback2 feedback2 feedback2   action2 action2 action2 action2 . . .'
+  '.  . CSfive CSfive CSfive CSfive CSfive CSfive    . . . . '
+  '.  . CSsix CSsix CSsix CSsix CSsix CSsix    . . . . '
+  '.  . CSseven CSseven CSseven CSseven CSseven CSseven    . . . . '
+  }
+
+}

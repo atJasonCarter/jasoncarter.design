@@ -25,19 +25,22 @@
     <link rel="stylesheet" href="./css/normalize.css" />
    
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/grids.css" />
-    <link rel="stylesheet" href="./css/mediaQuery.css"/>
-  </head>
+    <link rel="stylesheet" media='screen  and (max-width: 700px)' href="./css/narrow.css">
+    <link rel="stylesheet" media='screen and (min-width: 701px) and (max-width: 1699px)'  href="./css/medium.css">
+    <link rel="stylesheet" media='screen  and (min-width: 1700px)' href="./css/large.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css"/> 
+    
+<link rel="stylesheet" href="./css/grids.css" />  </head>
 <body class="el">
-
-
-
-<article class="container CS">
 
   <nav class="navbar">
     <a href="./index.html">Back Home</a>
     <a href="#contact">Contact</a>
 </nav>
+<article class="container CS">
+
+
+
 <header class="header cs">
     <span class="subtitle CS AB">TrueData's</span>
     <h1>Audience Builder</h1>
@@ -54,10 +57,10 @@
 TrueData's core product is matching our customers with the perfect audiences for them. For a long time, this was a manual process, performed by our wonderful Customer Management team and Sales. Our team would process the results and email them to our customers. As our client list grew, the workload was not scalable for our Customer Management team and we decided to take our internal tool and make it customer facing.
 </p>
 <p class="pCS ">
-Over the next year and a half we would take this tool from a bare forum to a unique tool that solved pain points in ways none of our competitors were.
+Over the next year and a half we would take this tool from a bare form to a unique tool that solved pain points in ways none of our competitors were.
 </p>
 <p class="pCS">
-It's not a pretty interface, but the initial tools available on our audience builder were:
+The tool I was updating looked like this:
 </p>
 </div>
 
@@ -84,35 +87,143 @@ The first iteration was an opportunity to build TrueData's first design system, 
 </p><p class="pCS">
 This is what we thought our customer's journey looked like:
 </p>
+<!-- Journey Map -->
+
 </div>
+
+<ul class="JourneyMapContainer JMC jm">
+  <li class="JourneyMap JMC">Company creates new product</li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JMC">  Marketing team does competitive analysis</li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JMC">  Marketing does research into ideal targeted customers</li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JMC">  Marketing begins marketing plan</li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JourneyMap-fixes JMC">  Marketing selects exact makeup of ideal customers </li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JMC">  Marketing delivers advertising campaign</li>
+  <div class="journeyArrows JMC">↓</div>
+  <li class="JourneyMap JMC">  Succesful Ad campaign </li>
+</ul>
 
 <div class="CSthree">
 
 <p class="pCS">
-  Our initial thought process was to improve Step 5 in the customers journey, by giving our competitors more precise selections than what our competitors were giving them. This would improve our target metric of outperforming our competitors, and lower our customers cost per click. Additionally we had no way of visualizing for the users the total size of the Audience was. Finally, our aesthetics needed updating, so I built our companies first design system to apply to all designs moving forward.
+  Our customers needed us to help fix how they select their ideal audience. This process was long and convulted on competitors platforms. This would improve our target metric of outperforming our competitors, and lower our customers cost per click. Additionally we had no way of visualizing for the users the total size of the Audience was. Finally, our aesthetics needed updating, so I built our companies first design system to apply to all designs moving forward.
 </p>
 <p class="pCS">
 I started by adding specificity to the Audience Builder. For each selection I included logistical operators such as "and"/"or". I knew not all marketers come from a tech background, and included tooltip hovers and contextual visuals.
 </p>
+<div class="fullW">
+  <div class="AbLog">
+
+  </div>
+</div>
+<div class="fullW c">
+  <div class="AbLoc">
+    
+  </div>
+</div>
+
+
+
 </div>
 
 <div class="CSfour">
   <p class="pCS">
   Next, we added an "Audience Scale Meter" to not only show the size of the selected audience, but to Give context to our Marketing customers about what the size of the selected audience means. For example, if the audience is too large, the benefits of targeting becomes nearly useless. If the audience becomes too small, your campaign wont have enough reach (If it gets TOO small, you're invading privacy, and I set up safeguards to prevent individual privacy being invaded).
-</p><p class="pCS">
+</p>
+
+<div class="asmcontainer">
+<div class="asm asm1"></div>
+<div class="asm asm2"></div>
+<div class="asm asm3"></div>
+<div class="asm asm4"></div>
+<div class="asm asm5"></div>
+</div>
+
+
+
+
+<p class="pCS">
 I presented these designs back to our engineers and our customers and wrote a research document to clarify my findings. The general feedback was:
 </p></div>
-<div class="feedback">
+<div class="feedback fb">
   The primary benefit of the logistical operators was simply revealing how the audience was being concatenated together.
 </div>
-<div class="action">
+<div class="action fb">
   For version one, remove ability to toggle between operators, our backend wasn't designed to support this functionality and would take up too many engineering resources early on. After we built the toggles, a Fullstory analysis proved this point by showing just how rarely people tried to toggle.
 </div>
-<div class="feedback2">
+<div class="feedback2 fb">
   What our customers really loved about our platform was their interactions with he customer service team. Our Customer Service team was building our customers audiences; helping discover new audiences, and test out multiple audiences at once.
 </div>
-<div class="action2">
+<div class="action2 fb">
   Make our audience builder more flexible, reimagine the way our customers interact with our platform. Allow customers to build and submit multiple audiences at once. Add audience plans to groups called "test plans"
 </div>
+
+<div class="fullW scroll">
+  <div class="imgCaseStudy-SoloScroll">
+
+  </div>
+  </div>
+
+  <div class="metricsContainer">
+    <h2>Design Metrics</h2>
+<div class="mc DesignMetricsContainer">
+  
+    <div class="Metrics">
+      <span class="subtitle">Satisfaction</span>
+
+    <p class="Goal">Goal:  ​ ​  ​  4.5/5</p>
+
+    <p class="Actual"> Actual : 3.9/5</p>
+    </div>
+    <div class="Metrics">
+    <span class="subtitle">Audience's Built / Month</span>
+
+    <p class="Goal">Goal:   ​ ​  ​ N/A → 5</p>
+
+    <p class="Actual"> Actual : N/A → 2</p>
+    </div>
+    <div class="Metrics">
+    <span class="subtitle">Rage Click Rate</span>
+
+    <p class="Goal">Goal:   ​ ​  ​  N/A → &lt; 1.00%</p>
+
+    <p class="Actual"> Actual : N/A →  &lt;.0004%</p>
+    </div>
+</div>
+</div>
+<div class="metricsContainer b">
+  <h2>Business Metrics</h2>
+<div class="mc BusinessMetricsContainer">
+    
+    <div class="Metrics">
+        <span class="subtitle">Click Through Rate</span>
+
+    <p class="Goal">Goal:   ​ ​  ​0.90% → 1.00%</p>
+
+    <p class="Actual"> Actual: 0.90% → 1.24%</p>
+    </div>
+  <div class="Metrics">
+      <span class="subtitle">Cost Per Click</span>
+
+    <p class="Goal">Goal​:     ​ ​  ​   $3.35 → $2.50 </p>
+
+    <p class="Actual"> Actual: $3.35 →  $1.47 </p>
+    </div>
+    <div class="Metrics">
+        <span class="subtitle">New Customers</span>
+
+      <p class="Goal"> Goal:  ​ ​  ​ 100% → 120%</p>
+
+      <p class="Actual"> Actual: 100% → 180%</p>
+      </div>
+    </div>
+    </div>
+
+
+ 
 
 </article>

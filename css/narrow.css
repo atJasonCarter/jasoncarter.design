@@ -1,0 +1,174 @@
+@media (max-width: 700px) {
+
+
+    body{
+        padding:12px;
+        width: initial;
+       
+    }
+
+nav{
+    left:initial;
+    
+ 
+}
+.dog:after{
+    top: 24px;
+    right: -124px
+
+}
+
+.container.landing{
+    max-width: calc(100vw - 24px);
+    width: 100%;
+    grid-column-gap: 12px;
+    grid-row-gap: 88px;
+
+}
+.work{
+    max-width: calc(100vw - 24px);
+    margin-left: 0px;
+    margin-right: -60px;
+    transition: all .32s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+
+}
+.workImageContainer{
+    width: auto;
+    max-width: calc(100vw - 24px);
+    align-content: center;
+    justify-content: center;
+}
+.workbg:before{
+    right:0px;
+    top:-48px
+}
+.workbg{
+  
+    width: 100%;
+    height: 208px ;
+    
+}
+
+.workIMG{
+    align-self: center;
+    justify-self: center;
+}
+
+.workIMG.one{
+    left: -6px;
+  max-width: 90vw;
+bottom: initial;
+   
+}
+
+.workIMG.two {
+    max-width: 90vw;
+    top: -12px;
+    left: -6px;
+}
+.workIMG.three{
+    right: 48px;
+    max-height: 150%;
+    top:-64px;
+}
+.workIMG.four{
+    right: initial;
+    left: 32px;
+    bottom: -4px
+}
+
+
+
+
+
+img.heroImg {
+    /* top:64px; */
+    max-width: 100vw;
+    height: auto;
+    left: -12px;
+    position: relative;
+}
+header.header.cs{
+    /* top: -88px; */
+    position: relative;
+}
+.subtitle.CS.AB{
+    bottom:-17px;
+}
+
+  
+
+
+
+  /* typography */
+  h1{
+      line-height:120% ;
+  }
+  p{
+    width: calc(100vw - 24px)
+  }
+
+
+  /* case studies */
+
+  .intro{
+    grid-column: span 1
+  }
+  .CSList{
+      position: relative;
+      top: -48px;
+      bottom:-88px
+  }
+  .feedback, .feedback2,.action,.action2{
+      margin-bottom: -40px;
+  }
+  .preAudienceBuilder{
+      max-width: calc(100vw - 24px);
+  }
+
+
+
+  /* grid */
+  .container{
+      width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "nav nav nav "
+  "header header header "
+  ". . . "
+  "workOne workOne workOne "
+  " workTwo workTwo workTwo "
+  " workThree workThree workThree  "
+  " workFour workFour workFour "
+  
+  "footer footer footer "
+}
+
+.container.CS{
+    display: grid;
+    grid-row-gap: 88px;
+    width: 100%;
+    grid-template-areas: 
+    ' nav nav nav '
+    ' header header header '
+ 
+    'heroImage heroImage . '
+    'intro intro intro'
+    'cslist cslist cslist'
+    'pab pab pab'
+    'CStwo CStwo CStwo'
+    'CSthree CSthree CSthree'
+    'CSfour CSfour CSfour'
+    'feedback feedback feedback'
+    'action action action'
+    'feedback2 feedback2 feedback2'
+    'action2 action2 action2'
+ ;
+    
+ }
+}
+
+
