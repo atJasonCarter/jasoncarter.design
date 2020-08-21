@@ -60,6 +60,7 @@ nav{
     left: -6px;
   max-width: 90vw;
 bottom: initial;
+top:initial;
    
 }
 
@@ -69,14 +70,16 @@ bottom: initial;
     left: -6px;
 }
 .workIMG.three{
-    right: 48px;
+    right: 60px;
     max-height: 150%;
     top:-64px;
+    left: initial;
 }
 .workIMG.four{
-    right: initial;
-    left: 32px;
-    bottom: -4px
+    right: 12px;
+    left: initial;
+    bottom: -4px;
+    max-height: 120%
 }
 
 
