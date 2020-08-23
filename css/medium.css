@@ -714,6 +714,14 @@ height: auto;
   width: 100%;
   left: initial;
 }
+.oldAnalytics.colorAdd{ 
+  content: url("/imgs/cs/acl.gif");
+  max-height: 600px;
+  object-fit: contain;
+  width: 100%;
+  left: initial;
+}
+
 
 
 

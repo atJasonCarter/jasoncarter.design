@@ -248,6 +248,12 @@ header.header.cs{
     max-width:calc(100vw - 24px);
   }
 
+
+  /* analytics specific */
+  .minW{
+    height:auto
+  }
+
   /* grid */
   .container{
       width: 100%;
@@ -294,5 +300,23 @@ header.header.cs{
  ;
     
  }
+
+ .container.CS.Analytics{
+  grid-template-areas: 
+  ' nav'
+  ' header'
+  ' heroImage'
+  ' intro  '
+  ' cslist'
+  'CStwo  ' 
+  ' CSthree  '
+  ' CSfour    '
+  ' CSfive       '
+  'CSsix    '
+  ' CSseven '
+  }
+
+
+
 }
 

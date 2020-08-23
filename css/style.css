@@ -691,34 +691,39 @@ height: auto;
   transform: scale(1.05);  
 }  
 
-
 .oldAnalytics{ 
-    content: url("/imgs/cs/old-Analytics.gif");
-    position: relative;
-    object-fit: cover;
-    width: 120%;
-    left: -7%;
-    border-radius: 4px;
-    height: auto;
-    background-repeat: no-repeat;
-    background-color: var(--black);
+  content: url("/imgs/cs/old-Analytics.gif");
+  position: relative;
+  object-fit: cover;
+  width: 120%;
+  left: -7%;
+  border-radius: 4px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-color: var(--black);
 }
 .oldAnalytics.dataAdd{ 
-    content: url("/imgs/cs/adp.gif");
-    max-height: 600px;
-    object-fit: contain;
-    width: 100%;
-    left: initial;
-}
-
-.oldAnalytics.layoutAdd{ 
-  content: url("/imgs/cs/agl.gif");
+  content: url("/imgs/cs/adp.gif");
   max-height: 600px;
   object-fit: contain;
   width: 100%;
   left: initial;
 }
 
+.oldAnalytics.layoutAdd{ 
+content: url("/imgs/cs/agl.gif");
+max-height: 600px;
+object-fit: contain;
+width: 100%;
+left: initial;
+}
+.oldAnalytics.colorAdd{ 
+content: url("/imgs/cs/acl.gif");
+max-height: 600px;
+object-fit: contain;
+width: 100%;
+left: initial;
+}
 
 
 
