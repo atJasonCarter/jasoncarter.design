@@ -84,7 +84,11 @@
     transition: all .32s ease-in-out;
     cursor: pointer;
     z-index: 99;
+    text-decoration: none;
 
+  }
+  .dog:hover{
+    text-decoration: none;
   }
 .dog:after{
   content:url("/imgs/dog.png");
@@ -718,10 +722,12 @@ height: auto;
 
 
 
-
+.if{
+  grid-area: if;
+}
 
 div.fullW.scroll{
-    grid-area: if;
+ 
     width: 100%;
     max-height: 768px;
     height:768px;
