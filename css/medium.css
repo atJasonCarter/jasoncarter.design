@@ -88,7 +88,6 @@
   }
 .dog:after{
   content:url("/imgs/dog.png");
-  
   position: absolute;
   top: 24px;
   right:0px;
@@ -96,9 +95,7 @@
   max-height: 600px;
   width: auto;
   height: auto; */
-
   opacity: 0;
-  
   /* min-width: 400px; */
   transform: translateY(0px) scaleY(0);
   transform-origin: top;
