@@ -665,7 +665,29 @@ height: auto;
     content: url("/imgs/asm5.png");
 }
 /*ANALYTICS IMAGES*/
-  
+.minW{
+
+  width: 100%;
+  max-height: 768px;
+  height:768px;
+  overflow: auto;
+  object-fit: fill;
+  outline: 1px var(--black) solid;
+  max-width: calc(100%);
+  margin-left: 1px;
+  margin-right: -1px;
+  border-radius: 4px;
+  position: relative;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  transition: all .6s ease-in-out;
+
+}
+.minW:hover{
+  transform: scale(1.05);  
+}  
+
+
 .oldAnalytics{ 
     content: url("/imgs/cs/old-Analytics.gif");
     position: relative;
@@ -675,9 +697,26 @@ height: auto;
     border-radius: 4px;
     height: auto;
     background-repeat: no-repeat;
-    background-color: #E3E9F1;
-
+    background-color: var(--black);
 }
+.oldAnalytics.dataAdd{ 
+    content: url("/imgs/cs/adp.gif");
+    max-height: 600px;
+    object-fit: contain;
+    width: 100%;
+    left: initial;
+}
+
+.oldAnalytics.layoutAdd{ 
+  content: url("/imgs/cs/agl.gif");
+  max-height: 600px;
+  object-fit: contain;
+  width: 100%;
+  left: initial;
+}
+
+
+
 
 
 
@@ -768,6 +807,13 @@ div.imgCaseStudy-SoloScroll{
 .Actual{
     font-weight: var(--med);
 }
+span.quote{
+    color: var(--color);
+}
+
+/* Analytics specific */
+
+
 
 /* grid */
 .container{
@@ -813,17 +859,14 @@ div.imgCaseStudy-SoloScroll{
     'nav nav nav nav nav nav nav nav nav nav nav nav'
     '  . . . . . . . header header header header header'
     '. heroImage heroImage . . . . . . . . .'
-    '.  . intro intro intro intro intro intro . . . . '
-    '. .   cslist cslist cslist cslist cslist cslist . .  . .'
-    '.  .  CStwo  CStwo CStwo CStwo CStwo CStwo      . . . . '
-    ' . . jm jm jm jm jm jm . . . .'
-    '.  .  CSthree CSthree CSthree CSthree CSthree CSthree      . . . . '
-    '.  . CSfour CSfour CSfour CSfour CSfour CSfour       . . . . '
-    '.  .  .feedback feedback feedback  action action action   . . .' 
-    '.  . .  feedback2  feedback2 feedback2   action2 action2 action2   . . .'
-    '.  if   if if if if  if if if      if . . '
-    '.  .  m m m m m m      m m . . '
-    '.  .  bm bm bm bm bm bm      bm bm . . '
+    '.  .  . intro intro intro intro intro intro  . . . '
+    '.    cslist cslist cslist cslist cslist cslist  . . .  . .'
+    '.  .  . . . CStwo  CStwo CStwo CStwo CStwo CStwo        . ' 
+    '.  .  .  CSthree CSthree CSthree CSthree CSthree CSthree       . . . '
+    '.  .  . CSfour CSfour CSfour CSfour CSfour CSfour        . . . '
+    '.  .  . CSfive CSfive CSfive CSfive CSfive CSfive        . . . '
+    '.  .  . CSsix CSsix CSsix CSsix CSsix CSsix        . . . '
+  
     '.  .  . CSseven CSseven CSseven CSseven CSseven      . . . . '
     }
   

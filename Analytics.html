@@ -82,51 +82,34 @@ When I joined TrueData, this is what our analytics looked like:
 <div class="CStwo">
     <h2><span class="subtitle">Nº 03</span>Improve Data Sources</h2>
   <p class="pCS">
-My first step whenever I begin designing is usually to talk to our customers. For this project it was more important to go to our Engineers/SMOs to learn about what was feasable, and ask two important questions: <br>   
-"What data do we already have that we aren't using?" <br>
-"What data do our partners have that we havent bought yet?"<br>
-I gathered 54 new data types that we weren't currently showing our customers, and then went to go and talk with them to begin learning.
+My first step whenever I begin designing is usually to talk to our customers. For this project it was more important to go to our Engineers/SMOs to learn about what was feasible, and ask two important questions: <br>   
+<br> <span class="quote qcs"> "What data do we already have that we aren't using?" </span><br>
+<span class="quote qcs"> "What data do our partners have that we havent bought yet?"</span><br>
+<br> I gathered 54 new data types that we weren't currently showing our customers, and then went to go and talk with them to begin learning.
  I did a quick poll and card sorting activity to find out what was most useful from the data that we currently displayed, and what (if anything) was not useful. 
-<br> Next I repeated the exercise, this time adding in the new data sets. We learned a ton about what our customers were most excited about having access to, and what was essentially useless.
-<br> Finally, we had a tehcnical and buisness model discussion, to maximize value and the time of our limited engineering resources.
-</p><p class="pCS">
-This is what we thought our customer's journey looked like:
-</p>
-<!-- Journey Map -->
+<br><br> Next I repeated the exercise, this time adding in the new data sets. We learned a ton about what our customers were most excited about having access to, and what was essentially useless.
+<br><br> Finally, we had a tehcnical and buisness model discussion, to maximize value and the time of our limited engineering resources.
+<div class="minW">
+    
+    <div class="oldAnalytics dataAdd"></div>
+
+</div>  
 
 </div>
 
-<ul class="JourneyMapContainer JMC jm">
-  <li class="JourneyMap JMC">Company creates new product</li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JMC">  Marketing team does competitive analysis</li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JMC">  Marketing does research into ideal targeted customers</li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JMC">  Marketing begins marketing plan</li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JourneyMap-fixes JMC">  Marketing selects exact makeup of ideal customers </li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JMC">  Marketing delivers advertising campaign</li>
-  <div class="journeyArrows JMC">↓</div>
-  <li class="JourneyMap JMC">  Succesful Ad campaign </li>
-</ul>
+
 
 <div class="CSthree">
+  <h2><span class="subtitle">Nº 04</span>Update Layout</h2>
+  <p class="pCS">
+As we added more analytics I implemented a grouping system, so that data types could be compared and sorted by tabs. With a long list of available graphs, and each graph being a vertical bar chart, the layout was too homogenous and prone to losing your place in.
 
-<p class="pCS">
-  Our customers needed us to help fix how they select their ideal audience. This process was long and convulted on competitors platforms. This would improve our target metric of outperforming our competitors, and lower our customers cost per click. Additionally we had no way of visualizing for the users the total size of the Audience was. Finally, our aesthetics needed updating, so I built our companies first design system to apply to all designs moving forward.
-</p>
-<p class="pCS">
-I started by adding specificity to the Audience Builder. For each selection I included logistical operators such as "and"/"or". I knew not all marketers come from a tech background, and included tooltip hovers and contextual visuals.
-</p>
-<div class="fullW">
-  <div class="AbLog">
-
-  </div>
-</div>
-<div class="fullW c">
-  <div class="AbLoc">
+    </p>
+    <div class="minW">
+    
+      <div class="oldAnalytics layoutAdd"></div>
+  
+  </div>  
     
   </div>
 </div>
@@ -136,97 +119,29 @@ I started by adding specificity to the Audience Builder. For each selection I in
 </div>
 
 <div class="CSfour">
+  <h2><span class="subtitle">Nº 05</span>Add Color</h2>
   <p class="pCS">
-  Next, we added an "Audience Scale Meter" to not only show the size of the selected audience, but to Give context to our Marketing customers about what the size of the selected audience means. For example, if the audience is too large, the benefits of targeting becomes nearly useless. If the audience becomes too small, your campaign wont have enough reach (If it gets TOO small, you're invading privacy, and I set up safeguards to prevent individual privacy being invaded).
-</p>
 
-<div class="asmcontainer">
-<div class="asm asm1"></div>
-<div class="asm asm2"></div>
-<div class="asm asm3"></div>
-<div class="asm asm4"></div>
-<div class="asm asm5"></div>
+    </p>
+
+</div>
+
+<div class="CSfive">
+  <h2><span class="subtitle">Nº 06</span>Add Charting Options</h2>
+  <p class="pCS">
+
+    </p>
+
 </div>
 
 
+<div class="CSsix">
+  <h2><span class="subtitle">Nº 07</span>Make Data Actionable</h2>
+  <p class="pCS">
 
+    </p>
 
-<p class="pCS">
-I presented these designs back to our engineers and our customers and wrote a research document to clarify my findings. The general feedback was:
-</p></div>
-<div class="feedback fb">
-  The primary benefit of the logistical operators was simply revealing how the audience was being concatenated together.
 </div>
-<div class="action fb">
-  For version one, remove ability to toggle between operators, our backend wasn't designed to support this functionality and would take up too many engineering resources early on. After we built the toggles, a Fullstory analysis proved this point by showing just how rarely people tried to toggle.
-</div>
-<div class="feedback2 fb">
-  What our customers really loved about our platform was their interactions with he customer service team. Our Customer Service team was building our customers audiences; helping discover new audiences, and test out multiple audiences at once.
-</div>
-<div class="action2 fb">
-  Make our audience builder more flexible, reimagine the way our customers interact with our platform. Allow customers to build and submit multiple audiences at once. Add audience plans to groups called "test plans"
-</div>
-
-<div class="fullW scroll">
-  <div class="imgCaseStudy-SoloScroll">
-
-  </div>
-  </div>
-
-  <div class="metricsContainer">
-    <h2>Design Metrics</h2>
-<div class="mc DesignMetricsContainer">
-  
-    <div class="Metrics">
-      <span class="subtitle">Satisfaction</span>
-
-    <p class="Goal">Goal:  ​ ​  ​  4.5/5</p>
-
-    <p class="Actual"> Actual : 3.9/5</p>
-    </div>
-    <div class="Metrics">
-    <span class="subtitle">Audience's Built / Month</span>
-
-    <p class="Goal">Goal:   ​ ​  ​ N/A → 5</p>
-
-    <p class="Actual"> Actual : N/A → 2</p>
-    </div>
-    <div class="Metrics">
-    <span class="subtitle">Rage Click Rate</span>
-
-    <p class="Goal">Goal:   ​ ​  ​  N/A → &lt; 1.00%</p>
-
-    <p class="Actual"> Actual : N/A →  &lt;.0004%</p>
-    </div>
-</div>
-</div>
-<div class="metricsContainer b">
-  <h2>Business Metrics</h2>
-<div class="mc BusinessMetricsContainer">
-    
-    <div class="Metrics">
-        <span class="subtitle">Click Through Rate</span>
-
-    <p class="Goal">Goal:   ​ ​  ​0.90% → 1.00%</p>
-
-    <p class="Actual"> Actual: 0.90% → 1.24%</p>
-    </div>
-  <div class="Metrics">
-      <span class="subtitle">Cost Per Click</span>
-
-    <p class="Goal">Goal​:     ​ ​  ​   $3.35 → $2.50 </p>
-
-    <p class="Actual"> Actual: $3.35 →  $1.47 </p>
-    </div>
-    <div class="Metrics">
-        <span class="subtitle">New Customers</span>
-
-      <p class="Goal"> Goal:  ​ ​  ​ 100% → 120%</p>
-
-      <p class="Actual"> Actual: 100% → 180%</p>
-      </div>
-    </div>
-    </div>
 
 
  

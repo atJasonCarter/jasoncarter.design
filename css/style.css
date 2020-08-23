@@ -81,7 +81,7 @@
   .dog{
     display: inline-block;
     position: relative;
-    transition: all .66s ease-in-out;
+    transition: all .32s ease-in-out;
     cursor: pointer;
     z-index: 99;
 
@@ -127,7 +127,7 @@ span.number, span.subtitle{
   font-size: var(--font-s);
 color: var(--grey);
 z-index: 4;
-transition: all .45s ease-in-out;
+transition: all .32s ease-in-out;
 
 }
 
@@ -328,7 +328,7 @@ text-align: right;
   height: auto;
   bottom: 0%;
   position: absolute;
-  transition: all .6s ease-in-out;
+  transition: all .32s ease-in-out;
 }
 .workTitle{
   z-index: 3;
@@ -375,7 +375,7 @@ position: relative;
     top: -68px;
 }
 .workIMG.two{
-  right:-60px;
+  right:-120px;
   max-height: 120%;
   top:-24px;
 }
@@ -400,10 +400,6 @@ position: relative;
   z-index: 99;
   box-shadow: var(--shadow2);
 } */
-
-.comingSoon{
-    color: var(--pink);
-}
 
 
 .workbg.one{
@@ -549,8 +545,6 @@ position: relative;
   max-width: 680px;
   border-radius: 8px;
   transition: all .6s ease-in-out;
-
-
 }
 .heroImg:hover{
     transform: scale(1.05);
@@ -670,6 +664,59 @@ height: auto;
 .asm5{
     content: url("/imgs/asm5.png");
 }
+/*ANALYTICS IMAGES*/
+.minW{
+
+  width: 100%;
+  max-height: 768px;
+  height:768px;
+  overflow: auto;
+  object-fit: fill;
+  outline: 1px var(--black) solid;
+  max-width: calc(100%);
+  margin-left: 1px;
+  margin-right: -1px;
+  border-radius: 4px;
+  position: relative;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  transition: all .6s ease-in-out;
+
+}
+.minW:hover{
+  transform: scale(1.05);  
+}  
+
+
+.oldAnalytics{ 
+    content: url("/imgs/cs/old-Analytics.gif");
+    position: relative;
+    object-fit: cover;
+    width: 120%;
+    left: -7%;
+    border-radius: 4px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: var(--black);
+}
+.oldAnalytics.dataAdd{ 
+    content: url("/imgs/cs/adp.gif");
+    max-height: 600px;
+    object-fit: contain;
+    width: 100%;
+    left: initial;
+}
+
+.oldAnalytics.layoutAdd{ 
+  content: url("/imgs/cs/agl.gif");
+  max-height: 600px;
+  object-fit: contain;
+  width: 100%;
+  left: initial;
+}
+
+
+
 
 
 
@@ -760,6 +807,13 @@ div.imgCaseStudy-SoloScroll{
 .Actual{
     font-weight: var(--med);
 }
+span.quote{
+    color: var(--color);
+}
+
+/* Analytics specific */
+
+
 
 /* grid */
 .container{
@@ -805,17 +859,14 @@ div.imgCaseStudy-SoloScroll{
     'nav nav nav nav nav nav nav nav nav nav nav nav'
     '  . . . . . . . header header header header header'
     '. heroImage heroImage . . . . . . . . .'
-    '.  . intro intro intro intro intro intro . . . . '
-    '. .  cslist cslist cslist cslist cslist cslist .  .'
-    '.  .  . CStwo CStwo CStwo CStwo CStwo      . . . . '
-    ' . . jm jm jm jm jm jm . . . .'
-    '.  .  . CSthree CSthree CSthree CSthree CSthree      . . . . '
-    '.  . . CSfour CSfour CSfour CSfour CSfour       . . . . '
-    '.  .  .feedback feedback feedback  action action action   . . .' 
-    '.  . .  feedback2  feedback2 feedback2   action2 action2 action2   . . .'
-    '.  if   if if if if  if if if      if . . '
-    '.  .  m m m m m m      m m . . '
-    '.  .  bm bm bm bm bm bm      bm bm . . '
+    '.  .  . intro intro intro intro intro intro  . . . '
+    '.    cslist cslist cslist cslist cslist cslist  . . .  . .'
+    '.  .  . . . CStwo  CStwo CStwo CStwo CStwo CStwo        . ' 
+    '.  .  .  CSthree CSthree CSthree CSthree CSthree CSthree       . . . '
+    '.  .  . CSfour CSfour CSfour CSfour CSfour CSfour        . . . '
+    '.  .  . CSfive CSfive CSfive CSfive CSfive CSfive        . . . '
+    '.  .  . CSsix CSsix CSsix CSsix CSsix CSsix        . . . '
+  
     '.  .  . CSseven CSseven CSseven CSseven CSseven      . . . . '
     }
   
