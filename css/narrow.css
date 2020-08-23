@@ -13,11 +13,25 @@ nav{
     
  
 }
-.dog:after{
+.dog:after, .dog:active{
     top: 24px;
-    right: -124px
-
+    right: -124px;
+    content:url("/imgs/dog.png");
+    position: absolute;
+    opacity: 0;
+    transform: translateY(0px) scaleY(0);
+    transform-origin: top;
 }
+/* .dog:hover:after, .dog:active:after{
+    top:32px;
+    right: -124px;
+    display: inline-block;
+  opacity: 1;
+  transform: scaleY(1) ;
+  transition: top .62s ease-in-out, opacity .62s ease-in-out;
+  ;
+  } */
+
 
 .container.landing{
     max-width: calc(100vw - 24px);
