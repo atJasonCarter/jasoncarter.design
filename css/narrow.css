@@ -253,6 +253,11 @@ header.header.cs{
   .minW{
     height:auto
   }
+  .oldAnalytics{
+    width:100%;
+    left: initial;
+
+  }
 
   /* grid */
   .container{
