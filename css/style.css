@@ -113,7 +113,7 @@
   display: inline-block;
 opacity: 1;
 transform: scaleY(1) ;
-transition: top .62s ease-in-out, opacity .62s ease-in-out, transform .002s ease-in-out;
+transition: top .62s ease-in-out, opacity .62s ease-in-out;
 ;
 }
 
@@ -742,6 +742,7 @@ left: initial;
     left: initial;
     border-radius: 8px;
     margin-bottom: 88px;
+    overflow: hidden;
     }
   
     .oldAnalytics.AC{ 
@@ -752,6 +753,7 @@ left: initial;
       left: initial;
       border-radius: 8px;
       margin-top: 88px;
+      overflow: hidden;
       }
     
 

@@ -84,7 +84,7 @@
     transition: all .32s ease-in-out;
     cursor: pointer;
     z-index: 99;
-
+    text-decoration: none;
   }
   .dog:hover{
     text-decoration: none;
@@ -722,6 +722,35 @@ height: auto;
   left: initial;
 }
 
+.oldAnalytics.chartOptions{ 	
+  content: url("/imgs/cs/chart Types.gif");	
+  max-height: 600px;	
+  object-fit: contain;	
+  width: 100%;	
+  left: initial;	
+  }	
+  .oldAnalytics.buildAudience{ 	
+    content: url("/imgs/cs/BNA.gif");	
+    max-height: 800px;	
+    object-fit: contain;	
+    width: 100%;	
+    left: initial;	
+    border-radius: 8px;	
+    margin-bottom: 88px;	
+    overflow: hidden;	
+    }	
+  	
+    .oldAnalytics.AC{ 	
+      content: url("/imgs/cs/AC.gif");	
+      max-height: 800px;	
+      object-fit: contain;	
+      width: 100%;	
+      left: initial;	
+      border-radius: 8px;	
+      margin-top: 88px;	
+      overflow: hidden;	
+      }	
+    
 
 
 
