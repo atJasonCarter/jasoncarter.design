@@ -51,9 +51,8 @@
 
     .heroImg:hover{
         transform: scale(1.05);
-        box-shadow: var(--shadow);
+        filter: drop-shadow(80px 60px 18px rgba(0, 0, 0, 0.37));
     }
-    
     .preAudienceBuilder{
       grid-area: pab;
       max-width: 600px;

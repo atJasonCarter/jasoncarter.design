@@ -547,8 +547,8 @@ position: relative;
   transition: all .6s ease-in-out;
 }
 .heroImg:hover{
-    transform: scale(1.05);
-    box-shadow: var(--shadow);
+  transform: scale(1.05);
+  filter: drop-shadow(80px 60px 18px rgba(0, 0, 0, 0.37));
 }
 
 .preAudienceBuilder{

@@ -552,7 +552,7 @@ position: relative;
 }
 .heroImg:hover{
     transform: scale(1.05);
-    box-shadow: var(--shadow);
+    filter: drop-shadow(80px 60px 18px rgba(0, 0, 0, 0.37));
 }
 
 .preAudienceBuilder{
@@ -689,7 +689,9 @@ height: auto;
 }
 .minW:hover{
   transform: scale(1.05);  
+ 
 }  
+
 
 .oldAnalytics{ 
   content: url("/imgs/cs/old-Analytics.gif");
@@ -724,7 +726,34 @@ object-fit: contain;
 width: 100%;
 left: initial;
 }
+.oldAnalytics.chartOptions{ 
+  content: url("/imgs/cs/chart Types.gif");
+  max-height: 600px;
+  object-fit: contain;
+  width: 100%;
+  left: initial;
+  }
 
+  .oldAnalytics.buildAudience{ 
+    content: url("/imgs/cs/BNA.gif");
+    max-height: 800px;
+    object-fit: contain;
+    width: 100%;
+    left: initial;
+    border-radius: 8px;
+    margin-bottom: 88px;
+    }
+  
+    .oldAnalytics.AC{ 
+      content: url("/imgs/cs/AC.gif");
+      max-height: 800px;
+      object-fit: contain;
+      width: 100%;
+      left: initial;
+      border-radius: 8px;
+      margin-top: 88px;
+      }
+    
 
 
 .if{
