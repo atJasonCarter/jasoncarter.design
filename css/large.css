@@ -20,7 +20,7 @@
 
     }
     .workIMG.one {
-        max-width: 100%;
+        max-width: 95%;
         bottom: 32px;
         right: -32px;
     }
@@ -45,7 +45,11 @@
         height: 342px;
     }
 
-
+    .minW {
+        height:auto;
+        max-height: auto;
+        }
+        
 
 
 

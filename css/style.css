@@ -687,6 +687,13 @@ height: auto;
   transition: all .6s ease-in-out;
 
 }
+.minW > .oldAnalytics.buildAudience, .minW > .oldAnalytics.AC{
+height:auto;
+max-height: auto;
+}
+
+
+
 .minW:hover{
   transform: scale(1.05);  
  
