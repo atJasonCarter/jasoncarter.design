@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2165" height="1670" fill="none" viewBox="0 0 2165 1670">
+  <g filter="url(#a)">
+    <path fill="url(#b)" fill-rule="evenodd" d="M1494.5 1221c304.03 0 550.5-246.467 550.5-550.5S1798.53 120 1494.5 120c-299.38 0-1302.666 368.919-1333.283 670.499a550.504 550.504 0 0 0-36.193 283.201 550.48 550.48 0 0 0 158.227 317.06 550.42 550.42 0 0 0 318.68 154.95 550.428 550.428 0 0 0 347.091-71.37l-199.246-339.69C1035.86 1195.13 1348.68 1221 1494.5 1221Z" clip-rule="evenodd"/>
+  </g>
+  <defs>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="rotate(105.617 452.15 528.644) scale(874.795 1177.61)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="red"/>
+      <stop offset=".595" stop-color="#D67EFF"/>
+      <stop offset="1" stop-color="#D67EFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="a" width="2165" height="1670" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_525_539" stdDeviation="60"/>
+    </filter>
+  </defs>
+</svg>

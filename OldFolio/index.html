@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-wf-page="scrollData">
+  <head>
+    <!-- 👋 -->
+    <meta charset="UTF-8" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      name="description"
+    />
+    <meta content="Jason Carter UX/UI" property="og:title" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      property="og:description"
+    />
+    <meta content="Jason Carter UX/UI" property="twitter:title" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jason Carter ✨ Product Design</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+   
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media='screen and (min-width: 701px) and (max-width: 1699px)'  href="./css/medium.css">
+    <link rel="stylesheet" media='screen  and (min-width: 1700px)' href="./css/large.css">
+    <link rel="stylesheet" media='screen  and (max-width: 700px)' href="./css/narrow.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css"/> 
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="./css/grids.css" />
+
+<script data-goatcounter="https://jasoncarterdesign.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+  </head>
+<body class="el">
+
+
+
+<article class="container landing">
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+    <header>
+        <h3  class="hey">Hey</h3>
+        <h3>I'm Jason, a designer from Chicago, IL</h3>
+        <br>
+        <h3>I have an <a class="dog dogScale">insanely cute dog</a></h3>
+        <br>
+        <span class="subtitle">UX ○ UI ○ INTERACTION</span>
+    </header>
+<!--  -->
+    <!-- Projects -->
+<!--  -->
+<!-- <h6 class="projects" href="#work">
+    Projects
+</h6> -->
+<a class="work one tilter" href="./AudienceBuilder.html">
+  <!-- <span class="number" > Nº 01</span> -->
+    <figure class="workImageContainer">
+      
+      <div class="workbg one"></div>
+      <img class="workIMG one" src="./imgs/abheader.png"><div class="imgshadow"></div></img>
+
+    </figure>
+    <h3 class="workTitle">Audience Builder</h3>
+    <span class="subtitle">TrueData</span>
+</a>
+
+
+<a class="work two tilter" href="./Analytics.html">
+  <!-- <span class="number" > Nº 01</span> -->
+ 
+    <figure class="workImageContainer">
+      
+      <div class="workbg two"></div>
+      <img class="workIMG two" src="./imgs/dataviz header.png"></img>
+
+    </figure>
+
+    <h3 class="workTitle">Analytics / Data Viz</h3>
+    <span class="subtitle">TrueData</span>
+  </a>
+
+<a class="work three tilter" href="./cmp.html">
+  <!-- <span class="number" > Nº 01</span> -->
+  <p class="comingSoon">Coming Soon</p>
+    <figure class="workImageContainer">
+      
+      <div class="workbg three"></div>
+      <img class="workIMG three" src="./imgs/cmp web header.png"></img>
+    
+    </figure>
+   
+    <h3 class="workTitle">Web Onboarding Platform</h3>
+    <span class="subtitle">TrueData's CMP</span>
+</a>
+
+<a class="work four tilter">
+  <!-- <span class="number" > Nº 01</span> -->
+  <p class="comingSoon">Coming Soon</p>
+    <figure class="workImageContainer">
+
+      <div class="workbg four"></div>
+  
+      <img class="workIMG four" src="./imgs/peck header.png"></img>
+
+    </figure>
+
+    
+    <h3 class="workTitle">PeckPeck -Daily Writing</h3>
+    <span class="subtitle">Personal project</span>
+</a>
+
+
+
+
+</article>
+
+
+
+
+<footer class="footer" >
+  <a href="http://www.linkedin.com/in/atjasoncarter">LinkedIn</a>
+  <a class="mail" href="mailto:jcarter91@gmail.com">Email me cute dog pics</a>
+</footer>
+
+
+
+<div class="contactLink" id="Contact" style="width: 100%; bottom:0px; position:relative; height:auto;" ></div>
+</body >
+<script src="./js/anime.min.js"></script>
+<script src="./js/fitty.min.js"></script>
+<script>
+  (function() {
+    var tiltSettings = [
+    {},
+    {
+      movement: {
+        imgWrapper : {
+          translation : {x: 10, y: 10, z: 30},
+          rotation : {x: 0, y: -10, z: 0},
+          reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+        }
+      }
+    }
+
+  ];
+
+    function init() {
+      var idx = 0;
+      [].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+        idx = pos%2 === 0 ? idx+1 : idx;
+        new TiltFx(el, tiltSettings[idx-1]);
+      });
+    }
+
+ 
+    // imagesLoaded(document.querySelector('container'), function() {
+    //   document.body.classList.remove('loading');
+    //   init();
+    // });
+
+  })();
+  </script>
+</html>
