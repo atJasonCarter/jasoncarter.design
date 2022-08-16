@@ -68,7 +68,7 @@
         <a  href="/work.html"><li class="nav homepage"><h3>View</h3><h3 class="h3 white">my work</h3></li></a>
         <li class="nav homepage"><h3>Read</h3><h3 class="h3 white">what I value</h3></li>
         <li class="nav homepage"><h3>Look</h3><h3 class="h3 white">at my cute dog</h3></li>
-        <li class="nav homepage"><h3>Download</h3><h3 class="h3 white">resume</h3></li>
+        <a  href="Jason%20Carter%20Resume%20-2022.pdf.pdf"><li class="nav homepage"><h3>Download</h3><h3 class="h3 white">ugly resume</h3></li></a>
         <li class="nav homepage"><h3>Check</h3><h3 class="h3 white">my top 10</h3></li>
       </ul>
 
@@ -104,6 +104,11 @@
     <clipPath id="a" class="a">
       <path fill="#fff" d="M0 0h808v724H0z" transform="matrix(-1 0 0 1 808.5 .156)"/>
     </clipPath>
+    
+      <pattern id="c" patternUnits="userSpaceOnUse" width="302.4" height="403.2">
+        <image href="/imgs/gibby.jpg" x="0" y="0" width="302.4" height="403.2" />
+      </pattern>
+  
   </defs>
 </svg>
 <!-- END OF COMPUTER SVG -->
@@ -116,9 +121,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
   $("#moveContainer").mousemove(function(e) {
-  parallaxIt(e, ".Mouse", -205);
-  parallaxIt(e, ".screen", 400);
-  parallaxIt(e, ".b", -3000);
+  parallaxIt(e, ".Mouse", -105);
+  parallaxIt(e, ".screen", 200);
+  parallaxIt(e, ".backgroundImageContainer.homepage", -1200);
 });
 
 function parallaxIt(e, target, movement) {

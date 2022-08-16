@@ -81,6 +81,8 @@ body{
     max-width: 1440px;
     width: 100vw ;
     flex-direction: column;
+    margin: 64px;
+    margin-left: 200px;
 }
 .bodyContainer.homepage{
     flex-direction: row;
