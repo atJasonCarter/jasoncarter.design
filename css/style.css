@@ -105,6 +105,11 @@ h5.subtitle.work.one{
     color: var(--purple500);
 }
 
+.ask{
+    color: var(--purple500);
+    font-weight: 700;
+}
+
 /* responsive + grid */
 
 /* spacing */
@@ -121,6 +126,12 @@ h5.subtitle.work.one{
 }
 
 /* divs */
+.subheaderContainer{
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+
 
 /* body */
 *{
@@ -176,6 +187,12 @@ img{
     max-width: 1440px;
     max-height: 100vh;
     background-size: 100%;
+    animation: bgScale 20s ease-in-out infinite alternate;
+}
+@keyframes bgScale{
+    0% {transform: scale(1);}
+    25% {transform: scale(.95);}
+    100% {transform: scale(5.2);}
 }
 
 
@@ -267,4 +284,22 @@ position: relative;
 }
 .workimg.imageUpgrade{
     filter:drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+/* values Specific */
+.ValuesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap:80px;
+    width: 100%;
+}
+.subPageContent{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.valuesList > li{
+    padding-bottom: 8px;
 }

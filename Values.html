@@ -40,10 +40,54 @@
 <main class="bodyContainer" >
  <header class="subPage"> 
    <a href="/index.html"><h3 class="back">← back</h3></a>
+   <div class="subheaderContainer">
     <h1>My Values</h1>
-    <p class="workDescription">This isn't everything, but its a brief of what I believe.</p>
+    <p class="workDescription">This isn't everything, but its a brief of what I believe, in no specific order.</p>
+</div>
 </header>
 <Article class="subPageContent">
+    <div class="ValuesContainer">
+        <div class="individualContainers">
+            <h3>Life</h3>
+            <div class="divider medium"></div>
+            <p>Go on more hikes</p>
+        </div>
+        <div class="individualContainers">
+            <h3>Work</h3>
+            <div class="divider medium"></div>
+                <ul class="valuesList">
+                    <li>› 4 day work weeks are better for the individual and the company</li>
+                    <li>› The highest paid employee should never make more than 20x the lowest paid employee</li>
+                    <li>› Every employee deserves equity & voting in the company they work for</li>
+                </ul> 
+          </div>
+    </div>
+    <div class="ValuesContainer">
+            <div class="individualContainers">
+                <h3>Society</h3>
+                <div class="divider medium"></div>
+                <p>Black Lives Matter</p>
+
+            </div>
+            <div class="individualContainers">
+                <h3>UX design</h3>
+                <div class="divider medium"></div>
+                <p>Go on more hikes</p>
+            </div>
+    </div>
+    <div class="ValuesContainer">
+         <div class="individualContainers">
+            <h3>Hiring</h3>
+            <div class="divider medium"></div>
+                <ul class="valuesList">
+                    <li>› "In diversity there is beauty and there is strength" - M.A.</li>
+                    <li>› Hire people you'd want to go camping with (or just spend a lot of time closely with)</li>
+                    <li>› Don't exclude candidates for things you wouldn't fire them for, like spelling mistakes</li>
+                </ul> 
+          </div>
+    </div>
+
+
 </Article>
 </main>
 <div class="backgroundImageContainer valuesPage"></div>
@@ -59,6 +103,7 @@
 <script>
   $("#moveContainer").mousemove(function(e) {
   parallaxIt(e, ".backgroundImageContainer.valuesPage", -1200);
+  
 });
 
 function parallaxIt(e, target, movement) {
