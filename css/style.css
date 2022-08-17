@@ -1,9 +1,14 @@
 /* Color */
-root{
+:root{
     --blk85:rgba(0, 0, 0, 0.85);
+    --purple500: #817EFF;
     --textShadow: 0px 100px 129px rgba(49, 37, 78, 0.34), 0px 41.7776px 53.8931px rgba(49, 37, 78, 0.24441), 0px 22.3363px 28.8138px rgba(49, 37, 78, 0.202676), 0px 12.5216px 16.1528px rgba(49, 37, 78, 0.17), 0px 6.6501px 8.57863px rgba(49, 37, 78, 0.137324), 0px 2.76726px 3.56976px rgba(49, 37, 78, 0.0955895);
     --lightgreen: #AFD19F;
+    --orange300: #FFAD98;
+    --Shadow: 0px 100px 111px rgba(0, 0, 0, 0.21), 0px 41.7776px 46.3731px rgba(0, 0, 0, 0.150959), 0px 22.3363px 24.7933px rgba(0, 0, 0, 0.125183), 0px 12.5216px 13.8989px rgba(0, 0, 0, 0.105), 0px 6.6501px 7.38161px rgba(0, 0, 0, 0.0848175), 0px 2.76726px 3.07165px rgba(0, 0, 0, 0.0590406);
 }
+
+
 /* typography */
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
@@ -23,6 +28,15 @@ h1{
     text-shadow: var(--textShadow);
 }
 
+h2.special{
+    font-family: 'Stretch Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 61px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+}
 
 h3{
     font-family: 'Inter', sans-serif;
@@ -45,18 +59,66 @@ h3.back:hover{
     transform: rotate(-7deg);
     opacity: 1;
 }
-h2.special{
-    font-family: 'Stretch Pro',sans-serif;
+
+h4{
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 61px;
-    /* identical to box height */
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+
+}
+h4.cardText{
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.274);
+    box-sizing: border-box;
+    position: absolute;
+    Top:16px;
+    left:16px;
+    border-radius:12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+h4.cardText.flights{
+    color: #FF4E21;
+}
+h4.cardText.Activities{
+    color: #12c238
+}
+h4.cardText.Maps{
+    color: var(--purple500)
+}
+
+h5{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: -0.03em;
 }
+
+h5.subtitle.work.one{
+    color: var(--purple500);
+}
+
 /* responsive + grid */
 
 /* spacing */
+.divider{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.divider.medium{
+    height: 24px;
+}
+.divider.Large{
+    height: 72px;
+}
 
 /* divs */
 
@@ -71,7 +133,9 @@ body{
     height:100vh;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-attachment: fixed;
+    
 }
 .bodyContainer{
     position: relative;
@@ -88,13 +152,18 @@ body{
     flex-direction: row;
 }
 /* images */
-
+img{
+    width: 100%;
+}
 .backgroundImageContainer.homepage{
     background-image: url("../imgs/svgGradient1.svg");    
 }
 
 .backgroundImageContainer.workpage{
     background-image: url("../imgs/greenOrange.svg");    
+}
+.backgroundImageContainer.valuesPage{
+    background-image: url("../imgs/blue.svg");    
 }
 .backgroundImageContainer{
     position: fixed;
@@ -151,7 +220,7 @@ header.subPage{
 .workBox{
     display: flex;
     gap: 40px;
-    flex-direction: row;
+    flex-direction: column;
 }
 .workBoxText{
     display: flex;
@@ -164,4 +233,38 @@ header.subPage{
     height: auto;
     aspect-ratio: 16/9;
     border: 1px solid;
+}
+
+.workTaskContainer{
+display: flex;
+flex-direction: column;
+max-width: 1040px;
+border-radius: 16px;
+padding: 80px;
+justify-content: center;
+align-content: center;
+gap: 16px;
+position: relative;
+}
+.workTaskContainer:hover{
+    transform: scale(1.05);
+}
+.workTaskContainer.flights{
+    background: rgba(255, 200, 149, 0.06);
+    backdrop-filter: blur(80px);
+}
+.workTaskContainer.Activities{
+    background: #12c23807;
+    backdrop-filter: blur(80px);
+}
+.workTaskContainer.Maps{
+    background: #4423ff07;
+    backdrop-filter: blur(80px);
+}
+
+.workimg{
+    max-width: calc(1080px - 160px);
+}
+.workimg.imageUpgrade{
+    filter:drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
 }
