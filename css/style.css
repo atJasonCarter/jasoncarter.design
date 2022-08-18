@@ -91,6 +91,12 @@ h4.cardText.Activities{
 h4.cardText.Maps{
     color: var(--purple500)
 }
+h4.cardText.AB{
+    color: #293eff
+}
+h4.cardText.AGL{
+    color: #dd04cb
+}
 
 h5{
     font-family: 'Inter', sans-serif;
@@ -210,7 +216,7 @@ gap: 8px;
 text-shadow: 0px 100px 129px rgba(49, 37, 78, 0.34), 0px 41.7776px 53.8931px rgba(49, 37, 78, 0.24441), 0px 22.3363px 28.8138px rgba(49, 37, 78, 0.202676), 0px 12.5216px 16.1528px rgba(49, 37, 78, 0.17), 0px 6.6501px 8.57863px rgba(49, 37, 78, 0.137324), 0px 2.76726px 3.56976px rgba(49, 37, 78, 0.0955895);
 }
 .nav.homepage:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor:grab;
     
 }
@@ -308,18 +314,26 @@ gap: 16px;
 position: relative;
 }
 .workTaskContainer:hover{
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 .workTaskContainer.flights{
-    background: rgba(255, 200, 149, 0.06);
+    background: rgba(255, 200, 149, 0.15);
     backdrop-filter: blur(80px);
 }
 .workTaskContainer.Activities{
-    background: #12c23807;
+    background: #12c23815;
     backdrop-filter: blur(80px);
 }
 .workTaskContainer.Maps{
-    background: #4423ff07;
+    background: #4423ff15;
+    backdrop-filter: blur(80px);
+}
+.workTaskContainer.AB{
+    background: #2382ff15;
+    backdrop-filter: blur(80px);
+}
+.workTaskContainer.AGL{
+    background: #8b004115;
     backdrop-filter: blur(80px);
 }
 
