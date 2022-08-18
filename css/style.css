@@ -220,6 +220,50 @@ li.fname{
     gap: 4px;
 }
 
+/* sphere  ignore sphere, shes not ready yet*/
+/* #sphere{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%)   
+}
+@keyframes sphere{
+    0%{transform: scaleX(var(--A));}
+    50%{transform: scaleX(var(--Z));}
+    100%{transform: scaleX(var(--Z));}
+}
+.sp:hover{
+    animation: sphere 4000ms alternate infinite;
+}
+
+.sp:hover .sp.spHighlight{
+    animation:sphere alternate;
+    transform: scaleX(1);
+    transform-origin: 50% 50%;
+    --A:1;
+    --Z:0;
+    animation-duration: 3000ms;
+}
+.sp:hover .sp.spShadow{
+    animation:sphere alternate;
+    transform: scaleX(1);
+    transform-origin: 50% 50%;
+    --A:1;
+    --Z:0;
+    animation-duration: 5000ms;
+}  */
+/* ignore the one below for now */
+/* .sp:hover .sp.spLeft{
+    animation:sphere ;
+    transform: scaleX(0);
+    transform-origin: 50% 50%;
+    --A:0;
+    --Z:1;
+    animation-duration: 700ms;
+    animation-delay: 700ms;
+    display: block;
+} */
+.sp.left{display: none;}
 
 /* subPage General */
 header.subPage{
