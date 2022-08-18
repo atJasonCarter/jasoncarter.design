@@ -1,0 +1,327 @@
+@media (max-width: 700px) {
+
+
+    body{
+        padding:12px;
+        width: initial;
+       
+        max-width: 100vw;
+    }
+
+nav{
+    left:initial;
+    
+ 
+}
+.dog:after, .dog:active{
+    top: 24px;
+    right: -124px;
+    content:url("/imgs/dog.png");
+    position: absolute;
+    opacity: 0;
+    transform: translateY(0px) scaleY(0);
+    transform-origin: top;
+}
+/* .dog:hover:after, .dog:active:after{
+    top:32px;
+    right: -124px;
+    display: inline-block;
+  opacity: 1;
+  transform: scaleY(1) ;
+  transition: top .62s ease-in-out, opacity .62s ease-in-out;
+  ;
+  } */
+
+
+.container.landing{
+    max-width: calc(100vw - 24px);
+    width: 100%;
+    grid-column-gap: 12px;
+    grid-row-gap: 88px;
+
+}
+.work{
+    max-width: calc(100vw - 24px);
+    margin-left: 0px;
+    margin-right: -60px;
+    transition: all .32s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+
+}
+.workImageContainer{
+    width: auto;
+    max-width: calc(100vw - 24px);
+    align-content: center;
+    justify-content: center;
+}
+.workbg:before{
+    right:0px;
+    top:-48px
+}
+.workbg{
+  
+    width: 100%;
+    height: 208px ;
+    
+}
+
+.workIMG{
+    align-self: center;
+    justify-self: center;
+}
+
+.workIMG.one{
+    left: -6px;
+  max-width: 90vw;
+bottom: initial;
+top:initial;
+   
+}
+
+.workIMG.two {
+    max-width: 90vw;
+    top: -12px;
+    left: -6px;
+}
+.workIMG.three{
+    right: 60px;
+    max-height: 150%;
+    top:-64px;
+    left: initial;
+}
+.workIMG.four{
+    right: 12px;
+    left: initial;
+    bottom: -4px;
+    max-height: 120%
+}
+
+
+
+
+
+img.heroImg {
+    /* top:64px; */
+    max-width: 100vw;
+    height: auto;
+
+    position: relative;
+}
+
+.heroImage{
+    margin-left: -12px;
+    max-width: 100vw;
+}
+.heroImg{
+    border-radius: 0px;
+}
+header.header.cs{
+    /* top: -88px; */
+    position: relative;
+}
+.subtitle.CS.AB{
+    bottom:-17px;
+    display: initial;
+}
+
+  
+
+
+
+  /* typography */
+  h1{
+      line-height:120% ;
+  }
+  p{
+    width: calc(100vw - 24px)
+  }
+
+
+  /* case studies */
+  header.header.cs {
+  
+    position: relative;
+    max-width: 100vw;
+  }
+  .intro{
+    grid-column: span 1
+  }
+  ul.CSList {
+    grid-area: cslist;
+    max-width: calc(100vw - 24px);
+    width: 100%;
+  }
+  .countList{
+      margin:0px;
+      margin-bottom: 24px;
+  }
+  .countList:before {
+    position: absolute;
+    counter-increment: list-number;
+    content: "Nº 0" counter(list-number);
+    left: 0px;
+    margin-top: -22px;
+  }
+
+
+  div.imgCaseStudy-SoloScroll{
+    width: 162%;
+    left: -28%;
+  }
+
+
+
+  .CSList{
+      position: relative;
+      top: -48px;
+      bottom:-88px
+  }
+  .feedback, .feedback2,.action,.action2{
+      margin-bottom: -40px;
+  }
+  .preAudienceBuilder{
+      max-width: calc(100vw - 24px);
+  }
+  .mc {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 16px;
+  }
+  .fullW{
+      width:calc(100vw - 24px);
+  
+  }
+  div.AbLog, div.AbLoc{
+      width: 100%;
+      left: initial;
+  }
+
+  .jm{
+    max-width:calc(100vw - 24px) ;
+    width:100%;
+    text-align: center;
+  }
+
+  .asmcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:calc(100vw - 24px);
+    left:initial;
+    position: relative;
+    object-fit: cover;
+    grid-gap: 12px;
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+  .asm{
+      width:auto;
+      max-width: 100%;
+      float: left;
+     
+  }
+
+  .fb{
+      max-width: calc(100% - 48px)
+  }
+  .feedback, .feedback2, .action, .action2{
+      margin-left: initial;
+      margin-right: initial;
+  }
+
+  div.fullW.scroll {
+    grid-area: if;
+    width: 100vw;
+    max-height: 366px;
+    height: 366px;
+    left:-12px;
+    position: relative;
+    border-radius: 0px;
+    margin:0px;
+    overflow: initial;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+  }
+  .CStwo, .CSthree, .CSfour, .CSfive, .CSsix, .CSseven{
+    max-width:calc(100vw - 24px);
+  }
+
+
+  /* analytics specific */
+  .minW{
+    height:auto
+  }
+  .oldAnalytics{
+    width:100%;
+    left: initial;
+
+  }
+
+  /* grid */
+  .container{
+      width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "nav nav nav "
+  "header header header "
+  ". . . "
+  "workOne workOne workOne "
+  " workTwo workTwo workTwo "
+  " workThree workThree workThree  "
+  " workFour workFour workFour "
+  
+  "footer footer footer "
+}
+
+.container.CS{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 88px;
+    width: 100%;
+    max-width: calc(100vw - 24px);
+    /* overflow-x: hidden; */
+    grid-template-areas: 
+    ' nav '
+    ' header '
+    'heroImage '
+    'intro '
+    'cslist '
+    'pab '
+    'CStwo '
+    'jm '
+    'CSthree'
+    'CSfour '
+    'feedback '
+    'action '
+    'feedback2 '
+    'action2 '
+    'if '
+    'm '
+    'bm '
+
+ ;
+    
+ }
+
+ .container.CS.Analytics{
+  grid-template-areas: 
+  ' nav'
+  ' header'
+  ' heroImage'
+  ' intro  '
+  ' cslist'
+  'CStwo  ' 
+  ' CSthree  '
+  ' CSfour    '
+  ' CSfive       '
+  'CSsix    '
+  ' CSseven '
+  }
+
+
+
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-wf-page="scrollData">
+  <head>
+    <!-- 👋 -->
+    <meta charset="UTF-8" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      name="description"
+    />
+    <meta content="Jason Carter UX/UI" property="og:title" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      property="og:description"
+    />
+    <meta content="Jason Carter UX/UI" property="twitter:title" />
+    <meta
+      content="Jason Carter is a web/mobile UX/UI and motion designer based out of Chicago."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jason Carter ✨ Product Design</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+   
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+
+
+<script data-goatcounter="https://jasoncarterdesign.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</head>
+
+
+
+
+<body class="body workpage" id="moveContainer">
+<main class="bodyContainer" >
+ <header class="subPage"> 
+   <a href="/index.html"><h3 class="back">← back</h3></a>
+   <div class="subheaderContainer">
+    <h1>My Work</h1>
+    <p class="workDescription">Hey! For many many reasons, I don't do public case studies. I'll happily put a presentation together for you if ya <a class="ask" href="www.linkedin.com/in/atJasonCarter">send me a message</a></p>
+    </div>
+</header>
+<Article class="subPageContent">
+
+  <!-- Rocket Travel -->
+      <div class="workBox">
+          <!-- <img src="/imgs/rocketLogo.svg" alt="Image of Product" class="workBoxImg"> -->
+          <div class="workBoxText">
+            <h3>Rocket Travel</h3>
+            <h5 class="subtitle work one">Design System ・ Design Ops ・ Product Design</h5> 
+            <p class="workDescription">RocketTravel does whitelabel travel portals. I worked on Flights, Acitivites, and Maps.</p>
+            <div class="divder medium"></div>  
+            <div class="workTaskContainer flights"><img src="/imgs/Flights- upgrades1.png" class="workimg" alt=""><img src="/imgs/flights upgrades2.png" alt="" class="workimg imageUpgrade"><h4 class="cardText flights">Flights</h4></div>
+            <div class="divder medium"></div>  
+            <div class="workTaskContainer Activities"><img src="/imgs/activities phone.png" alt="" class="workimg imageUpgrade"><h4 class="cardText Activities">Activities</h4></div>
+            <div class="divder medium"></div>  
+            <div class="workTaskContainer Maps"><img src="/imgs/map.png" alt="" class="workimg imageUpgrade"><h4 class="cardText Maps">Maps</h4></div>
+          </div>
+<div class="divider Large"></div>
+<!-- Ascent Global -->
+<div class="workBoxText">
+  <h3>Ascent Global Logistics</h3>
+  <h5 class="subtitle work one">Design System ・ Product Design</h5> 
+  <p class="workDescription">AGL does full service logistics. I worked on International Bookings, Trackings, and Form Design.</p>
+  <div class="divder medium"></div>  
+  <div class="workTaskContainer AGL"><img src="/imgs/AGL Maps.png" alt="" class="workimg imageUpgrade"><h4 class="cardText AGL">Dashboard</h4></div>
+  </div>
+  <div class="divider Large"></div>
+<!-- TrueData -->
+<div class="workBoxText">
+  <h3>TrueData</h3>
+  <h5 class="subtitle work one">Design Manager・ Product Design ・ Research Lead</h5> 
+  <p class="workDescription">TrueData helps companies find their ideal clients. I worked on Client Matching, Analytics, and Machine Learning.</p>
+  <div class="divder medium"></div>  
+  <div class="workTaskContainer AB"><img src="/imgs/trueData.png" alt="" class="workimg imageUpgrade"><h4 class="cardText AB">Audience Builder</h4></div>
+  </div>
+  <div class="divider Large"></div>
+<!-- Nielsen-->
+<div class="workBoxText">
+  <h3>Nielsen</h3>
+  <h5 class="subtitle work one">Design Systems・ Product Design </h5> 
+  <p class="workDescription">Nielsen hordes data. I designed API portals for people to navigate the Terabytes.</p>
+  <div class="divder medium"></div>  
+  <div class="workTaskContainer flights"><img src="/imgs/nielsends.png" alt="" class="workimg imageUpgrade"><h4 class="cardText flights">Design System</h4></div>
+  </div>
+  <div class="divider Large"></div>
+      </div>
+</Article>
+<div class="backgroundImageContainer workpage"></div>
+</main>
+</body> 
+
+
+<!-- script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  $("#moveContainer").mousemove(function(e) {
+  parallaxIt(e, ".backgroundImageContainer.workpage", -1200);
+});
+
+function parallaxIt(e, target, movement) {
+  var $this = $("#moveContainer");
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
+
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * movement,
+    y: (relY - $this.height() / 2) / $this.height() * movement
+  });
+}
+</script>
+    </html>
