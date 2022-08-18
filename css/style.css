@@ -267,7 +267,7 @@ li.fname{
     --Z:1;
     animation-duration: 700ms;
     animation-delay: 700ms;
-    display: block;
+    display: block;;
 } */
 .sp.left{display: none;}
 
