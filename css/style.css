@@ -256,7 +256,7 @@ li.fname{
     transform-origin: 50% 50%;
     --A:1;
     --Z:0;
-    animation-duration: 5000ms;
+    animation-duration: 5000ms;;
 }  */
 /* ignore the one below for now */
 /* .sp:hover .sp.spLeft{
