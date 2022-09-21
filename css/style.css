@@ -284,6 +284,11 @@ header.subPage{
 
 
 /* work Boxes */
+.workDescription{
+    line-height: 160%;
+    max-width: 82ch;
+}
+
 .workBox{
     display: flex;
     gap: 40px;
@@ -360,4 +365,47 @@ position: relative;
 
 .valuesList > li{
     padding-bottom: 8px;
+}
+
+
+/* tops specific */
+.top3GridRow{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1040px;
+    border-radius: 16px;
+    background: rgba(186, 149, 255, 0.075);
+
+}
+.topGridContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.topCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+img.topCardImg{
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    border-radius: 12px;
+    /* box-sizing: border-box; */
+}
+.topCardText{
+    color: var(--purple500);
+}
+.subPageContent.tops{
+    gap: 160px;
+}
+h4.subCardText{
+    color: rgb(131, 127, 139)
+    
 }
