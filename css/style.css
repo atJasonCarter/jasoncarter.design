@@ -402,8 +402,15 @@ img.topCardImg{
     height: auto;
     border-radius: 12px;
     object-fit: cover;
+    background-color: #fff6e4;
     /* box-sizing: border-box; */
 }
+
+img.topCardImg.books{
+    object-fit: contain;
+}
+
+
 .topCardText{
     color: var(--purple500);
 }
@@ -413,4 +420,14 @@ img.topCardImg{
 h4.subCardText{
     color: rgb(131, 127, 139)
     
+}
+
+/* Media Queries */
+@media (max-width: 1024px){
+    .topGridContainer{
+        flex-direction: column;
+    }
+    img.topCardImg{
+        max-height: 300px;
+    }
 }
