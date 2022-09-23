@@ -182,6 +182,9 @@ img{
 .backgroundImageContainer.valuesPage{
     background-image: url("../imgs/blue.svg");    
 }
+.backgroundImageContainer.tops{
+    background-image: url("../imgs/weird.svg");    
+}
 .backgroundImageContainer{
     position: fixed;
     top:0px;
@@ -391,12 +394,14 @@ position: relative;
     gap: 20px;
     width: 100%;
     height: auto;
+
 }
 img.topCardImg{
     width: 100%;
     aspect-ratio: 16/9;
     height: auto;
     border-radius: 12px;
+    object-fit: cover;
     /* box-sizing: border-box; */
 }
 .topCardText{
