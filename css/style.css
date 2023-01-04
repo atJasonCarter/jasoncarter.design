@@ -182,6 +182,9 @@ img{
 .backgroundImageContainer.valuesPage{
     background-image: url("../imgs/blue.svg");    
 }
+.backgroundImageContainer.tops{
+    background-image: url("../imgs/weird.svg");    
+}
 .backgroundImageContainer{
     position: fixed;
     top:0px;
@@ -284,6 +287,11 @@ header.subPage{
 
 
 /* work Boxes */
+.workDescription{
+    line-height: 160%;
+    max-width: 82ch;
+}
+
 .workBox{
     display: flex;
     gap: 40px;
@@ -360,4 +368,66 @@ position: relative;
 
 .valuesList > li{
     padding-bottom: 8px;
+}
+
+
+/* tops specific */
+.top3GridRow{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1040px;
+    border-radius: 16px;
+    background: rgba(186, 149, 255, 0.075);
+
+}
+.topGridContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.topCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+
+}
+img.topCardImg{
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #fff6e4;
+    /* box-sizing: border-box; */
+}
+
+img.topCardImg.books{
+    object-fit: contain;
+}
+
+
+.topCardText{
+    color: var(--purple500);
+}
+.subPageContent.tops{
+    gap: 160px;
+}
+h4.subCardText{
+    color: rgb(131, 127, 139)
+    
+}
+
+/* Media Queries */
+@media (max-width: 1024px){
+    .topGridContainer{
+        flex-direction: column;
+    }
+    img.topCardImg{
+        max-height: 300px;
+    }
 }
