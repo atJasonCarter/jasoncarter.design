@@ -17,6 +17,7 @@
    --color-08: #c9d17c;
    --color-09: #dad343;
 }
+/* @media */
 @media (prefers-color-scheme: light) {
     :root {
         --color-00:#c9bcab;
@@ -55,6 +56,11 @@
     }
 }
 
+@media screen and (max-width:567px){
+    
+}
+
+/* body & containers */
 
 body{
     background-color: #1E1F21;
@@ -109,6 +115,8 @@ summary.job-history{
     align-items: baseline;
     position: relative;
     left: -32px;
+    justify-content: space-between;
+    min-width: calc(100% + 32px);
 }
 
 .work-container{
@@ -117,7 +125,7 @@ summary.job-history{
     gap:48px;
 }
 
-details{
+details, article{
    
     min-width: 100%;
     display: flex;
@@ -129,6 +137,11 @@ header{
     display: flex;
     flex-direction: column;
     min-width: 100%;
+}
+.sum-container{
+display: flex;
+flex-direction: row;
+align-items: baseline;
 }
 
 /* typography */
@@ -189,6 +202,30 @@ span.num{
     color: var(--color-05);
 
 }
+p.date{
+color: var(--color-03);
+text-transform: uppercase;
+font-family: IBM Plex Mono, monospace;
+font-size: 12px;
+font-weight: 400;
+}
+span.updated{
+color: var(--color-06);
+text-transform: uppercase;
+font-family: IBM Plex Mono, monospace;
+font-size: 12px;
+font-weight: 400;
+}
+/* imgs */
+img.job-history-img{
+    width: 100%;
+    aspect-ratio: 2/1;
+    height: auto;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+}
+
 
 
 /* dividers */
@@ -219,17 +256,19 @@ span.num{
      z-index: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
     max-width: 1440px;
-    max-height: 100vh;
+    aspect-ratio: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url("../imgs/greengrad.png");
     animation: breath 24s ease-in-out infinite alternate;
+    animation-delay: 6s;
+    opacity: .66;
 }
 @keyframes breath{
     0% {transform: scale(1) }
     25% {transform: scale(.95);}
+    50% {transform: scale(1) }
     100% {transform: scale(6.2) translateY(100px);}
 }
 @keyframes topo{
