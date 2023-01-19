@@ -58,12 +58,12 @@
 
 @media screen and (max-width:567px){
     summary.job-history{
-        left: initial;
-        top: -16px;
-        flex-direction: column;
+        left: initial;!important
+        top: -16px;!important
+        flex-direction: column;!important
     }
     .sum-container{
-        flex-direction: column;
+        flex-direction: column;!important
     }
 }
 
