@@ -57,7 +57,14 @@
 }
 
 @media screen and (max-width:567px){
-    
+    summary.job-history{
+        left: initial;
+        top: -16px;
+        flex-direction: column;
+    }
+    .sum-container{
+        flex-direction: column;
+    }
 }
 
 /* body & containers */
