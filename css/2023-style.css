@@ -17,7 +17,8 @@
    --color-08: #c9d17c;
    --color-09: #dad343;
 }
-/* @media */
+/* media query */
+/* 
 @media (prefers-color-scheme: light) {
     :root {
         --color-00:#c9bcab;
@@ -39,8 +40,6 @@
     }
     .breath{
         background-image: url(../imgs/redgrad.png)!important ;
-        /* top: 20%!important;
-        right: -15% !important; */
     }
     h2{
         color: var(--color-05)!important;
@@ -54,7 +53,8 @@
     span.num{
         color: var(--color-08)!important;
     }
-}
+} 
+*/
 
 @media screen and (max-width:567px){
     summary.job-history{
@@ -137,13 +137,17 @@ summary.job-history{
     gap:48px;
 }
 
-details, article{
+details, article, {
    
     min-width: 100%;
     display: flex;
     flex-direction: column;
     perspective: 1000px;
 
+}
+
+article.work-container{
+    perspective: 8000px;  
 }
 header{
     display: flex;
@@ -222,6 +226,48 @@ span.num{
     color: var(--color-05);
 
 }
+span.Magik{
+    animation-duration:2s;
+    animation-fill-mode: both
+}
+span.Magik:hover{
+    animation-name: magik;
+    animation-duration:2s;
+    cursor: none;
+}
+
+  
+  @-webkit-keyframes magik {
+    0% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+    100% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(3, 3);
+      filter: blur(20px);
+    }
+  }
+  
+  @keyframes magik {
+    0% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+    100% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(3, 3);
+      filter: blur(20px);
+    }
+  }
+  
+
 p.date{
 color: var(--color-03);
 text-transform: uppercase;
