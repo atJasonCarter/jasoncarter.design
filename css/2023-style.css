@@ -134,7 +134,7 @@ summary.job-history{
 .work-container{
     display: flex;
     flex-direction: column;
-    gap:48px;
+    gap:140px;
 }
 
 details, article, {
