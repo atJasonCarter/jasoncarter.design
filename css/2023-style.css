@@ -212,6 +212,10 @@ h2{
     transition: all .35s ease-out;
     opacity: .85;
 }
+h2.link:hover{
+    cursor: pointer;
+}
+
 span.company{
     color: var(--color-04);
 }
@@ -302,7 +306,11 @@ p{
     line-height: 26px;
     padding-bottom: 12px;
 }
-
+.gibby{
+    aspect-ratio: 1;
+    opacity: .7;
+    object-fit: cover;
+}
 
 
 /* dividers */
