@@ -137,8 +137,8 @@ summary.job-history{
     gap:140px;
 }
 
-details, article, {
-   
+details, article {
+
     min-width: 100%;
     display: flex;
     flex-direction: column;
