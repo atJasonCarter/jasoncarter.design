@@ -215,6 +215,9 @@ h2{
 h2.link:hover{
     cursor: pointer;
 }
+h2.title{
+    margin-bottom: -80px;
+}
 
 span.company{
     color: var(--color-04);
