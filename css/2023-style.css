@@ -6,7 +6,7 @@
     font-display: swap;
   }
 :root{
-    --color-00:#35291b;
+    /* --color-00:#35291b;
     --color-01:#322e1c;
    --color-02: #2d341e;
    --color-03: #3d4f2b;
@@ -15,7 +15,35 @@
    --color-06: #97b68a;
    --color-07: #b7cfa3;
    --color-08: #c9d17c;
-   --color-09: #dad343;
+   --color-09: #dad343; */
+
+   --color-00:#100F0F;
+   --color-01:#1C1B1A;
+  --color-02: #282726;
+  --color-03: #403E3C;
+  --color-04: #575653;
+  --color-05: #6F6E69;
+  --color-06: #878580;
+  --color-07: #B7B5AC;
+  --color-08: #DAD8CE;
+  --color-09: #FFFCF0;
+  --color-or: #DA702C;
+  --color-gr: #66800B;
+  --color-bl: #7656f7;
+
+    /* --alt-colo-00:#240E25;
+    --alt-colo-01: #4F295B; 
+    --alt-colo-02: #582E68 ;
+     --alt-colo-03:#78498E;  
+     --alt-colo-04:#A062C1 ;
+     --alt-colo-05: #BD82DE;
+     --alt-colo-06: #D8A8F2 ; 
+     --alt-colo-07: #DEB6F8;
+     --alt-colo-08: #A586E4;
+     --alt-colo-09:#5F3FE3;
+
+     */
+     
 }
 /* media query */
 /* 
@@ -56,6 +84,59 @@
 } 
 */
 
+/* color blocks */
+.colorBlock{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+
+}
+    .colorBlocks{
+    height: 32px;
+    width: 32px;
+    box-sizing: border-box;
+}
+    .color01{
+background-color: var(--color-00);
+}
+.color02{
+    background-color: var(--color-01);
+    }
+    .color03{
+        background-color: var(--color-02);
+        }
+        .color04{
+            background-color: var(--color-03);
+            }
+            .color05{
+                background-color: var(--color-04);
+                }
+                .color06{
+                    background-color: var(--color-05);
+                    }
+                    .color07{
+                        background-color: var(--color-06);
+                        }
+                        .color08{
+                            background-color: var(--color-07);
+                            }
+                            .color09{
+                                background-color: var(--color-08);
+                                }
+                                .color10{
+                                    background-color: var(--color-09);
+                                    }
+                                    .color11{
+                                        background-color: var(--color-or);
+                                        }
+                                        .color12{
+                                            background-color: var(--color-gr);
+                                            }
+                                            .color13{
+                                                background-color: var(--color-bl);
+                                                }
+
 @media screen and (max-width:567px){
     summary.job-history{
         left: initial!important;
@@ -83,11 +164,20 @@ body{
     width: 100vw;
     position: fixed;
 }
-.background.grad{
+/* bg green switch */
+/* .background.grad{
     z-index: -2;
     opacity: .77;
     background: linear-gradient(180deg, rgba(53, 41, 27, 1) 0%, rgba(50, 46, 28, 1) 64.58%, rgba(45, 52, 30,1) 100%);
+} */
+
+.background.grad{
+    z-index: -2;
+    opacity: .77;
+    background: linear-gradient(180deg, var(--color-02) 0%, var(--color-01) 64.58%, var(--color-00) 100%);
 }
+
+
 .background.texture{
     z-index: -3;
     background-image: url("../imgs/texture.png");
@@ -98,6 +188,7 @@ body{
     background-image: url("../imgs/noise.png");
     opacity: .8;
     mix-blend-mode: overlay;
+    animation: topo 150s linear infinite alternate;
     
 }
 .body-container{
@@ -184,7 +275,7 @@ summary{
 
 }
 h5{
-    color: var(--color-07);
+    color: var(--color-05);
     text-transform: uppercase;
     font-family: IBM Plex Mono, monospace;
     font-size: 16px;
@@ -193,6 +284,7 @@ h5{
     letter-spacing: 0em;
     text-align: left;
     padding-bottom: 8px;
+    mix-blend-mode: overlay;
 }
 h2:hover{
     transform: translateZ(-50px);
@@ -201,6 +293,16 @@ h2:hover{
     cursor: default;
 }
 
+
+h1{
+    color: var(--color-09);
+    font-family: hmm, IBM Plex Sans Condensed, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0em;
+    text-align: left;
+}
 h2{
     color: var(--color-09);
     font-family: hmm, IBM Plex Sans Condensed, sans-serif;
@@ -215,12 +317,32 @@ h2{
 h2.link:hover{
     cursor: pointer;
 }
+h2.link.back::before{
+    content: "↢";
+    position: relative;
+    left: -80px;
+    display: flex;
+    top: 60px;
+}
 h2.title{
     margin-bottom: -80px;
 }
 
+h3{
+    color: var(--color-09);
+    font-family: hmm, IBM Plex Sans Condensed, sans-serif;
+    font-size:24px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: all .35s ease-out;
+    opacity: .85;
+}
+
 span.company{
-    color: var(--color-04);
+    color: var(--color-00);
+    mix-blend-mode: overlay;
 }
 span.num{
     text-transform: uppercase;
@@ -243,6 +365,27 @@ span.Magik:hover{
     cursor: none;
 }
 
+span.Magik.Pos{
+    color: var(--color-bl);
+    font-style: italic;
+    padding-right: 8px;
+    padding-left: -4px;
+}
+span.Pos{
+    color: var(--color-bl);
+    font-style: italic;
+}
+
+span.warn{
+    color: var(--color-or);
+}
+span.num{
+    color: var(--color-07);
+}
+p:has(span.num){
+    left: -24px;
+    position: relative;
+}
   
   @-webkit-keyframes magik {
     0% {
@@ -273,10 +416,29 @@ span.Magik:hover{
       filter: blur(20px);
     }
   }
-  
+  .wavy {
+    animation-name: wavy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
 
 p.date{
-color: var(--color-03);
+color: var(--color-04);
 text-transform: uppercase;
 font-family: IBM Plex Mono, monospace;
 font-size: 12px;
@@ -300,6 +462,15 @@ img.job-history-img{
     border-radius: 12px;
     position: relative;
     display: flex;
+    transition: all .35s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+img.job-history-img:hover{
+cursor: not-allowed;
+}
+
+.job-history-container.live:hover  img{
+    transform: rotateX(7deg);
+    cursor: pointer;
 }
 p{
     color:var(--color-08);
@@ -324,7 +495,7 @@ p{
     position: relative;
 }
 .divider-medium{
-    height: 32px;
+    height: 64px;
     width: 100%;
     position: relative;
 }
@@ -366,3 +537,72 @@ p{
     88%{transform: scale(1.02); rotate: -6deg;}
     100%{transform: scale(1); rotate: 0deg;}
 }
+
+
+
+
+/* Password */
+
+  #passwordInput {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    perspective: 800;
+    
+  }
+
+  #passwordField {
+    width: 100%;
+    height: 44px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    background-color: (var(--color-00));
+    color: #fff;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: inset 8px 8px 24px #00000050;
+    font-family:  IBM Plex Sans Condensed, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #submitPassword {
+    background-color: var(--color-08);
+    color: var(--color-00);
+    padding: 8px 20px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+    display: block;
+    position: relative;
+    width: 30%;
+    border-radius: 0px 4px 4px 0px;
+    box-shadow: inset -8px 8px 24px #00000050;
+    font-family:  IBM Plex Sans Condensed, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+
+#submitPassword:hover{
+    background-color: var(--color-or);
+
+}
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  #passwordField.shake {
+    animation: shake 0.35s;
+  }
