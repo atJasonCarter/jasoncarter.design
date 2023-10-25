@@ -518,7 +518,8 @@ li:before{
 .Ideation{
     position: relative;
     transition: all .55s ease-in-out;
-    margin-top: -140px;
+    top: 48px;
+
 }
 .Ideation:hover{
     transform: none!important;
@@ -528,14 +529,24 @@ li:before{
     flex-direction: column;
     margin-top: 202px;
     perspective: 800;
-
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    background-color:rgb(10, 10, 12);
+    border: 8px solid #0d0d0e;
+    border-radius: 16px;
+    overflow: scroll;
+    align-items: center;
+    justify-content: flex-start;
+    gap:48px;
 }
 
-.Ideation.one{
+/* .Ideation.one{
 left: -120px;
 transform:rotateX(-12deg) rotateY(8deg) rotateZ(7deg);
 transform-origin: left;
 }
+
 .Ideation.two{
     left: 400px;
     top:32px;
@@ -562,16 +573,17 @@ transform-origin: left;
     z-index: 4;
     transform-origin: top ;
 
-}
+} */
 
 
 /* dividers */
 
 .divider-small{
-    height: 8px;
+    height: 24px;
     width: 100%;
     position: relative;
 }
+
 .divider-medium{
     height: 64px;
     width: 100%;
