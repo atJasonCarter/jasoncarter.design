@@ -62,6 +62,7 @@
     <container class="body-container" id="top">
      
         <header class="header-container">
+          <button class="button small back" href="/index.html">↩</button>
             <p class="date"> Last Updated <span class="updated">Oct/15/2023</span></p>
             <article class="info-container">
                     <h5>Bonbon's</h5>
@@ -139,23 +140,58 @@
                 <li>Imagery was a must, outperformed non-imagery modals by almost 2x.</li>
                 <li>Telling a story such as: "earn a date night", "win a year of hulu", outperformed simply explaining a benefit "win a $100 gift card".</li>
                 <li>Simplify, simplify, simplify. The fewer words, the better.</li>
-                <li>We outperformed expected sign up rates by ~300% by making these continual optomizations.</li>
+                <li>We outperformed expected sign up rates by ~150% by making these continual optomizations.</li>
                 <li>Our publishers weren't as excited at sign ups as they were by an unexpected secondary effect, users that were shown the modal visited 7% more pages.</li>
               </ul>
               <p>Publishers asked us if we could increase that 7% number even further. We changed our buisness plan to focus on engagement. We started building out features that would increase engagement rates: bookmarking, commenting, voting, etc.</p>
               <div class="divider-medium"></div>
-              <p>Each publisher wanted something different. One publisher wanted just bookmarking, one wanted to add polls, one wanted a next article button. Engagement rates continuted to climb, we hit 15% more page views. Now our publishers wanted to add the other features they didnt initially take, but things were starting to get crowded, we were taking up a lot of space on their page. I talked with our P.M. about wanting us to become an opperating system for the web. What if the post you saved on Instagram could live side by side with a pinterest post or a housing article you wanted to save on Dwell. You could read replies to a comment you made on Salon while scrolling through America's Test Kitchen.</p>
-
+              <!-- <p>Each publisher wanted something different. One publisher wanted just bookmarking, one wanted to add polls, one wanted a next article button. Engagement rates continuted to climb, we hit 15% more page views. Now our publishers wanted to add the other features they didnt initially take, but things were starting to get crowded, we were taking up a lot of space on their page. I talked with our P.M. about wanting us to become an opperating system for the web. What if the post you saved on Instagram could live side by side with a pinterest post or a housing article you wanted to save on Dwell. You could read replies to a comment you made on Salon while scrolling through America's Test Kitchen.</p> -->
               <div class="divider-xl"></div>
               <h5 id="bonbar">Meet the Bonbar</h5>
-             
-
+              <p>I designed a flexible system to fit each publishers wants. Some customers wanted bookmarking, some wanted a shopping cart or an account manager. I designed the Bonbar thoughtfully so that it was contextual based on what activity the user was doing with some simple logic gates our Engineering team set up.</p>
+             <p>By integrating more access points, we increased registrations by 280% (peaking at 1500% lift on launch). We also reduced customer annoyance by covering a smaller portion of the screen. Engagement shot through the roof to users visting 22% more pages, and we saw cross-network effects starting to happen (Users were more likely to visit another site that had Bonbar installed). </p>
+                  <p>Below is a code prototype I made to pitch to engineering, not a live product</p>
 
               <!-- bonbar -->
             
                 <div class="bonbar-container">
-                  <div class="bonbar-button left"> 3.8k points</div>
-                  <div class="bonbar-button"></div>
+                  <div class="bonbar-button left"> 3.8k <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                      <g class="Bonbon" clip-path="url(#a)">
+                                                        <path fill="url(#b)" d="M11.154 21.129C.75 21.129.75 15.926.75 15.926s0-7.283 2.081-11.445S4.911.319 11.154.319s6.243 0 8.324 4.162c2.081 4.162 2.081 11.446 2.081 11.446s0 5.202-10.405 5.202Z" class="Outside"/>
+                                                        <path fill="url(#c)" d="M11.154 17.66c-6.936 0-6.936-3.468-6.936-3.468s0-4.856 1.387-7.63c1.387-2.775 1.387-2.775 5.55-2.775 4.161 0 4.161 0 5.549 2.775 1.387 2.774 1.387 7.63 1.387 7.63s0 3.468-6.937 3.468Z" class="Middle"/>
+                                                        <path fill="#140525" d="M11.154 14.192c-3.468 0-3.468-1.734-3.468-1.734s0-2.428.694-3.815c.693-1.387.693-1.387 2.774-1.387s2.081 0 2.775 1.387.694 3.815.694 3.815 0 1.734-3.469 1.734Z" class="Center"/>
+                                                        <g class="Mask group">
+                                                          <mask id="d" width="8" height="8" x="7" y="7" class="d" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                                                            <path fill="#000" d="M11.154 14.192c-3.468 0-3.468-1.734-3.468-1.734s0-2.428.694-3.815c.693-1.387.693-1.387 2.774-1.387s2.081 0 2.775 1.387.694 3.815.694 3.815 0 1.734-3.469 1.734Z" class="Color"/>
+                                                          </mask>
+                                                          <g class="Core" mask="url(#d)">
+                                                            <circle cx="11.154" cy="14.192" r="3.468" fill="#29B96E"/>
+                                                            <circle cx="11.154" cy="14.192" r="3.468" fill="url(#e)" fill-opacity=".2" style="mix-blend-mode:darken"/>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                      <defs>
+                                                        <radialGradient id="b" cx="0" cy="0" r="1" class="b" gradientTransform="rotate(135 10.714 4.624) scale(29.4295 29.4296)" gradientUnits="userSpaceOnUse">
+                                                          <stop stop-color="#1A0F46"/>
+                                                          <stop offset="1" stop-color="#07021C"/>
+                                                        </radialGradient>
+                                                        <radialGradient id="c" cx="0" cy="0" r="1" class="c" gradientTransform="rotate(135 8.261 5.64) scale(19.6195)" gradientUnits="userSpaceOnUse">
+                                                          <stop stop-color="#313660"/>
+                                                          <stop offset="1" stop-color="#4B4F78"/>
+                                                        </radialGradient>
+                                                        <radialGradient id="e" cx="0" cy="0" r="1" class="e" gradientTransform="rotate(135 3.738 8.571) scale(3.11657)" gradientUnits="userSpaceOnUse">
+                                                          <stop stop-color="#fff"/>
+                                                          <stop offset="1"/>
+                                                        </radialGradient>
+                                                        <clipPath id="a" class="a">
+                                                          <path fill="#fff" d="M.75.32h20.81v20.81H.75z"/>
+                                                        </clipPath>
+                                                      </defs>
+                                                    </svg>
+                   </div>
+                  <div class="bonbar-button bookmarks">
+
+                  </div>
                   <div class="bonbar-button"></div>
                   <div class="bonbar-button"></div>
                   <div class="bonbar-button"></div>
