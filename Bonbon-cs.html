@@ -66,18 +66,23 @@
             <p class="date"> Last Updated <span class="updated">Oct/15/2023</span></p>
             <article class="info-container">
                     <h5>Bonbon's</h5>
-                         <h1>The "<span class="Magik Pos">BonBar</span>"</h1>
+                         <h1>The "<span class=" Pos">BonBar</span>"</h1>
                          <h2>A better, incentivized web</h2>
                              <div class="divider-xl"></div>
                     <h5>team</h5>
-                         <h2>Jason Carter <span class="company">//Design</span></h2>
-                         <h2>Dean Murazak <span class="company">//PM</span></h2>
-                         <h2>Kale Mckinney <span class="company">//Eng</span></h2>
+                         <h2 class="noEffect">Jason Carter <span class="company">//Design</span></h2>
+                         <h2 class="noEffect">Dean Murazak <span class="company">//PM</span></h2>
+                         <h2 class="noEffect">Kale Mckinney <span class="company">//Eng</span></h2>
                             <div class="divider-xl"></div>
                     <h5>timeline</h5>
                       <h2>2 months </h2>
                       <div class="divider-xl"></div>
                     </header>
+
+<div class="divider-line"></div>
+                      <h5>TLDR:</h5>
+<div class="divider-line"></div>
+
                     <h5>Setup</h5>
                       <p>Bonbon was born from an opportunity we saw to solve two problems:</p>
                       <p><span class="number">1.</span> <span class="Pos"> Customers</span> are trading their data and not seeing benefits</p>
@@ -161,6 +166,7 @@
               <!-- bonbar -->
             
                 <div class="bonbar-container">
+                  <div class="callout"><img src="/imgs/bb/callout.svg" alt=""></div>
                   <div class="bonbar-button left"> 3.8k <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                       <g class="Bonbon" clip-path="url(#a)">
                                                         <path fill="url(#b)" d="M11.154 21.129C.75 21.129.75 15.926.75 15.926s0-7.283 2.081-11.445S4.911.319 11.154.319s6.243 0 8.324 4.162c2.081 4.162 2.081 11.446 2.081 11.446s0 5.202-10.405 5.202Z" class="Outside"/>
@@ -196,26 +202,19 @@
                                                     </svg>
                                                     <div class="tooltip" id="tooltip-Rewards">View Rewards</div>
                    </div>
-                  <div class="bonbar-button like">
-                    <img src="/imgs/bb/Icons/heart.outline.svg" alt=""> <div class="tooltip" id="tooltip-like">Like</div>
+                  <div class="bonbar-button save">
+                    <img src="/imgs/bb/Icons/heart.outline.svg" alt=""> <div class="tooltip" id="tooltip-Save">Save</div>
                   </div>
-                  <div class="bonbar-button message"><img src="/imgs/bb/message-circle.svg" alt=""></div>
-                  <div class="bonbar-button more"><img src="/imgs/bb/Icon.svg" alt=""></div>
-                  <div class="bonbar-button"></div>
-                  <div class="bonbar-button"></div>
+                  <div class="bonbar-button message"><img src="/imgs/bb/message-circle.svg" alt="">                              <div class="tooltip" id="tooltip-message">Add Comment</div></div>
+
+                  <div class="bonbar-button vote expandable"><img src="/imgs/bb/vote.svg" alt=""> 
+                    <div class="tooltip" id="tooltip-vote">Vote</div></div>
+                  <div class="bonbar-button shop expandable"><img src="/imgs/bb/shop.svg" alt="">                               <div class="tooltip" id="tooltip-shop">Shop</div></div>
                      <div class="bonbar-divider"></div>
-                  <div class="bonbar-button right"><img src="/imgs/bb/Icon-1.svg" alt=""></div>
+                     <div class="bonbar-button more"><img src="/imgs/bb/Icon.svg" alt="">                              <div class="tooltip" id="tooltip-more">More</div></div>
+                  <div class="bonbar-button right"><img src="/imgs/bb/Icon-1.svg" alt="">                              <div class="tooltip" id="tooltip-close">Minimize</div></div>
                 </div>
 
-
-                                              <!-- Tooltips -->
-                             
-                              <div class="tooltip" id="tooltip-message">Add Comment</div>
-                              <div class="tooltip" id="tooltip-more">More</div>
-                              <div class="tooltip" id="tooltip-close">Close</div>
-                              <div class="tooltip" id="tooltip-vote">Vote</div>
-                              <div class="tooltip" id="tooltip-save">Save</div>
-                              <div class="tooltip" id="tooltip-shop">Shop</div>
 
 
         
@@ -293,5 +292,87 @@ window.addEventListener("scroll", () => {
         });
       });
     </script>
+
+    <!-- toggle more button -->
+    <script>
+      const moreButton = document.querySelector(".bonbar-button.more");
+const expandableButtons = document.querySelectorAll(".bonbar-button.expandable");
+const tooltipMore = document.getElementById("tooltip-more");
+const moreButtonIcon = moreButton.querySelector("img");
+
+let isExpanded = false;
+
+moreButton.addEventListener("click", () => {
+  if (isExpanded) {
+    // Collapse state
+    expandableButtons.forEach((button) => {
+      button.style.transform = "scale(0)";
+      button.style.marginLeft = "-16px";
+      button.style.width = "0px";
+    });
+
+    tooltipMore.textContent = "More";
+    moreButtonIcon.src = "imgs/bb/Icon.svg";
+  } else {
+    // Expand state
+    expandableButtons.forEach((button) => {
+      button.style.transform = "scale(1)";
+      button.style.marginLeft = "0px";
+      button.style.width = "40px";
+    });
+
+    tooltipMore.textContent = "Collapse";
+    moreButtonIcon.src = "imgs/bb/Icon2.svg";
+  }
+
+  isExpanded = !isExpanded;
+});
+    </script>
+<!-- toggle collapse close -->
+    <script>const bonbar2 = document.querySelector(".bonbar-container");
+      const rightButton = document.querySelector(".bonbar-button.right");
+      const tooltipClose = document.getElementById("tooltip-close");
+      const closeButtonIcon =rightButton.querySelector("img")
+      
+      let isPinned = true; // Set the default state to pinned
+      let delayTimer;
+
+      
+      rightButton.addEventListener("click", () => {
+        clearTimeout(delayTimer); // Clear any existing delay
+        if (isPinned) {
+         
+          // Unpin state
+          bonbar2.style.bottom = "-56px";
+          tooltipClose.textContent = "Close";
+          closeButtonIcon.src = "imgs/bb/Icon-2.svg";
+      
+        } else {
+          // Pin state
+
+          bonbar2.style.bottom = "24px";
+          tooltipClose.textContent = "Pin to screen";
+          closeButtonIcon.src = "imgs/bb/Icon-1.svg";
+        }
+      
+        isPinned = !isPinned;
+      });
+      
+      // Add hover effect in the "Pin" state
+      rightButton.addEventListener("mouseenter", () => {
+        if (!isPinned) {
+          bonbar2.style.bottom = "24px";
+        }
+      });
+      
+      rightButton.addEventListener("mouseleave", () => {
+        if (!isPinned) {
+          delayTimer = setTimeout(() => {
+          bonbar2.style.bottom = "-32px";
+        },1000); 
+        }
+      });
+      
+      </script>
 </html>
 

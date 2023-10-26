@@ -300,6 +300,13 @@ gap: 8px;
     box-shadow: var(--Shadow-sm);
 
 }
+.button.small.back:focus{
+    border-top: 6px solid var(--color-02);
+    border-bottom: transparent;
+    box-shadow: inset 1px -9px 9px 0px #00000054;
+    transition: all .15s ease-in-out;
+}
+
 .perspective-div{
     width: 100vw;
   height:100vh;
@@ -363,6 +370,12 @@ h2:hover{
     opacity: .05;
     cursor: default;
 }
+h2.noEffect:hover{
+transform: none;
+opacity: 1;
+
+}
+
 
 
 h1{
@@ -412,7 +425,7 @@ h3{
 }
 
 span.company{
-    color: var(--color-00);
+    color: var(--color-06);
     mix-blend-mode: overlay;
 }
 span.num{
@@ -669,7 +682,7 @@ transform-origin: left;
     width: calc(100% + 96px);
     position: relative;
     left: -48px;
-    border-bottom:1px dashed var(--color-05);
+    border-bottom:1px dashed var(--color-02);
 
     
 }
@@ -795,9 +808,7 @@ background: var(--gradient-black, linear-gradient(135deg, #313131 25.05%, #20202
 
   } */
 
-.bonbar-border{
 
-}
   .bonbar-container{
     display: flex;
     width: fit-content;
@@ -814,6 +825,7 @@ bottom: 24px;
 position: fixed;
 animation: 750ms ease-out normal forwards paused Move-in ;
 z-index: 99;
+transition: all 750ms ease-in-out;
 
 
 
@@ -822,6 +834,12 @@ z-index: 99;
 @keyframes Move-in{
     0% {transform:translateY(130px);}
     100% {transform:translateY(0px);}
+}
+
+.callout {
+    position: absolute;
+    Right:-100px;
+    top: -48px;
 }
 
   .bonbar-button{
@@ -886,6 +904,12 @@ background: var(--white-10, rgba(255, 255, 255, 0.10));
   }
   .bonbar-button.left:hover >svg>g>g.Core>circle{
     transform: translateY(-3.5px);
+  }
+
+  .bonbar-button.expandable{
+    transform: scale(0);
+    margin-left: -16px ;
+    width: 0px;
   }
 
 
