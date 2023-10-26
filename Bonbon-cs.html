@@ -62,7 +62,7 @@
     <container class="body-container" id="top">
      
         <header class="header-container">
-          <button class="button small back" href="/index.html">↩</button>
+          <button class="button small back" href="./index.html">↩</button>
             <p class="date"> Last Updated <span class="updated">Oct/15/2023</span></p>
             <article class="info-container">
                     <h5>Bonbon's</h5>
@@ -151,7 +151,13 @@
               <p>I designed a flexible system to fit each publishers wants. Some customers wanted bookmarking, some wanted a shopping cart or an account manager. I designed the Bonbar thoughtfully so that it was contextual based on what activity the user was doing with some simple logic gates our Engineering team set up.</p>
              <p>By integrating more access points, we increased registrations by 280% (peaking at 1500% lift on launch). We also reduced customer annoyance by covering a smaller portion of the screen. Engagement shot through the roof to users visting 22% more pages, and we saw cross-network effects starting to happen (Users were more likely to visit another site that had Bonbar installed). </p>
                   <p>Below is a code prototype I made to pitch to engineering, not a live product</p>
+                  <div class="divider-xl"></div>
 
+                  <div class="divider-line"></div>
+                  <h5>And that's all folks</h5>
+                  <div class="divider-small"></div>
+                  <p>Theres obviously more detail to this, give me a call, i'll present it to your team, we'll work together, you'll love me, we'll run away together (my wife will be sad but understanding). Maybe start a commune? Idk it's all very fast and confusing. Lets start with that phone call.</p>
+                  <h2>404-992-2492</h2>
               <!-- bonbar -->
             
                 <div class="bonbar-container">
@@ -188,18 +194,28 @@
                                                         </clipPath>
                                                       </defs>
                                                     </svg>
+                                                    <div class="tooltip" id="tooltip-Rewards">View Rewards</div>
                    </div>
-                  <div class="bonbar-button bookmarks">
-
+                  <div class="bonbar-button like">
+                    <img src="/imgs/bb/Icons/heart.outline.svg" alt=""> <div class="tooltip" id="tooltip-like">Like</div>
                   </div>
-                  <div class="bonbar-button"></div>
-                  <div class="bonbar-button"></div>
+                  <div class="bonbar-button message"><img src="/imgs/bb/message-circle.svg" alt=""></div>
+                  <div class="bonbar-button more"><img src="/imgs/bb/Icon.svg" alt=""></div>
                   <div class="bonbar-button"></div>
                   <div class="bonbar-button"></div>
                      <div class="bonbar-divider"></div>
-                  <div class="bonbar-button right"></div>
+                  <div class="bonbar-button right"><img src="/imgs/bb/Icon-1.svg" alt=""></div>
                 </div>
-        
+
+
+                                              <!-- Tooltips -->
+                             
+                              <div class="tooltip" id="tooltip-message">Add Comment</div>
+                              <div class="tooltip" id="tooltip-more">More</div>
+                              <div class="tooltip" id="tooltip-close">Close</div>
+                              <div class="tooltip" id="tooltip-vote">Vote</div>
+                              <div class="tooltip" id="tooltip-save">Save</div>
+                              <div class="tooltip" id="tooltip-shop">Shop</div>
 
 
         
@@ -261,5 +277,21 @@ window.addEventListener("scroll", () => {
   handleScroll();
 
   </script>
+    <script>
+      const bonbarButtons = document.querySelectorAll(".bonbar-button");
+      const tooltips = document.querySelectorAll(".tooltip");
+  
+      bonbarButtons.forEach((button, index) => {
+        button.addEventListener("mouseenter", () => {
+          // tooltips[index].style.display = "flex";
+          tooltips[index].style.transform = "scale(1)";
+        });
+  
+        button.addEventListener("mouseleave", () => {
+          tooltips[index].style.transform = "scale(0)";
+       
+        });
+      });
+    </script>
 </html>
 

@@ -32,7 +32,7 @@
   --color-bl: #7656f7;
 
   --Shadow: 0px 100px 111px rgba(0, 0, 0, 0.21), 0px 41.7776px 46.3731px rgba(0, 0, 0, 0.150959), 0px 22.3363px 24.7933px rgba(0, 0, 0, 0.125183), 0px 12.5216px 13.8989px rgba(0, 0, 0, 0.105), 0px 6.6501px 7.38161px rgba(0, 0, 0, 0.0848175), 0px 2.76726px 3.07165px rgba(0, 0, 0, 0.0590406);
-
+--Shadow-sm: 0px 2.12854px 1.72094px 0px rgba(0, 0, 0, 0.11), 0px 5.88513px 4.75819px 0px rgba(0, 0, 0, 0.16), 0px 14.16912px 11.45589px 0px rgba(0, 0, 0, 0.21), 0px 47px 38px 0px rgba(0, 0, 0, 0.32);
 
     /* --alt-colo-00:#240E25;
     --alt-colo-01: #4F295B; 
@@ -286,16 +286,20 @@ gap: 8px;
 
 .button.small.back{
     background: none;
-    border: none;
+    border: 0px solid transparent;
     position: absolute;
     left: -72px;
     top:55px;
     color: var(--color-07);
     
 }
+.button.small.back:hover{
 
+    
+    border-bottom: 6px solid var(--color-01);
+    box-shadow: var(--Shadow-sm);
 
-
+}
 .perspective-div{
     width: 100vw;
   height:100vh;
@@ -599,6 +603,8 @@ li:before{
     align-items: center;
     justify-content: flex-start;
     gap:48px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* .Ideation.one{
@@ -856,12 +862,13 @@ font-weight: 500;
 line-height: 32px; /* 200% */
 width: fit-content;
 gap:4px;
+z-index: 0;
   }
 
   .bonbar-button.right{
 
     display: flex;
-    padding: 4px;
+    padding: 4px 0px 4px 4px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 8px 25px 25px 8px;
@@ -872,6 +879,7 @@ background: var(--white-10, rgba(255, 255, 255, 0.10));
   .bonbar-button:hover{
     background: var(--white-10, rgba(255, 255, 255, 0.08));
     cursor: pointer;
+    transform: translateY(-4px) scale(1.02) ;
   }
   .bonbar-button.left:hover{
     background:  #26d15f;
@@ -885,23 +893,51 @@ background: var(--white-10, rgba(255, 255, 255, 0.10));
         
   body::-webkit-scrollbar {
     width: 44px;
-    max-height: 40%;
-    z-index: -4;
 
+}
+.Ideations::-webkit-scrollbar{
+    width:12px;
+}
+.Ideations::-webkit-scrollbar-track{
+    background-color: transparent;
+    border: transparent
 }
 
 body{
     overflow-x: hidden;
 }
-body::-webkit-scrollbar-track {
+body, .::-webkit-scrollbar-track {
     border-radius: 4px;
     background-color: var(--color-00);
     border: 1px solid var(--color-01);
+
 }
 
-body::-webkit-scrollbar-thumb {
-    border-radius: 8px;
+body, .Ideations::-webkit-scrollbar-thumb {
+    border-radius: 10px;
   border: 3px solid transparent;
    background-clip: content-box;
     background-color: var(--color-01);
 }
+
+
+/* tooltip */
+.tooltip {
+    position: absolute;
+
+    width: fit-content;
+    flex-direction: row;
+    background-color: rgb(10,10,12);
+    color: #fff;
+    padding: 4px 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    bottom: 56px;
+    font-family: IBM Plex Sans Condensed, sans-serif;
+    font-weight: 500;
+    line-height: 12px;
+    z-index: -1;
+    transform: scale(0);
+    transition: all .15s ease-in-out;
+    transform-origin: bottom;
+  }
