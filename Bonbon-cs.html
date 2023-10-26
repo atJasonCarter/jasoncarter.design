@@ -34,6 +34,11 @@
         </style>
 </head>
 <body>
+
+  <div class="perspective-div" >
+     <!-- <image class="ArchesLeft" src="/imgs/bb/left.png"></image>
+    <image class="ArchesRight" src="/imgs/bb/right.png"></image> -->
+    <img class="HeaderImg" src="/imgs/bb/iPhone 13 mini.png" alt="image of the bottom of an iPhone">
     <div class="colorBlock">
         <div class="colorBlocks color01"></div>
         <div class="colorBlocks color02"></div>
@@ -47,12 +52,15 @@
         <div class="colorBlocks color10"></div>
         <div class="colorBlocks color11"></div>
         <div class="colorBlocks color12"></div>
-        <div class="colorBlocks color13"></div>
+        <div class="colorBlocks color13"></div> 
 
     </div>
-    <div class="background grad"></div><div class="background texture"></div><div class="background noise"></div>
+  
+  </div>
+    <div class="background grad"></div>
+    <!-- <div class="background texture"></div><div class="background noise"></div> -->
     <container class="body-container" id="top">
-        <img class="HeaderImg" src="/imgs/bb/iPhone 13 mini.png" alt="image of the bottom of an iPhone">
+     
         <header class="header-container">
             <p class="date"> Last Updated <span class="updated">Oct/15/2023</span></p>
             <article class="info-container">
@@ -139,7 +147,7 @@
               <p>Each publisher wanted something different. One publisher wanted just bookmarking, one wanted to add polls, one wanted a next article button. Engagement rates continuted to climb, we hit 15% more page views. Now our publishers wanted to add the other features they didnt initially take, but things were starting to get crowded, we were taking up a lot of space on their page. I talked with our P.M. about wanting us to become an opperating system for the web. What if the post you saved on Instagram could live side by side with a pinterest post or a housing article you wanted to save on Dwell. You could read replies to a comment you made on Salon while scrolling through America's Test Kitchen.</p>
 
               <div class="divider-xl"></div>
-              <h5>Meet the Bonbar</h5>
+              <h5 id="bonbar">Meet the Bonbar</h5>
              
 
 
@@ -179,40 +187,43 @@
 
 
   <script>
-function updateText(text){
-	let span = document.querySelector("warn");
+const perspectiveDiv = document.querySelector(".perspective-div");
 
-      span.innerHTML = text
-        .split("")
-        .map(letter => {
-          console.log(letter);
-          return `<span>` + letter + `</span>`;
-        })
-        .join("");
+window.addEventListener("scroll", () => {
+  const scrollValue = window.scrollY;
+  const perspectiveValue = scrollValue * 0.2; // Adjust the factor for the desired effect
+  perspectiveDiv.style.transform = `perspective(1200px) rotateX(${perspectiveValue}deg)`;
+});
 
-      Array.from(span.children).forEach((span, index) => {
-        setTimeout(() => {
-          span.classList.add("wavy");
-        }, index * 60 + delay);
-      });
-    }
 
   </script>
 
+<script>const bonbar = document.getElementById("bonbar");
+  const bonbarContainer = document.querySelector(".bonbar-container");
+  
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  function handleScroll() {
+    if (isElementInViewport(bonbar)) {
+      // When #bonbar is in view, change the animation property to running
+      bonbarContainer.style.animation = "750ms ease-out normal forwards running Move-in";
+    }
+  }
+  
+  // Attach a scroll event listener to monitor when #bonbar comes into view
+  window.addEventListener("scroll", handleScroll);
+  
+  // Initial check in case #bonbar is already in view when the page loads
+  handleScroll();
+
+  </script>
 </html>
 
-<!-- updated -->
-<!-- divider-small -->
-<!-- divider-xl -->
-<!-- tops-container -->
-<!-- work-container -->
-<!-- h2 -->
-<!-- h5 -->
-<!-- summary -->
-<!-- article -->
-<!-- date -->
-<!-- header-container -->
-<!-- body-container -->
-<!-- tops-container -->
-<!-- span.company -->
-<!-- test -->
