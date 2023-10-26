@@ -906,18 +906,25 @@ background: var(--white-10, rgba(255, 255, 255, 0.10));
 body{
     overflow-x: hidden;
 }
-body, .::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     border-radius: 4px;
     background-color: var(--color-00);
     border: 1px solid var(--color-01);
-
 }
 
-body, .Ideations::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     border-radius: 10px;
   border: 3px solid transparent;
    background-clip: content-box;
     background-color: var(--color-01);
+
+}
+
+.Ideations::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    border: 3px solid transparent;
+     background-clip: content-box;
+      background-color: var(--color-01);
 }
 
 
