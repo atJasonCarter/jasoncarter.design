@@ -198,9 +198,12 @@ background-color: var(--color-00);
         right:-5%!important;
     }
     .callout{
-        Right: -30px!important;
-        top: -108px!important;
+        Right: -42px!important;
+        top: 61px!important;
         transform: rotate(-25deg)!important;
+    }
+    .Ideations{
+        aspect-ratio: 9/16!important;
     }
 
 
