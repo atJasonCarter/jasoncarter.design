@@ -161,6 +161,7 @@ background-color: var(--color-00);
     .background{
         max-height: none!important;
         max-width: 100vw!important;
+        visibility: hidden;
     }
 
     .body-container{
@@ -177,6 +178,29 @@ background-color: var(--color-00);
     }
     h3{
         font-size: 24px!important;
+        flex-direction:column;
+        display: flex;
+    }
+    summary.job-history{
+        min-width: 100%!important;
+    }
+    #submitPassword{
+        width:-webkit-fill-available!important;
+    }
+    header.header-container.caseStudy{
+        margin-top: 64px;
+    }
+    button.button.small.back{
+        left:0px;
+        top:0px;
+    }
+    img.HeaderImg{
+        right:-5%!important;
+    }
+    .callout{
+        Right: -30px!important;
+        top: -108px!important;
+        transform: rotate(-25deg)!important;
     }
 
 
