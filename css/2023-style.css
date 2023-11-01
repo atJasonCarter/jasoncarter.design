@@ -140,7 +140,7 @@ background-color: var(--color-00);
                                                 background-color: var(--color-bl);
                                                 }
 
-@media screen and (max-width:567px){
+@media screen and (max-width:794px){
     summary.job-history{
         left: initial!important;
         top: -16px!important;
@@ -149,7 +149,39 @@ background-color: var(--color-00);
     .sum-container{
         flex-direction: column!important;
     }
+
+    .colorBlock{
+        left:0px;
+        flex-direction: row;
+    }
+    .colorBlocks{
+        height:8px;
+        width: 8px;
+    }
+    .background{
+        max-height: none!important;
+        max-width: 100vw!important;
+    }
+
+    .body-container{
+        max-width: calc(100vw - 16px)!important;
+        padding: 48px 16px!important;
+    }
+    header{
+        gap:48px!important;
+
+    }
+
+    h2{
+        font-size: 32px!important;
+    }
+    h3{
+        font-size: 24px!important;
+    }
+
+
 }
+
 
 /* body & containers */
 
