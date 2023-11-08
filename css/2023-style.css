@@ -611,6 +611,16 @@ img.job-history-img{
     transition: all .35s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+.cowboy{
+    position: absolute;
+    width:60px;
+    left: 400px;
+    top:40px;
+    z-index: 85;
+    rotate: 12deg;
+}
+
+
 img.job-history-img:hover{
 cursor: not-allowed;
 }
