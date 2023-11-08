@@ -320,7 +320,7 @@ gap: 8px;
 }
 
 .button.small{
-    border-radius: 12px;
+    border-radius: 6px;
     height: 44px;
     font-size: 16px;
 
@@ -328,18 +328,21 @@ gap: 8px;
     padding: 12px 24px;
 
     color: var(--color-01);
-    background: var(--color-bl);
-    border: 2px solid #4825d4;
+    background: var(--color-07);
+    border: 1px solid var(--color-05);
     transition: all .15s ease-in-out;
     box-sizing: border-box;
+    opacity: .7;
+    mix-blend-mode: overlay;
 }
 .button.small:hover{
 
     
-    border-bottom: 6px solid #4825d4;
+    border-bottom: 6px solid var(--color-05);
     height: 44px;
     padding: 0px 24px;
     cursor: pointer;
+    opacity:1;
 
 }
 
