@@ -692,6 +692,7 @@ li:before{
     overflow-y: scroll;
 }
 
+
 /* .Ideation.one{
 left: -120px;
 transform:rotateX(-12deg) rotateY(8deg) rotateZ(7deg);
@@ -801,14 +802,45 @@ transform-origin: left;
 
 
 /* Password */
+.passwordInput{
+    display: flex;
+  position: absolute;
+  top: 96px;
+  padding: 24px;
+  background-color: #27262a;
+  border-radius: 12px;
+  left: 24px;
+  right: 24px;
+  width: calc(100% - 96px);
+}
+
+        .closeButn {
+            position: absolute;
+            top: -30px;
+            right: 0px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+        
 
   #passwordInput {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     perspective: 800;
+    gap:8px;
     
   }
 
@@ -825,6 +857,7 @@ transform-origin: left;
     font-family:  IBM Plex Sans Condensed, sans-serif;
     font-size: 16px;
     font-weight: 500;
+    border-radius: 8px;
   }
 
   #submitPassword {
@@ -837,12 +870,13 @@ transform-origin: left;
     transition: all .35s ease-in-out;
     display: block;
     position: relative;
-    width: 30%;
+    width: 40%;
     border-radius: 0px 4px 4px 0px;
     box-shadow: inset -8px 8px 24px #00000050;
     font-family:  IBM Plex Sans Condensed, sans-serif;
     font-size: 16px;
     font-weight: 500;
+    border-radius: 8px;
 
   }
 

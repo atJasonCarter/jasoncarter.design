@@ -113,7 +113,7 @@
 
         <article class="work-container">
             <h2 class="title">Case Studies</h2>
-            <article class="job-history-container live Bonon-CS">
+            <article class="job-history-container live Bonon-CS" style="padding-bottom: -96px;">
                 <img src="/imgs/BB-1.png" alt="" class="job-history-img">
                 <summary class="job-history">                
                     <div class="sum-container"> 
@@ -124,17 +124,20 @@
                    <p class="date"> Nov/22 – Today </p>
                 </summary>
                 <P CLASS="job-update-text">
-                   Im currently cofounding a small startup that wants to help you navigate the web easier and get paid for it.
+                   Cofounded a small startup that wants to help you navigate the web easier and get paid for it.
                 </P>
 
-                <div id="passwordInput" style="display: none;">
+                <div class="passwordInput" id="passwordInput" style="display: none;">
+                      <button class="closeButn" id="closeButn" aria-label="Close">&times;</button>
                   <input type="text" id="passwordField" placeholder="Enter Password">
                   <button id="submitPassword">Read Case Study</button>
+                  
                 </div>
-                <p id="helperText" style="display: none;">Call or text Jason at 404-992-2492 for the password.</p>
+                   <p id="helperText" style=" display: none; position: relative;top: -210px;left: 48px;/*! right: 50%; */">Call or text Jason at 404-992-2492 for the password.</p>
+             
                 
             </article>
-
+     
             <p class="subtractor-medium">I don't put many case studies due to NDAs, I'd love to present to you in person (or zoom) <button class="button small" href="mailto:jcarter91@gmail.com?subject="Jason, show me your awesome work"">Set up a meeting</button></p>
 
             <h2 class="title">Other Products</h2>
@@ -293,14 +296,18 @@
     const passwordField = document.getElementById("passwordField");
     const submitPassword = document.getElementById("submitPassword");
     const helperText = document.getElementById("helperText");
+    const closeButn = document.getElementById('closeButn');
+        
+
   
+
     article.addEventListener("click", () => {
       if (passwordInput.style.display === "none") {
         passwordInput.style.display = "flex";
       }
     });
-  
 
+  
     submitPassword.addEventListener("click", () => {
   const enteredPassword = passwordField.value;
   if (enteredPassword === "LetsHireJason") {
@@ -309,17 +316,25 @@
     
     setTimeout(() => {
       window.location.href = "Bonbon-cs.html";
-    }, 2500);
+    }, 800);
   } else {
-    // Add the "shake" class to the password input
+  
     passwordField.classList.add("shake");
-    // Remove the class after the animation completes
+
     setTimeout(() => {
       passwordField.classList.remove("shake");
-    }, 500); // The same duration as the shake animation
+    }, 500);
     helperText.style.display = "block";
 }
+
 });
+
+   closeButn.addEventListener('click', function (e) {
+  e.stopPropagation(); // ⛔ stop parent click
+  passwordInput.style.display = "none";
+      helperText.style.display = "none";
+});
+  
   </script>
   
 
