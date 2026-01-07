@@ -531,6 +531,8 @@ span.num{
 p:has(span.num){
     left: -24px;
     position: relative;
+    display: flex;
+    align-items: baseline;
 }
   
   @-webkit-keyframes magik {
