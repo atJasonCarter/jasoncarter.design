@@ -205,6 +205,11 @@ background-color: var(--color-00);
     .Ideations{
         aspect-ratio: 9/16!important;
     }
+    #passwordInput{
+        margin-top: -66px!important;
+        flex-direction: column!important;
+    }
+
 
 
 }
