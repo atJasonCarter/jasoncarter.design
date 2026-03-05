@@ -787,16 +787,16 @@ transform-origin: left;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url("../imgs/greengrad.png");
-    animation: breath 24s ease-in-out infinite alternate;
-    animation-delay: 6s;
+    /* animation: breath 24s ease-in-out infinite alternate;
+    animation-delay: 6s; */
     opacity: .88;
 }
-@keyframes breath{
+/* @keyframes breath{
     0% {transform: scale(1) }
     25% {transform: scale(.95);}
     50% {transform: scale(1) }
     100% {transform: scale(6.2) translateY(50%);}
-}
+} */
 @keyframes topo{
     0%{transform: scale(1); rotate: 0deg;}
     33%{transform: scale(1.25); rotate: 7deg;}
