@@ -61,6 +61,7 @@ body {
   padding: 16px 24px;
   background: transparent;
   max-height: 32px;
+  height: 32px;
 }
 span.highlight,
 span.user-title {
@@ -80,10 +81,20 @@ span.user-title {
   cursor: pointer;
   transition: all 0.18s ease;
 }
-.nav a {
+.nav a,
+.nav button {
   color: inherit;
   text-decoration: none;
   margin-left: 16px;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  border-radius: 12px;
+}
+.nav button:hover {
+  opacity: 0.7;
+  transition: opacity 0.18s ease;
 }
 .home {
   align-items: center;
@@ -500,9 +511,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 5rem;
+  height: 32px;
   font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--ink-muted);
@@ -523,6 +532,10 @@ nav a {
 }
 nav a:hover {
   color: var(--ink);
+}
+
+button.about-btn {
+  display: none;
 }
 
 /* ── HERO ── */

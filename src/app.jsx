@@ -11,10 +11,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <header className="site-header">
-        <div className="logo"><img src={cowboyLogo} alt="Weird little dude, logo" style={{ height: '32px' }} /></div>
+        <div className="logo" ><Link to="/"><img src={cowboyLogo} alt="Weird little dude, logo" style={{ height: '32px' }} /></Link></div>
         <nav className="nav">
-          <Link to="/">Home</Link>
-          <button onClick={() => setShowAboutModal(true)} style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', marginLeft: '16px' }}>About</button>
+         
+          <button class = "about-btn"onClick={() => setShowAboutModal(true)} style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', marginLeft: '16px' }}>About</button>
         </nav>
       </header>
 
