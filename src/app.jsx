@@ -10,7 +10,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <header className="site-header">
-        <div className="logo"><img src="../src/data/cowboy.png" alt="Weird little dude, logo" style={{ height: '32px' }} /></div>
+        <div className="logo"><img src="/data/cowboy.png" alt="Weird little dude, logo" style={{ height: '32px' }} /></div>
         <nav className="nav">
           <Link to="/">Home</Link>
           <button onClick={() => setShowAboutModal(true)} style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', marginLeft: '16px' }}>About</button>
