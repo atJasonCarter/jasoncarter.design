@@ -17,11 +17,11 @@ const AboutModal = ({ show, onClose }) => {
           <section className="carousel">
             <h2>Gallery</h2>
             <div className="carousel-container">
-              <img src="/imgs/Ascent-Dashboard-cover.png" alt="Ascent Dashboard" />
-              <img src="/imgs/Ascent-cover.png" alt="Ascent Cover" />
-              <img src="/imgs/DE-chat-cover.png" alt="DE Chat" />
-              <img src="/imgs/RT-Activities-cover.png" alt="RT Activities" />
-              <img src="/imgs/TD-dataviz-cover.png" alt="TD Dataviz" />
+              <img src="../imgs/Ascent-Dashboard-cover.png" alt="Ascent Dashboard" />
+              <img src="../imgs/Ascent-cover.png" alt="Ascent Cover" />
+              <img src="../imgs/DE-chat-cover.png" alt="DE Chat" />
+              <img src="../imgs/RT-Activities-cover.png" alt="RT Activities" />
+              <img src="../imgs/TD-dataviz-cover.png" alt="TD Dataviz" />
             </div>
           </section>
           <section className="location">
