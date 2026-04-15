@@ -400,11 +400,13 @@ span.user-title {
 }
 
 /* case study */
+
 .case-root {
   font-family: system-ui;
   line-height: 1.5;
   color: #111;
 }
+
 .case-root .lead {
   color: #444;
   margin-bottom: 12px;
@@ -896,7 +898,10 @@ footer > a {
   object-fit: cover;
 }
 
-.location, .about-me, .books, .hobbies {
+.location,
+.about-me,
+.books,
+.hobbies {
   margin-bottom: 20px;
 }
 

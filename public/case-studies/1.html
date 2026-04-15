@@ -1,8 +1,8 @@
-<section class="case-root">
+<section class="case-root 1">
 <section class="sub-hero">
 
   <h1>Designing an <em>AI lesson planning</em> assistant for K–12 teachers</h1>
-  <p class="hero-sub">How a conversational LLM interface gave teachers back time in their day — and changed how they think about lesson prep.</p>
+  <p class="hero-sub">an LLM to empower teachers with intelligent lesson planning support</p>
   <div class="hero-meta">
     <div class="meta-block">
       <span class="meta-label">Role</span>
@@ -10,22 +10,22 @@
     </div>
     <div class="meta-block">
       <span class="meta-label">Timeline</span>
-      <span class="meta-value">[X months] · 2024</span>
+      <span class="meta-value">4 Months · 2025</span>
     </div>
     <div class="meta-block">
       <span class="meta-label">Platform</span>
-      <span class="meta-value">Web application</span>
+      <span class="meta-value">Web application, Mobile</span>
     </div>
     <div class="meta-block">
       <span class="meta-label">Team</span>
-      <span class="meta-value">[X designers, X engineers]</span>
+      <span class="meta-value">1 designer, 3 engineers, 1 Data Scientist</span>
     </div>
   </div>
 </section>
 
 <!-- HERO IMAGE -->
-<div style="margin-bottom: 6rem;">
-  <div class="img-placeholder wide">Hero image — product overview</div>
+<div style="margin-bottom: 6rem; margin-top: 2.5rem;">
+  <img src="../src/imgs/DE-cs-hero.png" alt="Hero image — product overview" class="img wide">
   <p class="img-caption">Final product — the AI lesson planning assistant in context</p>
 </div>
 
@@ -36,65 +36,43 @@
     <h2>The problem</h2>
   </div>
   <div class="section-body">
-    <p>K–12 teachers spend an average of [X hours/week] on lesson planning — time pulled away from actual teaching. Existing tools (Google, TPT, textbooks) required heavy manual assembly with no understanding of classroom context.</p>
+    <p>K–12 teachers spend an average of 5-7 hours/week on lesson planning. According to my wife (a very talented high school teacher), the most tedious part of the process is finding supplemental resources; the perfect video, an additional image that hammers a point, a short quiz to fill the time. Our existing tool required manually sifting through over 6 million assets, that when searched, often provided little value, duplicated resources, or irrelevant results.</p>
     <ul class="bullets">
-      <li>No tool understood grade level, subject, or individual student needs</li>
-      <li>Generic AI tools produced generic output, requiring just as much editing</li>
-      <li>Differentiation — adapting content for diverse learners — was the most time-intensive task</li>
+      <li>Our current search did not understand grade level, subject, or individual teacher needs</li>
+      <li>Teachers did not need 6 million assets; they needed 3-4 relevant, high-quality resources</li>
+      <li>Even when a relevant asset was found, you still had to manually integrate it into your lesson plan</li>
     </ul>
-    <span class="value-callout">Opportunity: context-aware AI, not just faster search</span>
+    <span class="value-callout">Opportunity: Context-aware AI, that could save time and frustration.</span>
 
     <div class="img-grid-2" style="margin-top: 2rem;">
       <div>
-        <div class="img-placeholder medium">Research — teacher interviews</div>
-        <p class="img-caption">Field research — classroom walkthroughs</p>
-      </div>
-      <div>
-        <div class="img-placeholder medium">Current workflow mapping</div>
-        <p class="img-caption">Existing planning workflow, mapped</p>
+        <img src="../src/imgs/DE-plottingpng.png" alt="Simplified LLM asset retrieval workflow" class="img medium">
+        <p class="img-caption">simplified LLM asset retrieval workflow</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 02 RESEARCH -->
-<section class="section">
-  <div class="section-header">
-    <span class="section-num">02</span>
-    <h2>Research & discovery</h2>
-  </div>
-  <div class="section-body">
-    <p>Conducted [X] teacher interviews and workflow observations across [X] schools. Three insights shaped everything that followed.</p>
-    <ul class="bullets">
-      <li><strong>Trust before speed</strong> — teachers distrust AI they can't verify; credibility is earned through transparency</li>
-      <li><strong>Time pressure is acute</strong> — Sunday nights and planning periods are when the pain is sharpest</li>
-      <li><strong>The blank page is the real problem</strong> — a starting point beats a polished draft</li>
-    </ul>
-
-    <div class="img-placeholder tall" style="margin-top: 2rem;">Research synthesis — affinity map / key insights</div>
-    <p class="img-caption">Affinity mapping session — [X] interviews distilled into 3 design principles</p>
-  </div>
-</section>
 
 <!-- 03 PRINCIPLES -->
 <section class="section">
   <div class="section-header">
-    <span class="section-num">03</span>
+    <span class="section-num">02</span>
     <h2>Design principles</h2>
   </div>
   <div class="section-body">
     <div class="principles-grid">
       <div class="principle">
         <div class="principle-title">Contextual</div>
-        <div class="principle-desc">The tool understands who the teacher is and who their students are — not a generic prompt box.</div>
+        <div class="principle-desc">The tool understands who the teacher is, and what results they want back, not a generic prompt box.</div>
       </div>
       <div class="principle">
-        <div class="principle-title">Transparent</div>
-        <div class="principle-desc">AI shows its reasoning. Errors are surfaced, not hidden. Confidence builds over time.</div>
+        <div class="principle-title">Efficent</div>
+        <div class="principle-desc">Not designed to be a chat bot. Designed to be a tool that delivers a result, and allows adjustments. </div>
       </div>
       <div class="principle">
-        <div class="principle-title">Efficient</div>
-        <div class="principle-desc">Reduces cognitive load. Doesn't create new tasks. Saves time where it matters most.</div>
+        <div class="principle-title">Simple & Actionable</div>
+        <div class="principle-desc">Reduces cognitive load, saves time, gives exceptional return.</div>
       </div>
     </div>
   </div>
@@ -109,16 +87,16 @@
   <div class="section-body">
     <p>Mapped conversation flows and edge cases before touching UI — treating the chat as a product with states, not just a text box. Key artifacts: conversation flow diagrams, error state specs, prompt engineering documentation.</p>
 
-    <div class="img-placeholder tall" style="margin-top: 1.5rem;">Conversation flow diagram</div>
+    <div class="img tall" style="margin-top: 1.5rem;">Conversation flow diagram</div>
     <p class="img-caption">Conversation architecture — states, branches, and edge cases</p>
 
     <div class="img-grid-2" style="margin-top: 1.5rem;">
       <div>
-        <div class="img-placeholder short">Early wireframes</div>
+        <div class="img short">Early wireframes</div>
         <p class="img-caption">Early wireframes — [round 1]</p>
       </div>
       <div>
-        <div class="img-placeholder short">Refined prototype</div>
+        <div class="img short">Refined prototype</div>
         <p class="img-caption">Refined prototype — post-testing</p>
       </div>
     </div>
@@ -158,7 +136,7 @@
       </div>
     </div>
 
-    <div class="img-placeholder tall" style="margin-top: 1.5rem;">UI detail — key interaction / component</div>
+    <div class="img tall" style="margin-top: 1.5rem;">UI detail — key interaction / component</div>
     <p class="img-caption">Follow-up prompt system — reducing the blank-page problem</p>
   </div>
 </section>
@@ -192,7 +170,7 @@
       <cite>— [Name], [Grade] teacher, [School/District]</cite>
     </blockquote>
 
-    <div class="img-placeholder medium" style="margin-top: 1rem;">Engagement data visualization</div>
+    <div class="img medium" style="margin-top: 1rem;">Engagement data visualization</div>
     <p class="img-caption">Weekly active users over 8 weeks post-launch</p>
 
     <span class="value-callout">Return usage = trust. Teachers don't go back to tools they don't believe in.</span>
