@@ -32,16 +32,16 @@ export default function Home() {
       <a  href='src/data/JasonCarterResume26.pdf' target="_blank" className="resume-link" style={{ marginTop: '96px', marginBottom: '240px' }}>Download Resume</a>
       {/* <div className="breath"></div> */}
           {/* <!-- family images --> */}
-     <div class="Familyimages">
-      <img class="FamImg one" src="public/imgs/Family0.png" alt=""></img>
-      <img class="FamImg two" src="public/imgs/Family1.png" alt=""></img>
-      <img class="FamImg seven" src="public/imgs/Family6.png" alt=""></img>
-      <img class="FamImg four" src="public/imgs/Family3.png" alt=""></img>
-      <img class="FamImg five" src="public/imgs/Family5.png" alt=""></img>
-      <img class="FamImg six" src="public/imgs/Family4.png" alt=""></img>
-      <img class="FamImg three" src="public/imgs/Family2.png" alt=""></img>
-      <img class="FamImg eight" src="public/imgs/Family7.png" alt=""></img>
-      <img class="FamImg nine" src="public/imgs/Family8.png" alt=""></img>
+     <div className="Familyimages">
+      <img className="FamImg one" src="/imgs/Family0.png" alt="" />
+      <img className="FamImg two" src="/imgs/Family1.png" alt="" />
+      <img className="FamImg seven" src="/imgs/Family6.png" alt="" />
+      <img className="FamImg four" src="/imgs/Family3.png" alt="" />
+      <img className="FamImg five" src="/imgs/Family5.png" alt="" />
+      <img className="FamImg six" src="/imgs/Family4.png" alt="" />
+      <img className="FamImg three" src="/imgs/Family2.png" alt="" />
+      <img className="FamImg eight" src="/imgs/Family7.png" alt="" />
+      <img className="FamImg nine" src="/imgs/Family8.png" alt="" />
      </div>
     </main>
   )
