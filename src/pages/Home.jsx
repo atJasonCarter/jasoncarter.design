@@ -31,6 +31,18 @@ export default function Home() {
 
       <a  href='src/data/JasonCarterResume26.pdf' target="_blank" className="resume-link" style={{ marginTop: '96px', marginBottom: '240px' }}>Download Resume</a>
       {/* <div className="breath"></div> */}
+          {/* <!-- family images --> */}
+     <div class="Familyimages">
+      <img class="FamImg one" src="/imgs/Family0.png" alt=""></img>
+      <img class="FamImg two" src="/imgs/Family1.png" alt=""></img>
+      <img class="FamImg seven" src="/imgs/Family6.png" alt=""></img>
+      <img class="FamImg four" src="/imgs/Family3.png" alt=""></img>
+      <img class="FamImg five" src="/imgs/Family5.png" alt=""></img>
+      <img class="FamImg six" src="/imgs/Family4.png" alt=""></img>
+      <img class="FamImg three" src="/imgs/Family2.png" alt=""></img>
+      <img class="FamImg eight" src="/imgs/Family7.png" alt=""></img>
+      <img class="FamImg nine" src="/imgs/Family8.png" alt=""></img>
+     </div>
     </main>
   )
 }
