@@ -968,31 +968,31 @@ h2 {
 }
 .FamImg.two {
   z-index: 2;
-  transform: rotate(-4deg) translateY(-20px);
+  transform: rotate(-4deg) translateY(-30px);
 }
 .FamImg.three {
   z-index: 3;
-  transform: rotate(2deg) translateY(-40px);
+  transform: rotate(2deg) translateY(-60px);
 }
 .FamImg.four {
   z-index: 4;
-  transform: rotate(-6deg) translateY(-60px);
+  transform: rotate(-6deg) translateY(-80px);
 }
 .FamImg.five {
   z-index: 5;
-  transform: rotate(3deg) translateY(-80px);
+  transform: rotate(3deg) translateY(-110px);
 }
 .FamImg.six {
   z-index: 4;
-  transform: rotate(-2deg) translateY(-60px);
+  transform: rotate(-2deg) translateY(-80px);
 }
 .FamImg.seven {
   z-index: 3;
-  transform: rotate(4deg) translateY(-40px);
+  transform: rotate(4deg) translateY(-60px);
 }
 .FamImg.eight {
   z-index: 2;
-  transform: rotate(7.5deg) translateY(-20px);
+  transform: rotate(7.5deg) translateY(-30px);
 }
 .FamImg.nine {
   z-index: 1;
