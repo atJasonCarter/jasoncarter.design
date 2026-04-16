@@ -33,15 +33,15 @@ export default function Home() {
       {/* <div className="breath"></div> */}
           {/* <!-- family images --> */}
      <div className="Familyimages">
-      <img className="FamImg one" src="/imgs/Family0.png" alt="" />
-      <img className="FamImg two" src="/imgs/Family1.png" alt="" />
-      <img className="FamImg seven" src="/imgs/Family6.png" alt="" />
-      <img className="FamImg four" src="/imgs/Family3.png" alt="" />
-      <img className="FamImg five" src="/imgs/Family5.png" alt="" />
-      <img className="FamImg six" src="/imgs/Family4.png" alt="" />
-      <img className="FamImg three" src="/imgs/Family2.png" alt="" />
-      <img className="FamImg eight" src="/imgs/Family7.png" alt="" />
-      <img className="FamImg nine" src="/imgs/Family8.png" alt="" />
+      <img className="FamImg one" src="../imgs/Family0.png" alt="" />
+      <img className="FamImg two" src="../imgs/Family1.png" alt="" />
+      <img className="FamImg seven" src="../imgs/Family6.png" alt="" />
+      <img className="FamImg four" src="../imgs/Family3.png" alt="" />
+      <img className="FamImg five" src="../imgs/Family5.png" alt="" />
+      <img className="FamImg six" src="../imgs/Family4.png" alt="" />
+      <img className="FamImg three" src="../imgs/Family2.png" alt="" />
+      <img className="FamImg eight" src="../imgs/Family7.png" alt="" />
+      <img className="FamImg nine" src="../imgs/Family8.png" alt="" />
      </div>
     </main>
   )
