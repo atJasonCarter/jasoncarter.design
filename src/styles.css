@@ -923,3 +923,78 @@ footer > a {
 h2 {
   color: var(--accent);
 }
+
+/* family images */
+.Familyimages {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  justify-content: center;
+  overflow-y: hidden;
+  margin-left: 3.75vw;
+}
+.Familyimages img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 16px solid #fff;
+  margin-left: -7.5vw;
+  bottom: -140px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow:
+    0px 232px 250px rgba(0, 0, 0, 0.04),
+    0px 96.9241px 113.635px rgba(0, 0, 0, 0.049074),
+    0px 51.8202px 60.7548px rgba(0, 0, 0, 0.0355718),
+    0px 29.05px 34.0586px rgba(0, 0, 0, 0.025),
+    0px 15.4282px 18.0883px rgba(0, 0, 0, 0.0244282),
+    0px 6.42003px 7.52694px rgba(0, 0, 0, 0.00926);
+}
+.Familyimages img:hover {
+  transform: translateY(-120px) scale(1.05);
+  z-index: 12;
+  box-shadow:
+    0px 232px 250px rgba(0, 0, 0, 0.16),
+    0px 96.9241px 113.635px rgba(0, 0, 0, 0.14),
+    0px 51.8202px 60.7548px rgba(0, 0, 0, 0.12),
+    0px 29.05px 34.0586px rgba(0, 0, 0, 0.09),
+    0px 15.4282px 18.0883px rgba(0, 0, 0, 0.08),
+    0px 6.42003px 7.52694px rgba(0, 0, 0, 0.03);
+}
+.FamImg.one {
+  z-index: 1;
+  transform: rotate(3deg) translateY(-0px);
+}
+.FamImg.two {
+  z-index: 2;
+  transform: rotate(-4deg) translateY(-20px);
+}
+.FamImg.three {
+  z-index: 3;
+  transform: rotate(2deg) translateY(-40px);
+}
+.FamImg.four {
+  z-index: 4;
+  transform: rotate(-6deg) translateY(-60px);
+}
+.FamImg.five {
+  z-index: 5;
+  transform: rotate(3deg) translateY(-80px);
+}
+.FamImg.six {
+  z-index: 4;
+  transform: rotate(-2deg) translateY(-60px);
+}
+.FamImg.seven {
+  z-index: 3;
+  transform: rotate(4deg) translateY(-40px);
+}
+.FamImg.eight {
+  z-index: 2;
+  transform: rotate(7.5deg) translateY(-20px);
+}
+.FamImg.nine {
+  z-index: 1;
+  transform: rotate(-2deg) translateY(-0px);
+}
