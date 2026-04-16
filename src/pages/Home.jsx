@@ -29,7 +29,7 @@ export default function Home() {
         ))}
       </section>
 
-      <a  href='src/data/JasonCarterResume26.pdf' target="_blank" className="resume-link" style={{ marginTop: '96px', marginBottom: '240px' }}>Download Resume</a>
+      <a  href='/JasonCarterResume26.pdf' target="_blank" download="JasonCarterResume26.pdf" className="resume-link" style={{ marginTop: '96px', marginBottom: '240px' }}>Download Resume</a>
       {/* <div className="breath"></div> */}
           {/* <!-- family images --> */}
      <div className="Familyimages">

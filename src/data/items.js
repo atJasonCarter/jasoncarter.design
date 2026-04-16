@@ -1,7 +1,7 @@
-import deChatCover from '../imgs/DE-chat-cover.png';
-import ascentDashboardCover from '../imgs/Ascent-Dashboard-cover.png';
-import rtActivitiesCover from '../imgs/RT-Activities-cover.png';
-import tdDatavizCover from '../imgs/TD-dataviz-cover.png';
+const deChatCover = '/imgs/DE-chat-cover.png';
+const ascentDashboardCover = '/imgs/Ascent-Dashboard-cover.png';
+const rtActivitiesCover = '/imgs/RT-Activities-cover.png';
+const tdDatavizCover = '/imgs/TD-dataviz-cover.png';
 
 const items = [
   {

@@ -1,9 +1,10 @@
 import React from 'react';
-import ascentDashboard from '../imgs/Ascent-Dashboard-cover.png';
-import ascentCover from '../imgs/Ascent-cover.png';
-import deChat from '../imgs/DE-chat-cover.png';
-import rtActivities from '../imgs/RT-Activities-cover.png';
-import tdDataviz from '../imgs/TD-dataviz-cover.png';
+
+const ascentDashboard = '/imgs/Ascent-Dashboard-cover.png';
+const ascentCover = '/imgs/Ascent-cover.png';
+const deChat = '/imgs/DE-chat-cover.png';
+const rtActivities = '/imgs/RT-Activities-cover.png';
+const tdDataviz = '/imgs/TD-dataviz-cover.png';
 
 const AboutModal = ({ show, onClose }) => {
   if (!show) return null;
