@@ -10,6 +10,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search)
+        const redirectPath = params.get('p')
+        if (redirectPath) {
+          const nextUrl = redirectPath.startsWith('/') ? redirectPath : '/' + redirectPath
+          window.history.replaceState(null, '', nextUrl)
+        }
+      })()
+    </script>
     <script type="module" src="/src/main.jsx"></script>
 
 

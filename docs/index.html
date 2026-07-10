@@ -7,11 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-SQffPS7P.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Kbwz2Um2.css">
+    <script type="module" crossorigin src="/assets/index-C6gJFM5Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CyO5vzDu.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search)
+        const redirectPath = params.get('p')
+        if (redirectPath) {
+          const nextUrl = redirectPath.startsWith('/') ? redirectPath : '/' + redirectPath
+          window.history.replaceState(null, '', nextUrl)
+        }
+      })()
+    </script>
 
 
 

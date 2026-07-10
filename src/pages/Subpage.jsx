@@ -4,7 +4,8 @@ import items from '../data/items'
 
 export default function Subpage() {
   const { id } = useParams()
-  const item = items.find((i) => i.id === id)
+  const normalizedId = id?.replace(/\.html$/, '') ?? ''
+  const item = items.find((i) => i.id === normalizedId)
   const [password, setPassword] = useState('')
   const [unlocked, setUnlocked] = useState(false)
   const [error, setError] = useState('')
