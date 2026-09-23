@@ -677,6 +677,16 @@ span.user-title {
   border: none;
   margin: 0px;
 }
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
 a.resume-link {
   display: inline-block;
   margin-top: 24px;
@@ -685,10 +695,10 @@ a.resume-link {
   color: var(--bg);
   text-decoration: none;
   border-radius: 16px;
-  transition: all 0.3s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
   font-family: sans-serif;
-  margin-left: calc(-1100px + 232px);
   position: relative;
+  transform-style: preserve-3d;
   box-shadow:
     0px 64px 80px rgba(0, 0, 0, 0.06),
     0px 26.7377px 33.4221px rgba(0, 0, 0, 0.0431313),
@@ -698,7 +708,31 @@ a.resume-link {
     0px 1.77104px 2.21381px rgba(0, 0, 0, 0.0168687);
 }
 a.resume-link:hover {
-  padding: 24px 40px;
+  transform: perspective(500px) rotateX(12deg);
+}
+
+a.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  width: 68px;
+  height: 68px;
+   transition: transform 0.1s ease, box-shadow 0.1s ease;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 16px;
+    transform-style: preserve-3d;
+  box-shadow:
+    0px 64px 80px rgba(0, 0, 0, 0.06),
+    0px 26.7377px 33.4221px rgba(0, 0, 0, 0.0431313),
+    0px 14.2952px 17.869px rgba(0, 0, 0, 0.0357664),
+    0px 8.01379px 10.0172px rgba(0, 0, 0, 0.03),
+    0px 4.25607px 5.32008px rgba(0, 0, 0, 0.0242336),
+    0px 1.77104px 2.21381px rgba(0, 0, 0, 0.0168687);
+}
+a.linkedin-link:hover {
+  transform: perspective(500px) rotateX(12deg);
 }
 
 button.reveal {
