@@ -23,7 +23,7 @@ export default function Home() {
           <h1>Jason Carter</h1> 
           <p className="subheader">Designer and Developer of useful products focused on process, conversations, and conversion. </p>
           <p className="subheader">Currently taking a purposeful pause to be hands-on with raising my first child.</p>
-          <p className="subheader">Previously a <span className="highlight">Lead Design Engineer</span> at Discovery Education, <span className="highlight">Head of Design</span> and <span className="highlight">Advisor</span> at several startups. </p>
+          <p className="subheader">Previously a <span className="highlight">Lead Product Designer</span> & <span className="highlight">Engineer</span> at Discovery Education, <span className="highlight">Head of Design</span> and <span className="highlight">Advisor</span> at several startups. </p>
          <div className="break-medium"></div>
           <p className="subheader"> Looking to mentor, increase happiness, and work with people who care about craft.</p>
         </div>
