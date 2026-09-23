@@ -68,10 +68,10 @@ export default function Subpage() {
               placeholder="Case Study Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              style={{ padding: '8px', borderRadius: 6, border: '1px solid #ddd', height:'48px' }}
+              style={{ padding: '8px', borderRadius: 6, border: '1px solid var(--rule)', height:'48px' }}
             />
             <button type="submit" class="reveal" >Reveal</button>
-            {error && <div style={{ color: 'crimson', marginLeft: 8 }}>{error}</div>}
+            {error && <div style={{ color: 'var(--danger)', marginLeft: 8 }}>{error}</div>}
           </form>
         ) : (
           <article className="case-study" style={{ marginTop: 12 }}>

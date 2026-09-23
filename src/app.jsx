@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import Subpage from './pages/Subpage'
 import AboutModal from './components/AboutModal'
+import ThemeToggle from './components/ThemeToggle'
 import cowboyLogo from './data/cowboy.png'
 
 export default function App() {
@@ -13,8 +14,9 @@ export default function App() {
       <header className="site-header">
         <div className="logo" ><Link to="/"><img src={cowboyLogo} alt="Weird little dude, logo" style={{ height: '32px' }} /></Link></div>
         <nav className="nav">
-         
+
           <button class = "about-btn"onClick={() => setShowAboutModal(true)} style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer', marginLeft: '16px' }}>About</button>
+          <ThemeToggle />
         </nav>
       </header>
 

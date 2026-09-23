@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light;
+
   --bg: #dddde8;
   --card-bg: #fff;
   --accent: #690bff;
@@ -15,6 +17,63 @@
   --rule: #d3cfd8;
   --placeholder-bg: #ff1717;
   --placeholder-label: #9e9c95;
+  --danger: #dc143c;
+  --photo-border: #fff;
+}
+
+/* Automatic dark mode: follows the OS/browser preference unless the
+   toggle has set an explicit data-theme on <html>. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --bg: #121018;
+    --card-bg: #1c1926;
+    --accent: #a684ff;
+    --accent-2: #ff9c52;
+    --muted: #a39fab;
+    --text: #f2eefc;
+
+    --ink: #f2eefc;
+    --ink-muted: #b8b2c2;
+    --ink-faint: #726c7d;
+    --paper: #1e1a29;
+    --paper-warm: #241f30;
+    --accent-light: #372a5c;
+    --rule: #322c40;
+    --placeholder-bg: #ff1717;
+    --placeholder-label: #8b8790;
+    --danger: #ff6b6b;
+  }
+}
+
+/* Explicit override from the theme toggle, regardless of OS preference. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #121018;
+  --card-bg: #1c1926;
+  --accent: #a684ff;
+  --accent-2: #ff9c52;
+  --muted: #a39fab;
+  --text: #f2eefc;
+
+  --ink: #f2eefc;
+  --ink-muted: #b8b2c2;
+  --ink-faint: #726c7d;
+  --paper: #1e1a29;
+  --paper-warm: #241f30;
+  --accent-light: #372a5c;
+  --rule: #322c40;
+  --placeholder-bg: #ff1717;
+  --placeholder-label: #8b8790;
+  --danger: #ff6b6b;
+}
+
+body {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 @font-face {
@@ -81,6 +140,10 @@ span.user-title {
   cursor: pointer;
   transition: all 0.18s ease;
 }
+.nav {
+  display: flex;
+  align-items: center;
+}
 .nav a,
 .nav button {
   color: inherit;
@@ -95,6 +158,32 @@ span.user-title {
 .nav button:hover {
   opacity: 0.7;
   transition: opacity 0.18s ease;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    opacity 0.18s ease,
+    background-color 0.18s ease;
+}
+.theme-toggle:hover {
+  opacity: 0.7;
+  background: var(--card-bg);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
 }
 .home {
   align-items: center;
@@ -172,25 +261,128 @@ span.user-title {
   color: var(--muted);
 }
 
-.grid {
+.section-heading {
+  max-width: 1200px;
+  width: 100%;
+  margin: 3rem auto 0;
+  padding: 0 16px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.case-studies-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
-  padding-top: 1.75rem;
+  grid-row-gap: 24px;
+  padding-top: 1.25rem;
   padding-left: 16px;
   padding-right: 16px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   perspective: 1000px;
 }
 
+@media (max-width: 900px) {
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 720px) {
-  .grid {
+  .case-studies-grid {
     grid-template-columns: 1fr;
     padding: 16px;
     perspective: 1000px;
   }
+}
+
+.other-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 1.25rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .other-projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .other-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 12px;
+  }
+}
+
+.project-tile {
+  background: transparent;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: default;
+  opacity: 0.9;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.1s ease;
+}
+
+.project-tile-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6px;
+}
+
+.project-tile-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--placeholder-bg);
+  color: var(--placeholder-label);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+}
+
+.project-tile-name {
+  padding: 0 4px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.project-tile-tag {
+  padding: 0 4px;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.project-tile-year {
+  padding: 0 4px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .break-medium {
@@ -371,7 +563,7 @@ span.user-title {
 }
 .back:hover {
   color: var(--accent);
-  background-color: #ffffff00;
+  background-color: transparent;
   left: 4.75rem;
   box-shadow:
     22px 0px 22px rgba(0, 0, 0, 0.11),
@@ -415,11 +607,11 @@ span.user-title {
 .case-root {
   font-family: system-ui;
   line-height: 1.5;
-  color: #111;
+  color: var(--ink);
 }
 
 .case-root .lead {
-  color: #444;
+  color: var(--ink-muted);
   margin-bottom: 12px;
 }
 
@@ -962,7 +1154,7 @@ h2 {
   height: 250px;
   object-fit: cover;
   border-radius: 12px;
-  border: 16px solid #fff;
+  border: 16px solid var(--photo-border);
   margin-left: -7.5vw;
   bottom: -140px;
   position: relative;

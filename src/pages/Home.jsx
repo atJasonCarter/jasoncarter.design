@@ -1,8 +1,14 @@
 import React from 'react'
 import Card from '../components/card'
+import ProjectTile from '../components/ProjectTile'
 import items from '../data/items'
+import otherProjects from '../data/otherProjects'
+
+const SHOW_OTHER_PROJECTS = false
 
 export default function Home() {
+  const caseStudyItems = items.filter((it) => !it.hidden)
+
   return (
     <main className="home">
       <section className="hero">
@@ -23,11 +29,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid">
-        {items.map((it) => (
+      <h2 className="section-heading">Case Studies</h2>
+      <section className="case-studies-grid">
+        {caseStudyItems.map((it) => (
           <Card key={it.id} item={it} />
         ))}
       </section>
+
+      {SHOW_OTHER_PROJECTS && (
+        <>
+          <h2 className="section-heading">Other Projects</h2>
+          <section className="other-projects-grid">
+            {otherProjects.map((p) => (
+              <ProjectTile key={p.id} project={p} />
+            ))}
+          </section>
+        </>
+      )}
 
       <a  href='/JasonCarterResume26.pdf' target="_blank" download="JasonCarterResume26.pdf" className="resume-link" style={{ marginTop: '96px', marginBottom: '240px' }}>Download Resume</a>
       {/* <div className="breath"></div> */}

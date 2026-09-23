@@ -38,11 +38,12 @@ const items = [
     description: 'A loveable, simple page for finding and booking the next thing to do on your vacation. ',
     Date: 'Activity Selection',
     company: 'Rocket Travel',
-    divider:'∙',  
+    divider:'∙',
     caseStudyFile: '/case-studies/3.html',
     year: '2022',
     category: 'Travel',
     tag: 'Data Organization ∙ Maps ∙ Pricing',
+    hidden: true,
   },
   {
     id: '4',
