@@ -397,6 +397,12 @@ span.user-title {
   color: inherit;
   box-sizing: border-box;
 }
+.card:nth-child(2) {
+  margin-top: 24px;
+}
+.card:nth-child(3) {
+  margin-top: 48px;
+}
 .card-image {
   position: relative;
   width: 100%;
