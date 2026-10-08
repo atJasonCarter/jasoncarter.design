@@ -1,0 +1,215 @@
+<section class="case-root 5">
+<section class="sub-hero">
+
+  <h1>Designing one <em>flexible</em> performance review system for every company</h1>
+  <p class="hero-sub">A 0 → 1 review dashboard and system for admins, managers, and employees</p>
+  <div class="hero-meta">
+    <div class="meta-block">
+      <span class="meta-label">Role</span>
+      <span class="meta-value">Lead Product Designer</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Timeline</span>
+      <span class="meta-value">3 Months · 2023</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Platform</span>
+      <span class="meta-value">Web application</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Status</span>
+      <span class="meta-value">0 → 1</span>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div style="margin-bottom: 6rem; margin-top: 2.5rem;">
+  <object type="image/svg+xml" data="../imgs/helios-CS-header.svg" aria-label="Helios performance reviews: question types, feedback, and company goals" style="display:block; width:100%; aspect-ratio:1435/1125; color-scheme:light;"></object>
+  <p class="img-caption">Helios performance reviews: question types, feedback, and company goals</p>
+</div>
+
+<!-- 01 PROBLEM -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>The problem</h2>
+  </div>
+  <div class="section-body">
+    <p>Helios is an HR company, and performance reviews were the next product on its roadmap. It was a 0 → 1 build: no existing product to iterate on, and no single customer to design for.</p>
+    <p>The system had to serve three very different people at once, across many kinds of reviews, for companies of any size, in any industry, anywhere.</p>
+    <ul class="bullets">
+      <li><strong>Admins</strong> configure review cycles, templates, and permissions for their whole company</li>
+      <li><strong>Managers</strong> write reviews, calibrate across their team, and hold the conversation</li>
+      <li><strong>Employees</strong> reflect on their own work, receive feedback, and track growth</li>
+      <li><strong>Multiple review types</strong>: annual, quarterly, 360, upwards, self, probationary, and custom, each with different participants, questions, and response types</li>
+    </ul>
+    <span class="value-callout">Opportunity: one flexible system, not a pile of one-off review forms.</span>
+  </div>
+</section>
+
+<!-- 02 RESEARCH -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>User Journey</h2>
+  </div>
+  <div class="section-body">
+    <p>With three roles sharing one system, I started by mapping each user's journey and the key inflection points for every job to be done, since the hand-offs between roles are where reviews succeed or stall.</p>
+    <img class="img wide" style="margin-top: 1.5rem;" src="../imgs/helios-user-journey.svg" alt="User journey: admin creates a template, manager customizes and assigns, employees fill out reviews, manager conducts the review">
+    <p class="img-caption">User journey for a single review cycle, from template creation to completed review</p>
+  </div>
+</section>
+
+<!-- 03 PRINCIPLES -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Design principles</h2>
+  </div>
+  <div class="section-body">
+    <div class="principles-grid">
+      <div class="principle">
+        <div class="principle-title">Flexible by default</div>
+        <div class="principle-desc">Any company, any review type, configured instead of custom built.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">One system, three views</div>
+        <div class="principle-desc">Admin, manager, and employee share one underlying model, each seeing only what they need.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-title">Reviews worth having</div>
+        <div class="principle-desc">Reduce the paperwork so the conversation gets the attention.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SYSTEM -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Designing the system</h2>
+  </div>
+  <div class="section-body">
+    <p>Every review type is built from the same building blocks, so the question builder had to give managers real flexibility without making form creation a chore.</p>
+    <ul class="bullets">
+      <li><strong>Flexible question setup</strong>: managers choose from multiple question and response types, such as single choice, multi-select, linear scales, and short answer</li>
+      <li><strong>Inline WYSIWYG editing</strong>: questions are edited directly on the card, exactly as employees will see them</li>
+      <li><strong>Easy form creation</strong>: add, reorder, and configure questions in a few clicks, with sensible defaults to start from</li>
+    </ul>
+    <object type="image/svg+xml" data="../imgs/helios-questions.svg" aria-label="Question and response card types" style="display:block; width:100%; aspect-ratio:1270/1500; margin-top:1.5rem; color-scheme:light;"></object>
+    <p class="img-caption">Question cards for each response type, edited inline</p>
+  </div>
+</section>
+
+<!-- 05 CAMPAIGNS -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Launching a review campaign</h2>
+  </div>
+  <div class="section-body">
+    <p>Once templates exist, administrators turn them into a review campaign: a single, scheduled send-out to the people across the organization. The setup had to feel as light as sending a survey, while still handling the complexity of a whole company.</p>
+    <ul class="bullets">
+      <li><strong>Choose the template</strong>: start from an admin-built template for the review type being run</li>
+      <li><strong>Set the schedule</strong>: open and due dates, plus reminders for anyone still in progress</li>
+      <li><strong>Select the audience</strong>: reach the organization by department, location, or individual people</li>
+      <li><strong>Review and send</strong>: confirm who will receive it, then launch, and track completion from the dashboard</li>
+    </ul>
+    <object type="image/svg+xml" data="../imgs/helios-Assign-to%20group.svg" aria-label="Interactive prototype: create a performance review campaign in four steps" style="display:block; width:100%; aspect-ratio:1100 / 1210; margin-top:1.5rem; color-scheme:light; background:#f4f4f5; border-radius:24px; border:4px solid var(--rule); box-sizing:border-box;"></object>
+    <p class="img-caption">Very simple interactive prototype: click Continue (or a step in the header) to move through the four steps of campaign setup</p>
+  </div>
+</section>
+
+<!-- 06 FEEDBACK -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Reviewing feedback</h2>
+  </div>
+  <div class="section-body">
+    <p>Once responses come in, managers need to make sense of feedback from many people at once. I designed one view per person that gathers every response, so the review conversation starts from a complete picture.</p>
+    <ul class="bullets">
+      <li><strong>Filter by reviewer</strong>: see everything together, or narrow to a single reviewer</li>
+      <li><strong>Results at a glance</strong>: choice questions show vote counts and percentages, with the reviewers behind them</li>
+      <li><strong>Context on every comment</strong>: each written response is labeled with the reviewer's relationship, such as manager, peer, or upwards</li>
+    </ul>
+    <object type="image/svg+xml" data="../imgs/helios-review-feedback.svg" aria-label="Reviewing feedback for an employee, filtered by reviewer" style="display:block; width:100%; aspect-ratio:969/870; margin-top:1.5rem; color-scheme:light;"></object>
+    <p class="img-caption">Manager view of feedback for one employee, with reviewer filtering and relationship labels</p>
+  </div>
+</section>
+
+<!-- 07 ADMIN DASHBOARD -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>Admin dashboard</h2>
+  </div>
+  <div class="section-body">
+    <p>Administrators run reviews for the whole organization, so they needed one place to see what is due, what is overdue, and how every campaign is progressing, without opening each review.</p>
+    <ul class="bullets">
+      <li><strong>Due soon</strong>: upcoming reviews and who they belong to, surfaced first</li>
+      <li><strong>Snapshot</strong>: average completion rate and active goals at a glance</li>
+      <li><strong>Active campaigns</strong>: per-person status (completed, in progress, overdue, canceled) and a completion rate that can be broken down by department or country</li>
+      <li><strong>Create new campaign</strong>: always one click away, leading into the setup flow above</li>
+    </ul>
+    <img class="img wide" style="margin-top: 1.5rem; background:#fff; padding:1.5rem; box-sizing:border-box;" src="../imgs/helios-Admin-Dashboard.svg" alt="Admin dashboard showing due soon, snapshot, and active campaign completion rates">
+    <p class="img-caption">Admin dashboard: due soon, snapshot metrics, and active campaign progress</p>
+  </div>
+</section>
+
+<!-- 08 OUTCOME -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">08</span>
+    <h2>Outcome</h2>
+  </div>
+  <div class="section-body">
+    <p>I left Helios before the product launched, so there are no usage metrics to share. What I can point to is the scale of what was designed.</p>
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-num">14</span>
+        <span class="stat-label">end-to-end flows designed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">jobs to be done</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">28</span>
+        <span class="stat-label">cross-platform touch points</span>
+      </div>
+    </div>
+    <p>Taking a complete performance review system from nothing to designed, from template creation and campaign launch to completing reviews, reviewing feedback, and admin reporting, was a tremendous undertaking for three months of work.</p>
+    <p>The work was considered a great success by the C-suite and our stakeholders.</p>
+  </div>
+</section>
+
+<!-- 09 REFLECTION (hidden for now)
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">09</span>
+    <h2>Reflection</h2>
+  </div>
+  <div class="section-body">
+    <div class="reflection-grid">
+      <div class="reflection-item">
+        <div class="reflection-label">Biggest challenge</div>
+        <div class="reflection-body">[Designing for flexibility without making the product feel generic or overwhelming.]</div>
+      </div>
+      <div class="reflection-item">
+        <div class="reflection-label">Would do differently</div>
+        <div class="reflection-body">[Text]</div>
+      </div>
+      <div class="reflection-item">
+        <div class="reflection-label">What I learned</div>
+        <div class="reflection-body">[Text on 0 → 1 work and systems thinking.]</div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<footer></footer>
+</section>

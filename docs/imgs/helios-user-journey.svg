@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Helios review cycle user journey</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171421"/><stop offset="1" stop-color="#110f18"/></linearGradient></defs>
+<rect width="1200" height="700" rx="24" fill="url(#bg)"/>
+<text x="34" y="60" font-size="28" font-weight="700" fill="#f2eefc">One review cycle, four hand-offs</text>
+<text x="34" y="90" font-size="17" fill="#a49db3">How a template becomes a completed review across admin, manager, and employee</text>
+<line x1="162.0" x2="1038.0" y1="652" y2="652" stroke="#3a3350" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+<rect x="34" y="118" width="256" height="482" rx="22" fill="#1c1925" stroke="#322c40" stroke-width="1.5"/>
+<circle cx="72" cy="166" r="17" fill="#a78bfa"/><text x="72" y="172" font-size="17" font-weight="800" text-anchor="middle" fill="#14121b">1</text>
+<text x="100" y="171" font-size="14" font-weight="700" letter-spacing="1.8" fill="#a78bfa">ADMIN</text>
+<text x="56" y="222" font-size="19.5" font-weight="700" fill="#f2eefc">Creates the template</text>
+<line x1="62" x2="62" y1="272" y2="328" stroke="#a78bfa" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="62" cy="263" r="9" fill="#1c1925" stroke="#a78bfa" stroke-opacity=".6" stroke-width="1.5"/><circle cx="62" cy="263" r="3" fill="#a78bfa"/>
+<text x="84" y="268" font-size="17" fill="#e0dbea">Choose the</text>
+<text x="84" y="290" font-size="17" fill="#e0dbea">review type</text>
+<line x1="62" x2="62" y1="346" y2="402" stroke="#a78bfa" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="62" cy="337" r="9" fill="#1c1925" stroke="#a78bfa" stroke-opacity=".6" stroke-width="1.5"/><circle cx="62" cy="337" r="3" fill="#a78bfa"/>
+<text x="84" y="342" font-size="17" fill="#e0dbea">Add questions and</text>
+<text x="84" y="364" font-size="17" fill="#e0dbea">response types</text>
+<line x1="62" x2="62" y1="420" y2="476" stroke="#a78bfa" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="62" cy="411" r="9" fill="#1c1925" stroke="#a78bfa" stroke-opacity=".6" stroke-width="1.5"/><circle cx="62" cy="411" r="3" fill="#a78bfa"/>
+<text x="84" y="416" font-size="17" fill="#e0dbea">Set participants</text>
+<text x="84" y="438" font-size="17" fill="#e0dbea">and timing</text>
+<circle cx="62" cy="485" r="9" fill="#1c1925" stroke="#a78bfa" stroke-opacity=".6" stroke-width="1.5"/><circle cx="62" cy="485" r="3" fill="#a78bfa"/>
+<text x="84" y="490" font-size="17" fill="#e0dbea">Publish to managers</text>
+<line x1="56" x2="268" y1="512" y2="512" stroke="#322c40"/>
+<text x="56" y="538" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8d8699">GOAL</text>
+<text x="56" y="562" font-size="16" font-style="italic" fill="#cfc9dc">One template that fits</text>
+<text x="56" y="582" font-size="16" font-style="italic" fill="#cfc9dc">any company</text>
+<line x1="162.0" x2="162.0" y1="600" y2="644" stroke="#a78bfa" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="162.0" cy="652" r="8" fill="#14121b" stroke="#a78bfa" stroke-width="3"/>
+<rect x="326" y="118" width="256" height="482" rx="22" fill="#1c1925" stroke="#322c40" stroke-width="1.5"/>
+<circle cx="364" cy="166" r="17" fill="#5eead4"/><text x="364" y="172" font-size="17" font-weight="800" text-anchor="middle" fill="#14121b">2</text>
+<text x="392" y="171" font-size="14" font-weight="700" letter-spacing="1.8" fill="#5eead4">MANAGER</text>
+<text x="348" y="222" font-size="19.5" font-weight="700" fill="#f2eefc">Customizes &amp; assigns</text>
+<line x1="354" x2="354" y1="272" y2="306" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="354" cy="263" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="354" cy="263" r="3" fill="#5eead4"/>
+<text x="376" y="268" font-size="17" fill="#e0dbea">Pick a template</text>
+<line x1="354" x2="354" y1="324" y2="380" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="354" cy="315" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="354" cy="315" r="3" fill="#5eead4"/>
+<text x="376" y="320" font-size="17" fill="#e0dbea">Tailor questions</text>
+<text x="376" y="342" font-size="17" fill="#e0dbea">for the team</text>
+<line x1="354" x2="354" y1="398" y2="454" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="354" cy="389" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="354" cy="389" r="3" fill="#5eead4"/>
+<text x="376" y="394" font-size="17" fill="#e0dbea">Choose reviewees</text>
+<text x="376" y="416" font-size="17" fill="#e0dbea">and teammates</text>
+<circle cx="354" cy="463" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="354" cy="463" r="3" fill="#5eead4"/>
+<text x="376" y="468" font-size="17" fill="#e0dbea">Set due dates</text>
+<text x="376" y="490" font-size="17" fill="#e0dbea">and launch</text>
+<line x1="348" x2="560" y1="512" y2="512" stroke="#322c40"/>
+<text x="348" y="538" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8d8699">GOAL</text>
+<text x="348" y="562" font-size="16" font-style="italic" fill="#cfc9dc">Fit it to my own team</text>
+<line x1="454.0" x2="454.0" y1="600" y2="644" stroke="#5eead4" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="454.0" cy="652" r="8" fill="#14121b" stroke="#5eead4" stroke-width="3"/>
+<rect x="618" y="118" width="256" height="482" rx="22" fill="#1c1925" stroke="#322c40" stroke-width="1.5"/>
+<circle cx="656" cy="166" r="17" fill="#fbbf24"/><text x="656" y="172" font-size="17" font-weight="800" text-anchor="middle" fill="#14121b">3</text>
+<text x="684" y="171" font-size="14" font-weight="700" letter-spacing="1.8" fill="#fbbf24">EMPLOYEE</text>
+<text x="640" y="222" font-size="19.5" font-weight="700" fill="#f2eefc">Fills out reviews</text>
+<line x1="646" x2="646" y1="272" y2="306" stroke="#fbbf24" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="646" cy="263" r="9" fill="#1c1925" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.5"/><circle cx="646" cy="263" r="3" fill="#fbbf24"/>
+<text x="668" y="268" font-size="17" fill="#e0dbea">Get notified</text>
+<line x1="646" x2="646" y1="324" y2="380" stroke="#fbbf24" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="646" cy="315" r="9" fill="#1c1925" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.5"/><circle cx="646" cy="315" r="3" fill="#fbbf24"/>
+<text x="668" y="320" font-size="17" fill="#e0dbea">Complete the</text>
+<text x="668" y="342" font-size="17" fill="#e0dbea">self review</text>
+<line x1="646" x2="646" y1="398" y2="432" stroke="#fbbf24" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="646" cy="389" r="9" fill="#1c1925" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.5"/><circle cx="646" cy="389" r="3" fill="#fbbf24"/>
+<text x="668" y="394" font-size="17" fill="#e0dbea">Review teammates</text>
+<circle cx="646" cy="441" r="9" fill="#1c1925" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.5"/><circle cx="646" cy="441" r="3" fill="#fbbf24"/>
+<text x="668" y="446" font-size="17" fill="#e0dbea">Submit feedback</text>
+<line x1="640" x2="852" y1="512" y2="512" stroke="#322c40"/>
+<text x="640" y="538" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8d8699">GOAL</text>
+<text x="640" y="562" font-size="16" font-style="italic" fill="#cfc9dc">Honest input,</text>
+<text x="640" y="582" font-size="16" font-style="italic" fill="#cfc9dc">low effort</text>
+<line x1="746.0" x2="746.0" y1="600" y2="644" stroke="#fbbf24" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="746.0" cy="652" r="8" fill="#14121b" stroke="#fbbf24" stroke-width="3"/>
+<rect x="910" y="118" width="256" height="482" rx="22" fill="#1c1925" stroke="#322c40" stroke-width="1.5"/>
+<circle cx="948" cy="166" r="17" fill="#5eead4"/><text x="948" y="172" font-size="17" font-weight="800" text-anchor="middle" fill="#14121b">4</text>
+<text x="976" y="171" font-size="14" font-weight="700" letter-spacing="1.8" fill="#5eead4">MANAGER</text>
+<text x="932" y="222" font-size="19.5" font-weight="700" fill="#f2eefc">Conducts the review</text>
+<line x1="938" x2="938" y1="272" y2="328" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="938" cy="263" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="938" cy="263" r="3" fill="#5eead4"/>
+<text x="960" y="268" font-size="17" fill="#e0dbea">Track completion</text>
+<text x="960" y="290" font-size="17" fill="#e0dbea">on the dashboard</text>
+<line x1="938" x2="938" y1="346" y2="402" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="938" cy="337" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="938" cy="337" r="3" fill="#5eead4"/>
+<text x="960" y="342" font-size="17" fill="#e0dbea">Read responses</text>
+<text x="960" y="364" font-size="17" fill="#e0dbea">side by side</text>
+<line x1="938" x2="938" y1="420" y2="476" stroke="#5eead4" stroke-opacity=".25" stroke-width="1.5"/>
+<circle cx="938" cy="411" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="938" cy="411" r="3" fill="#5eead4"/>
+<text x="960" y="416" font-size="17" fill="#e0dbea">Write the review</text>
+<text x="960" y="438" font-size="17" fill="#e0dbea">and rating</text>
+<circle cx="938" cy="485" r="9" fill="#1c1925" stroke="#5eead4" stroke-opacity=".6" stroke-width="1.5"/><circle cx="938" cy="485" r="3" fill="#5eead4"/>
+<text x="960" y="490" font-size="17" fill="#e0dbea">Share it in a 1:1</text>
+<line x1="932" x2="1144" y1="512" y2="512" stroke="#322c40"/>
+<text x="932" y="538" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8d8699">GOAL</text>
+<text x="932" y="562" font-size="16" font-style="italic" fill="#cfc9dc">A conversation,</text>
+<text x="932" y="582" font-size="16" font-style="italic" fill="#cfc9dc">not paperwork</text>
+<line x1="1038.0" x2="1038.0" y1="600" y2="635" stroke="#5eead4" stroke-opacity=".5" stroke-width="2"/>
+<rect x="235.0" y="635" width="146" height="34" rx="17" fill="#241f31" stroke="#4a4160"/>
+<text x="308.0" y="657" font-size="15" font-weight="600" text-anchor="middle" fill="#e0dbea">Review template</text>
+<rect x="527.0" y="635" width="146" height="34" rx="17" fill="#241f31" stroke="#4a4160"/>
+<text x="600.0" y="657" font-size="15" font-weight="600" text-anchor="middle" fill="#e0dbea">Assigned review</text>
+<rect x="834.0" y="635" width="116" height="34" rx="17" fill="#241f31" stroke="#4a4160"/>
+<text x="892.0" y="657" font-size="15" font-weight="600" text-anchor="middle" fill="#e0dbea">Responses</text>
+<rect x="958.0" y="635" width="176" height="34" rx="17" fill="#14121b"/>
+<rect x="958.0" y="635" width="176" height="34" rx="17" fill="#5eead4" fill-opacity=".16" stroke="#5eead4"/>
+<text x="1056.0" y="657" font-size="15" font-weight="700" text-anchor="middle" fill="#5eead4">Completed review</text>
+<path d="M974.0 652 l4.5 4.5 l8 -9" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

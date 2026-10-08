@@ -2,8 +2,9 @@ const deChatCover = '/imgs/DE-chat-cover.png';
 const ascentDashboardCover = '/imgs/Ascent-Dashboard-cover.png';
 const rtActivitiesCover = '/imgs/RT-Activities-cover.png';
 const tdDatavizCover = '/imgs/TD-dataviz-cover.png';
+const heliosReviewsCover = '/imgs/Helios-reviews-cover.png';
 
-const items = [
+const rawItems = [
   {
     id: '1',
     name: 'Discovery Education',
@@ -57,7 +58,26 @@ const items = [
     year: '2018',
     category: 'Advertising Tech',
     tag: 'Data Visualization',
+  },
+  {
+    id: '5',
+    name: 'Helios',
+    imageUrl: heliosReviewsCover,
+    description: 'A 0 → 1 performance review dashboard and system for Helios, an HR platform, designed to make reviews useful instead of a yearly chore.',
+    Date: 'Performance Reviews',
+    company: 'Helios',
+    divider:'∙',
+    caseStudyFile: '/case-studies/5.html',
+    year: '2026',
+    category: 'HR Tech',
+    tag: 'Workflows ∙ Forms ∙ Feedback',
   }
 ];
+
+const slugify = (str) =>
+  str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+// URL slug = company + project, e.g. /item/helios-performance-reviews
+const items = rawItems.map((it) => ({ ...it, slug: slugify(`${it.company} ${it.Date}`) }));
 
 export default items;
